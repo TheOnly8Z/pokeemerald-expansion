@@ -627,6 +627,8 @@
     "ShuiyunTown"
   ],
   "gMapGroup_NewIndoor": [
-    "ShuiyunTownIntroBoat"
+    "ShuiyunTownIntroBoat",
+    "ShuiyunTownBoatHallway",
+    "ShuiyunTownBoatCaptainsRoom"
   ]
 }

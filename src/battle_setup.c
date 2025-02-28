@@ -1009,19 +1009,19 @@ static void CB2_StartFirstBattle(void)
         FreeAllWindowBuffers();
         //SetMainCallback2(CB2_InitBattle);
         SetMainCallback2(CB2_EndFirstBattle);
-        RestartWildEncounterImmunitySteps();
-        ClearPoisonStepCounter();
-        IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
-        IncrementGameStat(GAME_STAT_WILD_BATTLES);
-        IncrementDailyWildBattles();
-        TryUpdateGymLeaderRematchFromWild();
+        // RestartWildEncounterImmunitySteps();
+        // ClearPoisonStepCounter();
+        // IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
+        // IncrementGameStat(GAME_STAT_WILD_BATTLES);
+        // IncrementDailyWildBattles();
+        // TryUpdateGymLeaderRematchFromWild();
     }
 }
 
 static void CB2_EndFirstBattle(void)
 {
-    Overworld_ClearSavedMusic();
-    DowngradeBadPoison();
+    // Overworld_ClearSavedMusic();
+    // DowngradeBadPoison();
     SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }
 

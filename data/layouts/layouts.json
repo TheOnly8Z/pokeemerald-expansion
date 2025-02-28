@@ -4424,12 +4424,32 @@
     {
       "id": "LAYOUT_SHUIYUN_TOWN_INTRO_BOAT",
       "name": "ShuiyunTownIntroBoat_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 16,
+      "height": 16,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/ShuiyunTownIntroBoat/border.bin",
       "blockdata_filepath": "data/layouts/ShuiyunTownIntroBoat/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_BOAT_HALLWAY",
+      "name": "ShuiyunTownBoatHallway_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/ShuiyunTownBoatHallway/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTownBoatHallway/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_BOAT_CAPTAINS_ROOM",
+      "name": "ShuiyunTownBoatCaptainsRoom_Layout",
+      "width": 16,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/ShuiyunTownBoatCaptainsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTownBoatCaptainsRoom/map.bin"
     }
   ]
 }

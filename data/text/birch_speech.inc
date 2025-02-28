@@ -9,23 +9,23 @@ gText_Birch_Pokemon::
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "There is a place far away\n"
+	.string "There is a place far from Hoenn\n"
 	.string "called Tianlan Island.\p"
 	.string "The POKéMON LEAGUE maintains a few\n"
 	.string "POKéMON GYMS there.\p"
 	.string "However, since a few weeks ago,\l"
 	.string "We couldn't get in contact with\n"
-	.string "Anyone on the island.\p"
+	.string "the GYM LEADERS on the island.\p"
 	.string "Something terrible might have\n"
 	.string "happened there!\p"
-	.string "I understand you have only just\n"
-	.string "become a LEAGUE REPRESENTATIVE...\p"
-	.string "But you are the closest person\n"
+	.string "I understand you have only just\l"
+	.string "become a LEAGUE REPRESENTATIVE…\p"
+	.string "But you are the nearest person\n"
 	.string "who can help out.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Oh, but I never asked about you!$"
+	.string "Oh, but I never asked…$"
 
 gText_Birch_BoyOrGirl::
 	.string "What do you look like?$"
@@ -46,10 +46,8 @@ gText_Birch_AreYouReady::
 	.string "Are you ready?\p"
 	.string "Investigate the island, and find out\n"
 	.string "What is happening to the place.\p"
-	.string "A good place to start looking at\n"
-	.string "might be the POKéMON GYMS.\p"
 	.string "Oh, and...\p"
-	.string "Look for a briefcase on the boat.\p"
-	.string "This is a dangerous task, so\n"
-	.string "I have arranged something for you.\p"
+	.string "This is a dangerous task, so\l"
+	.string "I have arranged something for you.\n"
+	.string "Look for a bag on your table.\p"
 	.string "$"

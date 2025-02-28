@@ -1156,3 +1156,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShuiyunTown/scripts.inc"
 
 	.include "data/maps/ShuiyunTownIntroBoat/scripts.inc"
+
+	.include "data/maps/ShuiyunTownBoatHallway/scripts.inc"
+
+	.include "data/maps/ShuiyunTownBoatCaptainsRoom/scripts.inc"
