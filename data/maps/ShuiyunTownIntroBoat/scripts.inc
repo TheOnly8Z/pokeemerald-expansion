@@ -4,10 +4,17 @@ ShuiyunTownIntroBoat_MapScripts::
 .set LOCALID_BIRCH_BAG, 1
 
 ShuiyunTownIntroBoat_EventScript_BirchsBag::
-	lockall
-	msgbox ShuiyunTownIntroBoat_Text_BirchsBag, MSGBOX_DEFAULT
-	@ closemessage
-	setflag FLAG_SYS_POKEMON_GET
+	lock
+	msgbox ShuiyunTownIntroBoat_Text_BirchsBag1, MSGBOX_DEFAULT
+
+	msgbox ShuiyunTownIntroBoat_Text_BirchsBag2, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+
+	msgbox ShuiyunTownIntroBoat_Text_BirchsBag3, MSGBOX_DEFAULT
+
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_SYS_POKEDEX_GET
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_BIRCH_BAG
@@ -15,6 +22,7 @@ ShuiyunTownIntroBoat_EventScript_BirchsBag::
 	waitstate
 	setvar VAR_BIRCH_LAB_STATE, 2
 	setvar VAR_ROUTE101_STATE, 3
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 	bufferleadmonspeciesname STR_VAR_1
 	playfanfare MUS_OBTAIN_ITEM
 	message ShuiyunTownIntroBoat_Text_Received
@@ -32,21 +40,26 @@ ShuiyunTownIntroBoat_EventScript_NicknameStarter::
 	end
 
 ShuiyunTownIntroBoat_EventScript_LookForCaptain::
-	@ msgbox ShuiyunTownIntroBoat_Text_Captain, MSGBOX_DEFAULT
-	releaseall
+	msgbox ShuiyunTownIntroBoat_Text_Captain, MSGBOX_DEFAULT
+	release
 	end
 
 ShuiyunTownIntroBoat_EventScript_PreventExit::
 	lockall
 	msgbox ShuiyunTownIntroBoat_Text_DontForgetBag, MSGBOX_DEFAULT
-	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, ShuiyunTownIntroBoat_Movement_PreventExit
 	waitmovement 0
-	releaseall
+	release
 	end
 
-ShuiyunTownIntroBoat_Text_BirchsBag:
-	.string "There is a note in the bag.\p"
+ShuiyunTownIntroBoat_Text_BirchsBag1:
+	.string "This looks like the bag STEVEN mentioned.$"
+
+ShuiyunTownIntroBoat_Text_BirchsBag2:
+	.string "You got the POKéDEX and RUNNING SHOES!$"
+
+ShuiyunTownIntroBoat_Text_BirchsBag3:
+	.string "You also found a note addressed to you.\p"
 	.string "“{PLAYER}{KUN}, I realized you don't have\n"
 	.string "a POKéMON partner yet.\p"
 	.string "In this bag are some capable POKéMON.\n"
@@ -54,22 +67,20 @@ ShuiyunTownIntroBoat_Text_BirchsBag:
 	.string "I also asked the captain to prepare some\n"
 	.string "helpful items for you. Don't forget to\l"
 	.string "talk to him before you go.\p"
-	.string "Good luck, and I hope to see you soon.”\p"
+	.string "I hope to hear from you soon.”\n"
 	.string "- STEVEN STONE$"
 
 ShuiyunTownIntroBoat_Text_Received:
 	.string "{PLAYER} received the {STR_VAR_1}!$"
 
-
 ShuiyunTownIntroBoat_Text_DontForgetBag:
 	.string "It might be a good idea to check out\n"
 	.string "what's in the bag first.$"
-
 
 ShuiyunTownIntroBoat_Movement_PreventExit:
 	walk_down
 	step_end
 
 ShuiyunTownIntroBoat_Text_Captain:
-	.string "The captain's room is be upstairs.\n"
+	.string "The captain's room is upstairs.\n"
 	.string "Better go look for him!$"
