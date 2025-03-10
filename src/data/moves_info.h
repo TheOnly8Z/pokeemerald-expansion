@@ -3132,7 +3132,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Licks with a long tongue to\n"
             "injure. May also paralyze."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 30 : 20,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 50 : 20, // was 30
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 30,

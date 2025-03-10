@@ -464,6 +464,17 @@ u32 ScriptGiveMon(u16 species, u8 level, u16 item)
     return ScriptGiveMonParameterized(0, PARTY_SIZE, species, level, item, ITEM_POKE_BALL, NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_GENDERLESS, evs, ivs, moves, FALSE, FALSE, NUMBER_OF_MON_TYPES);
 }
 
+
+u32 ScriptGiveMonDetailed(u16 species, u8 level, u16 item, u8 nature, u8 abilityNum, u16 *moves, bool8 isShiny)
+{
+    u8 evs[NUM_STATS]        = {0, 0, 0, 0, 0, 0};
+    u8 ivs[NUM_STATS]        = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
+                                MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
+
+    return ScriptGiveMonParameterized(0, PARTY_SIZE, species, level, item, ITEM_POKE_BALL, nature, abilityNum, MON_GENDERLESS, evs, ivs, moves, isShiny, FALSE, NUMBER_OF_MON_TYPES);
+}
+
+
 #define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)
 
 /* Give or create a mon to either player or opponent

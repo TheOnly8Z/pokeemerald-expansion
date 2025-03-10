@@ -9876,12 +9876,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 43,
-        .baseAttack    = 30,
-        .baseDefense   = 55,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 65,
+        .baseHP        = 93, // 43 + 50
+        .baseAttack    = 30, // 30
+        .baseDefense   = 95, // 55 + 40
+        .baseSpeed     = 103, // 97 + 5
+        .baseSpAttack  = 75, // 40 + 35
+        .baseSpDefense = 95, // 65 + 30
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 225,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 116 : 110,
@@ -9890,9 +9890,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_FAST, // GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_FRIEND_GUARD, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Luvdisc"),
         .cryId = CRY_LUVDISC,

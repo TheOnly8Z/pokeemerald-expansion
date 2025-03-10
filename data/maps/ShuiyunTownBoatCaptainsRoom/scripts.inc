@@ -11,7 +11,7 @@ ShuiyunTownBoatCaptainsRoom_OnFrame:
 .set LOCALID_AQUA_GRUNT, 2
 .set LOCALID_MAGMA_GRUNT, 3
 
-ShuiyunTownBoatCaptainsRoom_EventScript_TalkCaptain:
+ShuiyunTownBoatCaptainsRoom_EventScript_TalkCaptain::
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain MSGBOX_NPC
 	end
 
@@ -142,8 +142,9 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle7 MSGBOX_DEFAULT
 
-	giveitem ITEM_STORAGE_KEY
-	delay 20
+	giveitem ITEM_POKE_BALL, 30
+	giveitem ITEM_POTION, 20
+	giveitem ITEM_REPEL, 10
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle8 MSGBOX_DEFAULT
 
@@ -175,7 +176,7 @@ ShuiyunTownBoatCaptainsRoom_Text_1:
 	.string "You're not supposed to sail here…$"
 
 ShuiyunTownBoatCaptainsRoom_Text_2:
-	.string "This island is under lockdown!\n"
+	.string "I bet you're illegally fishing!\n"
 	.string "We'll have to impound your ship!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_3:
@@ -231,8 +232,8 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle4:
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle5:
 	.string "Yes! Exactly! That's you, isn't it?!\p"
-	.string "Mission accomplished! Now we will run\n"
-	.string "away and tell our bosses! See ya!$"
+	.string "We need to tell our bosses!\n"
+	.string "Let's go!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle6:
 	.string "Time to bid adieu… {EMOJI_HEART}$"
@@ -243,8 +244,7 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle7:
 	.string "so I rescued them onto the boat.\p"
 	.string "STEVEN asked me to provide you with all\n"
 	.string "the supplies I can muster.\p"
-	.string "I stashed them in the rear cabin.\n"
-	.string "Here, take this key.$"
+	.string "Here you go.$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle8:
 	.string "Oh, and about the EEVEE…\p"

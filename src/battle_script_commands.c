@@ -4591,6 +4591,9 @@ static void Cmd_getexp(void)
             else
                 calculatedExp /= 7;
 
+            // EDIT: Drastically increase XP gain
+            calculatedExp = calculatedExp * 5;
+
             if (B_TRAINER_EXP_MULTIPLIER <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 calculatedExp = (calculatedExp * 150) / 100;
 

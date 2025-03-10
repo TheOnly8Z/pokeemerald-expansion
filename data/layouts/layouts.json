@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_SHUIYUN_TOWN",
       "name": "ShuiyunTown_Layout",
-      "width": 32,
-      "height": 40,
+      "width": 45,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/ShuiyunTown/border.bin",

@@ -115,9 +115,9 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
     // SPECIES_TREECKO,
     // SPECIES_TORCHIC,
     // SPECIES_MUDKIP,
-    SPECIES_VIGOROTH,
-    SPECIES_LOUDRED,
-    SPECIES_HERDIER,
+    SPECIES_CARNIVINE,
+    SPECIES_HEATMOR,
+    SPECIES_LUVDISC,
 };
 
 static const struct BgTemplate sBgTemplates[3] =

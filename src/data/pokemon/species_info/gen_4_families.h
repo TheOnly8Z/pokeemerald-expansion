@@ -4620,10 +4620,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CARNIVINE
     [SPECIES_CARNIVINE] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 100,
+        .baseHP        = 114, // 84 + 30
+        .baseAttack    = 110, // 100 + 10
         .baseDefense   = 72,
-        .baseSpeed     = 46,
+        .baseSpeed     = 36, // 46 - 10
         .baseSpAttack  = 90,
         .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_GRASS),
@@ -4633,9 +4633,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST, // GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_STRONG_JAW, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Carnivine"),
         .cryId = CRY_CARNIVINE,

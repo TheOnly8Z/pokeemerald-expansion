@@ -987,7 +987,50 @@ static void CB2_GiveStarter(void)
 
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 25, ITEM_NONE); // EDIT: level was 5
+
+
+    u16 moves[MAX_MON_MOVES];
+    u8 ability = NUM_ABILITY_PERSONALITY;
+    switch (starterMon)
+    {
+    case SPECIES_HERDIER:
+        moves[0] = MOVE_RETALIATE;
+        moves[1] = MOVE_PLAY_ROUGH;
+        moves[2] = MOVE_BABY_DOLL_EYES;
+        moves[3] = MOVE_WORK_UP;
+        ability = 0; // ABILITY_INTIMIDATE
+        break;
+    case SPECIES_LUVDISC:
+        moves[0] = MOVE_WATER_PULSE;
+        moves[1] = MOVE_DRAINING_KISS;
+        moves[2] = MOVE_HEAL_PULSE;
+        moves[3] = MOVE_FOLLOW_ME;
+        ability = 1; // ABILITY_FRIEND_GUARD
+        break;
+    case SPECIES_CARNIVINE:
+        moves[0] = MOVE_VINE_WHIP;
+        moves[1] = MOVE_BITE;
+        moves[2] = MOVE_SYNTHESIS;
+        moves[3] = MOVE_GROWTH;
+        ability = 1; // ABILITY_STRONG_JAW
+        break;
+    case SPECIES_HEATMOR:
+        moves[0] = MOVE_INCINERATE;
+        moves[1] = MOVE_LICK;
+        moves[2] = MOVE_WILL_O_WISP;
+        moves[3] = MOVE_HONE_CLAWS;
+        ability = 0; // ABILITY_INTIMIDATE
+        break;
+    default:
+        moves[0] = MOVE_NONE;
+        moves[1] = MOVE_NONE;
+        moves[2] = MOVE_NONE;
+        moves[3] = MOVE_NONE;
+    }
+
+    ScriptGiveMonDetailed(starterMon, 25, ITEM_NONE, NUM_NATURES, ability, moves, TRUE);
+    //ScriptGiveMon(starterMon, 25, ITEM_NONE); // EDIT: level was 5
+
     ResetTasks();
     // PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

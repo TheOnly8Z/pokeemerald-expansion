@@ -15,7 +15,10 @@ ShuiyunTownIntroBoat_EventScript_BirchsBag::
 
 	setflag FLAG_SYS_B_DASH
 	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
+	setflag FLAG_ADVENTURE_STARTED
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_BIRCH_BAG
 	special ChooseStarter
@@ -62,8 +65,16 @@ ShuiyunTownIntroBoat_Text_BirchsBag3:
 	.string "You also found a note addressed to you.\p"
 	.string "“{PLAYER}{KUN}, I realized you don't have\n"
 	.string "a POKéMON partner yet.\p"
-	.string "In this bag are some capable POKéMON.\n"
-	.string "Choose one for your journey ahead.\p"
+	.string "In this bag are three capable POKéMON\n"
+	.string "with unique abilities.\p"
+	.string "LUVDISC has the ability FRIEND GUARD.\n"
+	.string "It's a great supporting POKéMON.\p"
+	.string "CARNIVINE has the ability STRONG JAW.\n"
+	.string "It's a slow but tough POKéMON.\p"
+	.string "HEATMOR has the ability INTIMIDATE.\n"
+	.string "It's well-rounded POKéMON.\p"
+	.string "Pick one of these POKéMON for your.\p"
+	.string "journey ahead.\p"
 	.string "I also asked the captain to prepare some\n"
 	.string "helpful items for you. Don't forget to\l"
 	.string "talk to him before you go.\p"
