@@ -68,9 +68,6 @@ ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene1:
 	waitmovement 0
 	removeobject LOCALID_CAPTAIN
 	delay 20
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkSlowUp
-	waitmovement 0
-	delay 20
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_8 MSGBOX_DEFAULT
 
 	setvar VAR_SHUIYUN_BOAT_INTRO_BATTLE_STATE, 1
@@ -129,7 +126,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 	delay 20
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle6 MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_AquaGruntLeave
+	applymovement LOCALID_AQUA_GRUNT, Movement_AquaGruntLeave
 	waitmovement 0
 	removeobject LOCALID_AQUA_GRUNT
 	delay 20
@@ -142,8 +139,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle7 MSGBOX_DEFAULT
 
-	giveitem ITEM_POKE_BALL, 30
-	giveitem ITEM_POTION, 20
+	giveitem ITEM_POKE_BALL, 20
 	giveitem ITEM_REPEL, 10
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle8 MSGBOX_DEFAULT
@@ -258,12 +254,12 @@ ShuiyunTownBoatCaptainsRoom_Text_GetEevee:
 	.string "{PLAYER} received EEVEE!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle9:
-	.string "I will bring us to shore.\n"
-	.string "Go get your supplies in the meantime.$"
+	.string "We will see our destination soon.\n"
+	.string "Why don't you go outside and look?$"
 
 ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain:
-	.string "The supply room is the door on the left.\n"
-	.string "We can dock once you are ready.$"
+	.string "Wait… They ran away while we're at sea.\n"
+	.string "I hope they didn't actually drown.$"
 
 Movement_PlayerEnterRoom:
 	walk_up
@@ -321,11 +317,11 @@ Movement_CaptainLeave1:
 	walk_faster_down
 	walk_faster_down
 	walk_faster_down
-	walk_faster_down
 	walk_faster_left
 	step_end
 
 Movement_CaptainLeave2:
+	walk_faster_down
 	walk_faster_down
 	step_end
 
