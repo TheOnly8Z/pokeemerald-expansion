@@ -5,16 +5,20 @@ ShuiyunTownIntroBoat_MapScripts::
 
 ShuiyunTownIntroBoat_EventScript_BirchsBag::
 	lock
+
+	setrespawn HEAL_LOCATION_SHUIYUN_TOWN_INTRO_BOAT
+
 	msgbox ShuiyunTownIntroBoat_Text_BirchsBag1, MSGBOX_DEFAULT
 
-	msgbox ShuiyunTownIntroBoat_Text_BirchsBag2, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
+	message ShuiyunTownIntroBoat_Text_BirchsBag2
 	waitfanfare
+	waitmessage
 
 	msgbox ShuiyunTownIntroBoat_Text_BirchsBag3, MSGBOX_DEFAULT
 
 	setflag FLAG_SYS_B_DASH
-	setflag FLAG_SYS_POKEDEX_GET
+	@ setflag FLAG_SYS_POKEDEX_GET
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
@@ -59,7 +63,8 @@ ShuiyunTownIntroBoat_Text_BirchsBag1:
 	.string "This looks like the bag STEVEN mentioned.$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag2:
-	.string "You got the POKéDEX and RUNNING SHOES!$"
+	.string "You got the RUNNING SHOES!\n"
+	.string "Hold the B Button to run faster.$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag3:
 	.string "You also found a note addressed to you.\p"

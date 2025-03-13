@@ -4444,8 +4444,8 @@
     {
       "id": "LAYOUT_SHUIYUN_TOWN_BOAT_CAPTAINS_ROOM",
       "name": "ShuiyunTownBoatCaptainsRoom_Layout",
-      "width": 16,
-      "height": 16,
+      "width": 8,
+      "height": 10,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/ShuiyunTownBoatCaptainsRoom/border.bin",

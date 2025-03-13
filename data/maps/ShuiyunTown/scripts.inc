@@ -22,13 +22,13 @@ ShuiyunTown_Text_Dockyard:
 
 ShuiyunTown_Text_GymSign:
 	.string "SHUIYUN TOWN POKéMON GYM\n"
-	.string "LEADER: NAME HERE\l"
-	.string "“Quote here!”$"
+	.string "LEADER: ZHONG\l"
+	.string "“Strong Arms, Strong Heart”$"
 
 ShuiyunTown_Text_Cave:
-	.string "{UP_ARROW} NAME CAVE\n"
-	.string "{RIGHT_ARROW} ROUTE 1$"
+	.string "{UP_ARROW} LANTERN CAVE\n"
+	.string "{RIGHT_ARROW} SKYWARD ROUTE$"
 
 ShuiyunTown_Text_Clubhouse:
-	.string "CLUBHOUSE\n"
-	.string "“Quote here!”$"
+	.string "COMMUNITY CENTER\n"
+	.string "“Sharing Ocean's Bounty”$"

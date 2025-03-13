@@ -18,7 +18,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_TalkCaptain::
 ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene1:
 	lock
 
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkUp2
 	waitmovement 0
 	delay 20
 
@@ -61,13 +61,17 @@ ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene1:
 	waitmovement 0
 	delay 20
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_7 MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 25, move1=MOVE_SWIFT, move2=MOVE_QUICK_ATTACK, move3=MOVE_BABY_DOLL_EYES, move4=MOVE_HELPING_HAND
+	givemon SPECIES_EEVEE, 25, move1=MOVE_COVET, move2=MOVE_QUICK_ATTACK, move3=MOVE_BABY_DOLL_EYES, move4=MOVE_HELPING_HAND
 	delay 20
 	
 	applymovement LOCALID_CAPTAIN, Movement_CaptainLeave2
 	waitmovement 0
 	removeobject LOCALID_CAPTAIN
 	delay 20
+
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_LookUp
+	waitmovement 0
+
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_8 MSGBOX_DEFAULT
 
 	setvar VAR_SHUIYUN_BOAT_INTRO_BATTLE_STATE, 1
@@ -79,7 +83,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene2:
 	lock
 	removeobject LOCALID_CAPTAIN
 
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkUp2
 	waitmovement 0
 
 	applymovement LOCALID_AQUA_GRUNT, Movement_LookDown
@@ -133,21 +137,23 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 
 	fadescreen FADE_TO_BLACK
 	addobject LOCALID_CAPTAIN
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerUp
-	waitmovement 0
+	delay 40
 	fadescreen FADE_FROM_BLACK
+
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkUp2
+	waitmovement 0
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle7 MSGBOX_DEFAULT
 
 	giveitem ITEM_POKE_BALL, 20
-	giveitem ITEM_REPEL, 10
+	giveitem ITEM_POTION, 10
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle8 MSGBOX_DEFAULT
 
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox ShuiyunTownBoatCaptainsRoom_Text_GetEevee MSGBOX_DEFAULT
+	message ShuiyunTownBoatCaptainsRoom_Text_GetEevee
 	waitfanfare
-	delay 20
+	waitmessage
 
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, ShuiyunTownBoatCaptainsRoom_EventScript_NicknameStarter
@@ -216,7 +222,7 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle1:
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle2:
 	.string "Now, now…{EMOJI_HEART}\p"
-	.string "TABITHA did mention a certain someone\n"
+	.string "COURTNEY did mention a certain someone\n"
 	.string "sent by the POKéMON LEAGUE…{EMOJI_HEART}$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle3:
@@ -228,19 +234,17 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle4:
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle5:
 	.string "Yes! Exactly! That's you, isn't it?!\p"
-	.string "We need to tell our bosses!\n"
-	.string "Let's go!$"
+	.string "We need to tell COURTNEY and MATT!\n"
+	.string "Grab the others! Let's go!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle6:
 	.string "Time to bid adieu… {EMOJI_HEART}$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle7:
 	.string "Ah, sorry for the trouble.\p"
-	.string "Those two pretended to be stranded,\n"
-	.string "so I rescued them onto the boat.\p"
-	.string "STEVEN asked me to provide you with all\n"
-	.string "the supplies I can muster.\p"
-	.string "Here you go.$"
+	.string "They rushed inside as soon as I docked.\p"
+	.string "Here are the supplies STEVEN asked me\n"
+	.string "to give you.$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle8:
 	.string "Oh, and about the EEVEE…\p"
@@ -254,14 +258,15 @@ ShuiyunTownBoatCaptainsRoom_Text_GetEevee:
 	.string "{PLAYER} received EEVEE!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle9:
-	.string "We will see our destination soon.\n"
-	.string "Why don't you go outside and look?$"
+	.string "Well, here's our stop.\n"
+	.string "The weather is terrible, so we'll be here\l"
+	.string "for the time being. Good luck!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain:
-	.string "Wait… They ran away while we're at sea.\n"
-	.string "I hope they didn't actually drown.$"
+	.string "Maybe I should have paid attention\n"
+	.string "during TRAINER school…$"
 
-Movement_PlayerEnterRoom:
+Movement_WalkUp2:
 	walk_up
 	walk_up
 	step_end
@@ -277,6 +282,10 @@ Movement_WalkSlowDown:
 Movement_LookRight:
 	face_right
 	emote_question_mark
+	step_end
+
+Movement_LookUp:
+	face_up
 	step_end
 
 Movement_LookDown:
@@ -326,9 +335,10 @@ Movement_CaptainLeave2:
 	step_end
 
 Movement_MagmaGruntLeave:
+	walk_faster_left
+	walk_faster_down
 	walk_faster_down
 	walk_faster_right
-	walk_faster_down
 	walk_faster_down
 	step_end
 

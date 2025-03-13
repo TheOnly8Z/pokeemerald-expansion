@@ -16885,6 +16885,7 @@ AI: Check Bad Move
 
 Mightyena
 Level: 25
+Ability: Quick Feet
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Howl
@@ -16904,5 +16905,6 @@ Golbat
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Screech
-- Air Cutter
-- Poison Fang
+- Absorb
+- Swift
+- Quick Guard

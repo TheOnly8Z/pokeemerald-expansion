@@ -42256,8 +42256,8 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 16906
                 MOVE_SCREECH,
-                MOVE_AIR_CUTTER,
-                MOVE_POISON_FANG,
+                MOVE_ABSORB,
+                MOVE_SWIFT,
             },
             },
         },

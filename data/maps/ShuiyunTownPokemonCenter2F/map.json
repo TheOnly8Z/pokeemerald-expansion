@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN_POKEMON_CENTER2F",
   "name": "ShuiyunTownPokemonCenter2F",
   "layout": "LAYOUT_SHUIYUN_TOWN_POKEMON_CENTER2F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
