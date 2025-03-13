@@ -1160,3 +1160,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShuiyunTownBoatHallway/scripts.inc"
 
 	.include "data/maps/ShuiyunTownBoatCaptainsRoom/scripts.inc"
+
+	.include "data/maps/ShuiyunTownPokemonCenter1F/scripts.inc"
+
+	.include "data/maps/ShuiyunTownPokemonCenter2F/scripts.inc"
+
+	.include "data/maps/NewRoute1/scripts.inc"

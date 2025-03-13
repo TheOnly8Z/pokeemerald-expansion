@@ -624,11 +624,14 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_NewTownsAndRoutes": [
-    "ShuiyunTown"
+    "ShuiyunTown",
+    "NewRoute1"
   ],
   "gMapGroup_NewIndoor": [
     "ShuiyunTownIntroBoat",
     "ShuiyunTownBoatHallway",
-    "ShuiyunTownBoatCaptainsRoom"
+    "ShuiyunTownBoatCaptainsRoom",
+    "ShuiyunTownPokemonCenter1F",
+    "ShuiyunTownPokemonCenter2F"
   ]
 }

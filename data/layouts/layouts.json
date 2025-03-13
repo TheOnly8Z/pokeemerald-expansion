@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_SHUIYUN_TOWN",
       "name": "ShuiyunTown_Layout",
-      "width": 45,
-      "height": 30,
+      "width": 50,
+      "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/ShuiyunTown/border.bin",
@@ -4450,6 +4450,36 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/ShuiyunTownBoatCaptainsRoom/border.bin",
       "blockdata_filepath": "data/layouts/ShuiyunTownBoatCaptainsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_POKEMON_CENTER1F",
+      "name": "ShuiyunTownPokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ShuiyunTownPokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTownPokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_POKEMON_CENTER2F",
+      "name": "ShuiyunTownPokemonCenter2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ShuiyunTownPokemonCenter2F/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTownPokemonCenter2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_ROUTE1",
+      "name": "NewRoute1_Layout",
+      "width": 50,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/NewRoute1/border.bin",
+      "blockdata_filepath": "data/layouts/NewRoute1/map.bin"
     }
   ]
 }
