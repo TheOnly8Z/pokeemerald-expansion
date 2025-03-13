@@ -1028,7 +1028,7 @@ static void CB2_GiveStarter(void)
         moves[3] = MOVE_NONE;
     }
 
-    ScriptGiveMonDetailed(starterMon, 25, ITEM_NONE, NUM_NATURES, ability, moves, TRUE);
+    ScriptGiveMonDetailed(starterMon, 25, ITEM_NONE, NUM_NATURES, ability, moves, FALSE);
     //ScriptGiveMon(starterMon, 25, ITEM_NONE); // EDIT: level was 5
 
     ResetTasks();
