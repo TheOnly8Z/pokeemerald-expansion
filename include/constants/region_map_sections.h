@@ -216,6 +216,9 @@
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_NONE                         0xD5
 #define MAPSEC_SHUIYUN_TOWN                 0xD6
+#define MAPSEC_LANTERN_CAVE                 0xD7
+#define MAPSEC_SKYWARD_TRAIL                0xD8
+#define MAPSEC_JIANGSHEN_LAKE               0xD9
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

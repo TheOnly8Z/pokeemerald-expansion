@@ -1165,4 +1165,16 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/ShuiyunTownPokemonCenter2F/scripts.inc"
 
-	.include "data/maps/NewRoute1/scripts.inc"
+	.include "data/maps/SkywardTrail/scripts.inc"
+
+	.include "data/maps/LanternCave_1F/scripts.inc"
+
+	.include "data/maps/LanternCave_2F/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_Dockyard/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_Gym/scripts.inc"
+
+	.include "data/maps/LanternCave_2F_Connector/scripts.inc"
+
+	.include "data/maps/SkywardTrail_House/scripts.inc"

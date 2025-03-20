@@ -4472,14 +4472,74 @@
       "blockdata_filepath": "data/layouts/ShuiyunTownPokemonCenter2F/map.bin"
     },
     {
-      "id": "LAYOUT_NEW_ROUTE1",
-      "name": "NewRoute1_Layout",
-      "width": 50,
+      "id": "LAYOUT_SKYWARD_TRAIL",
+      "name": "SkywardTrail_Layout",
+      "width": 60,
       "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/NewRoute1/border.bin",
-      "blockdata_filepath": "data/layouts/NewRoute1/map.bin"
+      "border_filepath": "data/layouts/SkywardTrail/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_1F",
+      "name": "LanternCave_1F_Layout",
+      "width": 60,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_2F",
+      "name": "LanternCave_2F_Layout",
+      "width": 60,
+      "height": 53,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_2F/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_DOCKYARD",
+      "name": "ShuiyunTown_Dockyard_Layout",
+      "width": 20,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/ShuiyunTown_Dockyard/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTown_Dockyard/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_GYM",
+      "name": "ShuiyunTown_Gym_Layout",
+      "width": 11,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/ShuiyunTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTown_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_2F_CONNECTOR",
+      "name": "LanternCave_2F_Connector_Layout",
+      "width": 24,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_2F_Connector/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_2F_Connector/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_HOUSE",
+      "name": "SkywardTrail_House_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SkywardTrail_House/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_House/map.bin"
     }
   ]
 }

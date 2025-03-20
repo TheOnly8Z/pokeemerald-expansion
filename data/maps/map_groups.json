@@ -625,13 +625,19 @@
   ],
   "gMapGroup_NewTownsAndRoutes": [
     "ShuiyunTown",
-    "NewRoute1"
+    "SkywardTrail"
   ],
   "gMapGroup_NewIndoor": [
     "ShuiyunTownIntroBoat",
     "ShuiyunTownBoatHallway",
     "ShuiyunTownBoatCaptainsRoom",
     "ShuiyunTownPokemonCenter1F",
-    "ShuiyunTownPokemonCenter2F"
+    "ShuiyunTownPokemonCenter2F",
+    "LanternCave_1F",
+    "LanternCave_2F",
+    "ShuiyunTown_Dockyard",
+    "ShuiyunTown_Gym",
+    "LanternCave_2F_Connector",
+    "SkywardTrail_House"
   ]
 }
