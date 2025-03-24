@@ -4540,6 +4540,66 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SkywardTrail_House/border.bin",
       "blockdata_filepath": "data/layouts/SkywardTrail_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_BOAT_ROOMS",
+      "name": "ShuiyunTownBoatRooms_Layout",
+      "width": 18,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/ShuiyunTownBoatRooms/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTownBoatRooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_COMMUNITY_CENTER",
+      "name": "ShuiyunTown_CommunityCenter_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ShuiyunTown_CommunityCenter/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTown_CommunityCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_HOUSE1",
+      "name": "ShuiyunTown_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ShuiyunTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUIYUN_TOWN_HOUSE2",
+      "name": "ShuiyunTown_House2_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ShuiyunTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/ShuiyunTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_LAB",
+      "name": "SkywardTrail_Lab_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SkywardTrail_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_LAB_2F",
+      "name": "SkywardTrail_Lab_2F_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SkywardTrail_Lab_2F/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_Lab_2F/map.bin"
     }
   ]
 }

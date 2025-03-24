@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN",
   "name": "ShuiyunTown",
   "layout": "LAYOUT_SHUIYUN_TOWN",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_ABNORMAL_WEATHER",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_DOWNPOUR",
@@ -21,29 +21,16 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 26,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-      "x": 23,
-      "y": 20,
+      "x": 27,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ShuiyunTown_EventScript_TalkOldMan",
       "flag": "0"
     },
     {
@@ -51,13 +38,13 @@
       "x": 16,
       "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 2,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_EventScript_FatMan",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN"
+      "script": "ShuiyunTown_EventScript_TalkFatMan",
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
@@ -78,25 +65,25 @@
       "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ShuiyunTown_EventScript_TalkFisher",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 35,
-      "y": 21,
+      "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA_STILL",
+      "x": 26,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ShuiyunTown_EventScript_DebugGiveHM",
+      "flag": "FLAG_DEBUG_GIVE_HM"
     }
   ],
   "warp_events": [
@@ -112,7 +99,7 @@
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN_BOAT_HALLWAY",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
     },
     {
       "x": 20,
@@ -126,6 +113,34 @@
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_COMMUNITY_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_LANTERN_CAVE_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_HOUSE2",
       "dest_warp_id": "0"
     }
   ],

@@ -14093,4 +14093,22 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_SHIP_PARTS] =
+    {
+        .name = _("Ship Parts"),
+        .pluralName = _("Ship Parts"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A package that\n"
+            "contains parts\n"
+            "for ship repair."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_DevonParts,
+        .iconPalette = gItemIconPalette_DevonParts,
+    },
+
 };

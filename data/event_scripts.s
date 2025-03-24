@@ -1178,3 +1178,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LanternCave_2F_Connector/scripts.inc"
 
 	.include "data/maps/SkywardTrail_House/scripts.inc"
+
+	.include "data/maps/ShuiyunTownBoatRooms/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_CommunityCenter/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_House1/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_House2/scripts.inc"
+
+	.include "data/maps/SkywardTrail_Lab/scripts.inc"
+
+	.include "data/maps/SkywardTrail_Lab_2F/scripts.inc"

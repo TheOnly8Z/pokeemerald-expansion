@@ -16884,7 +16884,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Mightyena
-Level: 25
+Level: 20
 Ability: Quick Feet
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
@@ -16902,9 +16902,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Golbat
-Level: 25
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Screech
 - Absorb
 - Swift
-- Quick Guard

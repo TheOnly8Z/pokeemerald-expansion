@@ -42213,7 +42213,7 @@ F_TRAINER_FEMALE |
 #line 16888
             .ability = ABILITY_QUICK_FEET,
 #line 16887
-            .lvl = 25,
+            .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -42252,7 +42252,7 @@ F_TRAINER_FEMALE |
 #line 16906
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 16905
-            .lvl = 25,
+            .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -42260,7 +42260,6 @@ F_TRAINER_FEMALE |
                 MOVE_SCREECH,
                 MOVE_ABSORB,
                 MOVE_SWIFT,
-                MOVE_QUICK_GUARD,
             },
             },
         },

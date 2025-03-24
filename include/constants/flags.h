@@ -657,10 +657,10 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_DEFEATED_INTRO_GRUNTS  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_DEBUG_GIVE_HM  0x265 // Unused Flag
+#define FLAG_EXPERT_ADVICE_ITEM  0x266 // Unused Flag
+#define FLAG_HIDE_DOCKYARD_KAI  0x267 // Unused Flag
+#define FLAG_HIDE_GYM_ZHONG  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag

@@ -1,12 +1,22 @@
 ShuiyunTownIntroBoat_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, ShuiyunTownIntroBoat_OnFrame
 	.byte 0
+
+ShuiyunTownIntroBoat_OnFrame:
+	map_script_2 VAR_ROUTE101_STATE, 0, ShuiyunTownIntroBoat_EventScript_Intro
+	.2byte 0
 
 .set LOCALID_BIRCH_BAG, 1
 
+ShuiyunTownIntroBoat_EventScript_Intro::
+	lock
+	setrespawn HEAL_LOCATION_SHUIYUN_TOWN_INTRO_BOAT
+	msgbox ShuiyunTownIntroBoat_Text_Intro, MSGBOX_DEFAULT
+	setvar VAR_ROUTE101_STATE, 1
+	release
+
 ShuiyunTownIntroBoat_EventScript_BirchsBag::
 	lock
-
-	setrespawn HEAL_LOCATION_SHUIYUN_TOWN_INTRO_BOAT
 
 	msgbox ShuiyunTownIntroBoat_Text_BirchsBag1, MSGBOX_DEFAULT
 
@@ -59,6 +69,10 @@ ShuiyunTownIntroBoat_EventScript_PreventExit::
 	release
 	end
 
+ShuiyunTownIntroBoat_Text_Intro:
+	.string "After a long trip on the boat, it seems\n"
+	.string "like you're finally at your destination.$"
+
 ShuiyunTownIntroBoat_Text_BirchsBag1:
 	.string "This looks like the bag STEVEN mentioned.$"
 
@@ -71,14 +85,16 @@ ShuiyunTownIntroBoat_Text_BirchsBag3:
 	.string "“{PLAYER}{KUN}, I realized you don't have\n"
 	.string "a POKéMON partner yet.\p"
 	.string "In this bag are three capable POKéMON\n"
-	.string "with unique abilities.\p"
-	.string "LUVDISC has the ability FRIEND GUARD.\n"
-	.string "It's a great supporting POKéMON.\p"
-	.string "CARNIVINE has the ability STRONG JAW.\n"
-	.string "It's a slow but tough POKéMON.\p"
-	.string "HEATMOR has the ability INTIMIDATE.\n"
-	.string "It's well-rounded POKéMON.\p"
-	.string "Pick one of these POKéMON for your.\p"
+	.string "with unique abilities.\l"
+	.string "You'll find them quite different to\l"
+	.string "what you might expect.\n"
+	@.string "LUVDISC has the ability FRIEND GUARD.\n"
+	@.string "It's a great supporting POKéMON.\p"
+	@.string "CARNIVINE has the ability STRONG JAW.\n"
+	@.string "It's a slow but tough POKéMON.\p"
+	@.string "HEATMOR has the ability WHITE SMOKE.\n"
+	@.string "It's well-rounded POKéMON.\p"
+	.string "Pick one of these POKéMON for your\n"
 	.string "journey ahead.\p"
 	.string "I also asked the captain to prepare some\n"
 	.string "helpful items for you. Don't forget to\l"

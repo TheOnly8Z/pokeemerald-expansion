@@ -2,7 +2,7 @@
   "id": "MAP_LANTERN_CAVE_2F_CONNECTOR",
   "name": "LanternCave_2F_Connector",
   "layout": "LAYOUT_LANTERN_CAVE_2F_CONNECTOR",
-  "music": "MUS_DUMMY",
+  "music": "MUS_AQUA_MAGMA_HIDEOUT",
   "region_map_section": "MAPSEC_LANTERN_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

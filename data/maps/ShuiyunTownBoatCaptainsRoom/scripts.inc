@@ -61,7 +61,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene1:
 	waitmovement 0
 	delay 20
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_7 MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 25, move1=MOVE_COVET, move2=MOVE_QUICK_ATTACK, move3=MOVE_BABY_DOLL_EYES, move4=MOVE_HELPING_HAND
+	givemon SPECIES_EEVEE, 20, move1=MOVE_COVET, move2=MOVE_QUICK_ATTACK, move3=MOVE_BABY_DOLL_EYES, move4=MOVE_HELPING_HAND
 	delay 20
 	
 	applymovement LOCALID_CAPTAIN, Movement_CaptainLeave2
@@ -155,6 +155,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 	waitfanfare
 	waitmessage
 
+	bufferspeciesname STR_VAR_1, SPECIES_EEVEE
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, ShuiyunTownBoatCaptainsRoom_EventScript_NicknameStarter
 	goto_if_eq VAR_RESULT, NO, ShuiyunTownBoatCaptainsRoom_EventScript_CutsceneEnd
@@ -191,7 +192,7 @@ ShuiyunTownBoatCaptainsRoom_Text_4:
 
 ShuiyunTownBoatCaptainsRoom_Text_5:
 	.string "That's right! This cowardly CAPTAIN\n"
-	.string "isn't even a Trainer! He's helpless!\p"
+	.string "isn't even a TRAINER! He's helpless!\p"
 	.string "Go on, run for your life!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_6:
@@ -258,9 +259,15 @@ ShuiyunTownBoatCaptainsRoom_Text_GetEevee:
 	.string "{PLAYER} received EEVEE!$"
 
 ShuiyunTownBoatCaptainsRoom_Text_PostBattle9:
-	.string "Well, here's our stop.\n"
-	.string "The weather is terrible, so we'll be here\l"
-	.string "for the time being. Good luck!$"
+	.string "Well, here's our stop - TIANLAN ISLAND.\p"
+	.string "It's a tourist hotspot known for its\n"
+	.string "hospitality.\p"
+	.string "If I were you,\n"
+	.string "I'd talk to everyone I see.\p"
+	.string "They have a habit of giving helpful\n"
+	.string "advice and items to aspiring TRAINERS.\p"
+	.string "That said, it never rains this much on\n"
+	.string "this island. I wonder why.$"
 
 ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain:
 	.string "Maybe I should have paid attention\n"

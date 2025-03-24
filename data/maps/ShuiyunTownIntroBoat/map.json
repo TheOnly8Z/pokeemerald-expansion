@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
-      "x": 6,
-      "y": 8,
+      "x": 9,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -44,8 +44,8 @@
       "y": 6,
       "elevation": 3,
       "var": "VAR_ROUTE101_STATE",
-      "var_value": "2",
-      "script": "Route101_EventScript_PreventExitSouth"
+      "var_value": "1",
+      "script": "ShuiyunTownIntroBoat_EventScript_PreventExit"
     }
   ],
   "bg_events": [

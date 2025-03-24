@@ -991,6 +991,7 @@ static void CB2_GiveStarter(void)
 
     u16 moves[MAX_MON_MOVES];
     u8 ability = NUM_ABILITY_PERSONALITY;
+    u16 item = ITEM_NONE;
     switch (starterMon)
     {
     case SPECIES_HERDIER:
@@ -1003,23 +1004,26 @@ static void CB2_GiveStarter(void)
     case SPECIES_LUVDISC:
         moves[0] = MOVE_WATER_PULSE;
         moves[1] = MOVE_DRAINING_KISS;
-        moves[2] = MOVE_HEAL_PULSE;
-        moves[3] = MOVE_FOLLOW_ME;
+        moves[2] = MOVE_ICY_WIND;
+        moves[3] = MOVE_CHARM;
         ability = 1; // ABILITY_FRIEND_GUARD
+        // item = ITEM_LEFTOVERS;
         break;
     case SPECIES_CARNIVINE:
-        moves[0] = MOVE_VINE_WHIP;
-        moves[1] = MOVE_BITE;
-        moves[2] = MOVE_SYNTHESIS;
-        moves[3] = MOVE_GROWTH;
+        moves[0] = MOVE_BITE;
+        moves[1] = MOVE_VINE_WHIP;
+        moves[2] = MOVE_GROWTH;
+        moves[3] = MOVE_SYNTHESIS;
         ability = 1; // ABILITY_STRONG_JAW
+        // item = ITEM_ROCKY_HELMET;
         break;
     case SPECIES_HEATMOR:
-        moves[0] = MOVE_INCINERATE;
-        moves[1] = MOVE_LICK;
+        moves[0] = MOVE_SLASH;
+        moves[1] = MOVE_EMBER;
         moves[2] = MOVE_WILL_O_WISP;
-        moves[3] = MOVE_HONE_CLAWS;
-        ability = 0; // ABILITY_INTIMIDATE
+        moves[3] = MOVE_FOCUS_ENERGY;
+        ability = 2; // ABILITY_WHITE_SMOKE
+        // item = ITEM_SHELL_BELL;
         break;
     default:
         moves[0] = MOVE_NONE;
@@ -1028,7 +1032,7 @@ static void CB2_GiveStarter(void)
         moves[3] = MOVE_NONE;
     }
 
-    ScriptGiveMonDetailed(starterMon, 25, ITEM_NONE, NUM_NATURES, ability, moves, FALSE);
+    ScriptGiveMonDetailed(starterMon, 20, item, NUM_NATURES, ability, moves, FALSE);
     //ScriptGiveMon(starterMon, 25, ITEM_NONE); // EDIT: level was 5
 
     ResetTasks();

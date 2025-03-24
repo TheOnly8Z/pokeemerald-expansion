@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN_GYM",
   "name": "ShuiyunTown_Gym",
   "layout": "LAYOUT_SHUIYUN_TOWN_GYM",
-  "music": "MUS_DUMMY",
+  "music": "MUS_ABNORMAL_WEATHER",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

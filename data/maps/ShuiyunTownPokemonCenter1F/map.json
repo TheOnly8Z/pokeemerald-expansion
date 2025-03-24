@@ -44,8 +44,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 1,
-      "y": 6,
+      "x": 0,
+      "y": -2,
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN_POKEMON_CENTER2F",
       "dest_warp_id": "0"

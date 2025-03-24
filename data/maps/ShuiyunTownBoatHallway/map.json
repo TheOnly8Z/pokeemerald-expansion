@@ -16,10 +16,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 13,
-      "y": 11,
+      "x": 15,
+      "y": 6,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -29,10 +29,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 14,
-      "y": 11,
+      "x": 15,
+      "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -44,7 +44,7 @@
   "warp_events": [
     {
       "x": 11,
-      "y": 13,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN_INTRO_BOAT",
       "dest_warp_id": "0"
@@ -62,6 +62,34 @@
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_ROOMS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_ROOMS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_ROOMS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_ROOMS",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
