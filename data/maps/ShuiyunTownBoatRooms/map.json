@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN_BOAT_ROOMS",
   "name": "ShuiyunTownBoatRooms",
   "layout": "LAYOUT_SHUIYUN_TOWN_BOAT_ROOMS",
-  "music": "MUS_DUMMY",
+  "music": "MUS_ABNORMAL_WEATHER",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -3,7 +3,7 @@
   "name": "ShuiyunTownBoatCaptainsRoom",
   "layout": "LAYOUT_SHUIYUN_TOWN_BOAT_CAPTAINS_ROOM",
   "music": "MUS_ABNORMAL_WEATHER",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

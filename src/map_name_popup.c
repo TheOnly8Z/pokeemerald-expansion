@@ -188,7 +188,11 @@ static const u8 sRegionMapSectionId_To_PopUpThemeIdMapping[] =
     [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
 
     // Custom
-    [MAPSEC_SHUIYUN_TOWN - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE
+    [MAPSEC_SHUIYUN_TOWN] = MAPPOPUP_THEME_MARBLE,
+    [MAPSEC_LANTERN_CAVE] = MAPPOPUP_THEME_STONE,
+    [MAPSEC_SKYWARD_TRAIL] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_JIANGSHEN_LAKE] = MAPPOPUP_THEME_WOOD
+
 };
 
 #if OW_POPUP_GENERATION == GEN_5
@@ -310,6 +314,13 @@ static const u8 sRegionMapSectionId_To_PopUpThemeIdMapping_BW[] =
     [MAPSEC_ALTERING_CAVE - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_BW_DEFAULT,
     [MAPSEC_NAVEL_ROCK - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_BW_DEFAULT,
     [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_BW_DEFAULT,
+
+    
+    // Custom
+    [MAPSEC_SHUIYUN_TOWN] = MAPPOPUP_THEME_BW_DEFAULT,
+    [MAPSEC_LANTERN_CAVE] = MAPPOPUP_THEME_BW_DEFAULT,
+    [MAPSEC_SKYWARD_TRAIL] = MAPPOPUP_THEME_BW_DEFAULT,
+    [MAPSEC_JIANGSHEN_LAKE] = MAPPOPUP_THEME_BW_DEFAULT
 };
 
 static const u8 sText_PyramidFloor1[] = _("PYRAMID FLOOR 1");
@@ -614,6 +625,7 @@ static void LoadMapNamePopUpWindowBg(void)
     if (OW_POPUP_GENERATION == GEN_5)
         secondaryPopUpWindowId = GetSecondaryPopUpWindowId();
 
+    /*
     if (regionMapSectionId >= KANTO_MAPSEC_START)
     {
         if (regionMapSectionId > KANTO_MAPSEC_END)
@@ -621,6 +633,7 @@ static void LoadMapNamePopUpWindowBg(void)
         else
             regionMapSectionId = 0; // Discard kanto region sections;
     }
+    */
 
     if (OW_POPUP_GENERATION == GEN_5)
     {
