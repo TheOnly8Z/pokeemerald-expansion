@@ -1707,32 +1707,32 @@
     {
       "map_section": "MAPSEC_SHUIYUN_TOWN",
       "name": "SHUIYUN TOWN",
-      "x": 15,
-      "y": 15,
+      "x": 12,
+      "y": 13,
       "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_LANTERN_CAVE",
       "name": "LANTERN CAVE",
-      "x": 15,
-      "y": 14,
+      "x": 12,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SKYWARD_TRAIL",
       "name": "SKYWARD TRAIL",
-      "x": 16,
-      "y": 14,
+      "x": 13,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_JIANGSHEN_LAKE",
       "name": "JIANGSHEN LAKE",
-      "x": 16,
-      "y": 13,
+      "x": 13,
+      "y": 11,
       "width": 1,
       "height": 1
     }
