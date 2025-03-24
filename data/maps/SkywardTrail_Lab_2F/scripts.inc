@@ -46,7 +46,7 @@ SkywardTrail_Lab_2F_Text_ScientistGiveItemNoQuest:
 	.string "If you made it this far, you must\n"
 	.string "be quite the capable TRAINER.\p"
 	.string "Can you bring this to the DOCKYARD\n"
-	.string "in SHUIYUN TOWN?\p"
+	.string "in SHUIYUN TOWN?$"
 
 SkywardTrail_Lab_2F_Text_ScientistGiveItemQuest:
 	.string "I'll never give you what you want,\n"
