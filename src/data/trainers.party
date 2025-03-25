@@ -17163,3 +17163,140 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Ancient Power
 - Lava Plume
 - Earth Power
+
+=== TRAINER_LANTERN_GRUNT_5 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move / Powerful Status
+
+Magmortar
+Level: 40
+Ability: Flame Body
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fire Punch
+- Curse
+- Low Kick
+- Smokescreen
+
+Xatu
+Level: 38
+Ability: Early Bird
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Trick Room
+- Air Slash
+- Reflect
+- Light Screen
+
+Houndoom
+Level: 42
+Ability: Flash Fire
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Howl
+- Fire Fang
+- Beat Up
+- Snarl
+
+=== TRAINER_LANTERN_GRUNT_6 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move
+
+Growlithe
+Level: 34
+Ability: Intimidate
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Wheel
+- Leer
+- Crunch
+- Thunder Fang
+
+Growlithe
+Level: 34
+Ability: Intimidate
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Wheel
+- Leer
+- Crunch
+- Thunder Fang
+
+Growlithe
+Level: 34
+Ability: Intimidate
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Wheel
+- Leer
+- Crunch
+- Thunder Fang
+
+Growlithe
+Level: 34
+Ability: Intimidate
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Wheel
+- Leer
+- Crunch
+- Thunder Fang
+
+
+=== TRAINER_SKYWARD_GRUNT_5 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
+
+Poliwrath
+Level: 40
+Ability: Water Absorb
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Smash
+- Waterfall
+- Bulk Up
+- Brick Break
+
+Crobat
+Level: 42
+Ability: Inner Focus
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tailwind
+- Rain Dance
+- Cross Poison
+- Air Cutter
+
+
+=== TRAINER_SKYWARD_GRUNT_6 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
+
+Lanturn
+Level: 42
+Ability: Water Absorb
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Discharge
+- Electroweb
+- Charge Beam
+- Aqua Ring
+
+Lanturn
+Level: 42
+Ability: Volt Absorb
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Surf
+- Discharge
+- Scald
+- Aqua Ring

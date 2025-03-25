@@ -474,13 +474,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Cut"),
         .description = COMPOUND_STRING(
-            "Cuts the foe with sharp\n"
-            "scythes, claws, etc."),
+            "Cuts the foe sharply.\n"
+            "Always a critical hit."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 40,
         .type = TYPE_NORMAL,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 30,
+        .alwaysCriticalHit = TRUE,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -1842,10 +1843,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Strength"),
         .description = COMPOUND_STRING(
-            "Builds enormous power,\n"
-            "then slams the foe."),
+            "Slams the foe with\n"
+            "massive power."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 100,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
@@ -6326,9 +6327,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Rock Smash"),
         .description = COMPOUND_STRING(
             "A rock-crushing attack\n"
-            "that may lower Defense."),
+            "that lowers Defense."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 40 : 20,
+        .power = 50, // B_UPDATED_MOVE_DATA >= GEN_4 ? 40 : 20,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 15,
@@ -6338,7 +6339,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 50,
+            .chance = 100,
         }),
         .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION,
         .contestCategory = CONTEST_CATEGORY_TOUGH,

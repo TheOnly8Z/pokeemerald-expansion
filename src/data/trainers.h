@@ -42840,3 +42840,307 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17167
+    [TRAINER_LANTERN_GRUNT_5] =
+    {
+#line 17168
+        .trainerName = _("GRUNT"),
+#line 17169
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17170
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17172
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17173
+        .doubleBattle = TRUE,
+#line 17174
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_POWERFUL_STATUS,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17176
+            .species = SPECIES_MAGMORTAR,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17179
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17178
+            .ability = ABILITY_FLAME_BODY,
+#line 17177
+            .lvl = 40,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17180
+                MOVE_FIRE_PUNCH,
+                MOVE_CURSE,
+                MOVE_LOW_KICK,
+                MOVE_SMOKESCREEN,
+            },
+            },
+            {
+#line 17185
+            .species = SPECIES_XATU,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17188
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17187
+            .ability = ABILITY_EARLY_BIRD,
+#line 17186
+            .lvl = 38,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17189
+                MOVE_TRICK_ROOM,
+                MOVE_AIR_SLASH,
+                MOVE_REFLECT,
+                MOVE_LIGHT_SCREEN,
+            },
+            },
+            {
+#line 17194
+            .species = SPECIES_HOUNDOOM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17197
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17196
+            .ability = ABILITY_FLASH_FIRE,
+#line 17195
+            .lvl = 42,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17198
+                MOVE_HOWL,
+                MOVE_FIRE_FANG,
+                MOVE_BEAT_UP,
+                MOVE_SNARL,
+            },
+            },
+        },
+    },
+#line 17203
+    [TRAINER_LANTERN_GRUNT_6] =
+    {
+#line 17204
+        .trainerName = _("GRUNT"),
+#line 17205
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17206
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17208
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17209
+        .doubleBattle = TRUE,
+#line 17210
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 4,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17212
+            .species = SPECIES_GROWLITHE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17215
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17214
+            .ability = ABILITY_INTIMIDATE,
+#line 17213
+            .lvl = 34,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17216
+                MOVE_FLAME_WHEEL,
+                MOVE_LEER,
+                MOVE_CRUNCH,
+                MOVE_THUNDER_FANG,
+            },
+            },
+            {
+#line 17221
+            .species = SPECIES_GROWLITHE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17224
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17223
+            .ability = ABILITY_INTIMIDATE,
+#line 17222
+            .lvl = 34,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17225
+                MOVE_FLAME_WHEEL,
+                MOVE_LEER,
+                MOVE_CRUNCH,
+                MOVE_THUNDER_FANG,
+            },
+            },
+            {
+#line 17230
+            .species = SPECIES_GROWLITHE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17233
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17232
+            .ability = ABILITY_INTIMIDATE,
+#line 17231
+            .lvl = 34,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17234
+                MOVE_FLAME_WHEEL,
+                MOVE_LEER,
+                MOVE_CRUNCH,
+                MOVE_THUNDER_FANG,
+            },
+            },
+            {
+#line 17239
+            .species = SPECIES_GROWLITHE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17242
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17241
+            .ability = ABILITY_INTIMIDATE,
+#line 17240
+            .lvl = 34,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17243
+                MOVE_FLAME_WHEEL,
+                MOVE_LEER,
+                MOVE_CRUNCH,
+                MOVE_THUNDER_FANG,
+            },
+            },
+        },
+    },
+#line 17249
+    [TRAINER_SKYWARD_GRUNT_5] =
+    {
+#line 17250
+        .trainerName = _("GRUNT"),
+#line 17251
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+#line 17252
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17254
+            TRAINER_ENCOUNTER_MUSIC_AQUA,
+#line 17255
+        .doubleBattle = TRUE,
+#line 17256
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17258
+            .species = SPECIES_POLIWRATH,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17261
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17260
+            .ability = ABILITY_WATER_ABSORB,
+#line 17259
+            .lvl = 40,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17262
+                MOVE_ROCK_SMASH,
+                MOVE_WATERFALL,
+                MOVE_BULK_UP,
+                MOVE_BRICK_BREAK,
+            },
+            },
+            {
+#line 17267
+            .species = SPECIES_CROBAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17270
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17269
+            .ability = ABILITY_INNER_FOCUS,
+#line 17268
+            .lvl = 42,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17271
+                MOVE_TAILWIND,
+                MOVE_RAIN_DANCE,
+                MOVE_CROSS_POISON,
+                MOVE_AIR_CUTTER,
+            },
+            },
+        },
+    },
+#line 17277
+    [TRAINER_SKYWARD_GRUNT_6] =
+    {
+#line 17278
+        .trainerName = _("GRUNT"),
+#line 17279
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+#line 17280
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17282
+            TRAINER_ENCOUNTER_MUSIC_AQUA,
+#line 17283
+        .doubleBattle = TRUE,
+#line 17284
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17286
+            .species = SPECIES_LANTURN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17289
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17288
+            .ability = ABILITY_WATER_ABSORB,
+#line 17287
+            .lvl = 42,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17290
+                MOVE_DISCHARGE,
+                MOVE_ELECTROWEB,
+                MOVE_CHARGE_BEAM,
+                MOVE_AQUA_RING,
+            },
+            },
+            {
+#line 17295
+            .species = SPECIES_LANTURN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17298
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17297
+            .ability = ABILITY_VOLT_ABSORB,
+#line 17296
+            .lvl = 42,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17299
+                MOVE_SURF,
+                MOVE_DISCHARGE,
+                MOVE_SCALD,
+                MOVE_AQUA_RING,
+            },
+            },
+        },
+    },

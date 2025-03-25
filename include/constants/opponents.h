@@ -868,13 +868,16 @@
 #define TRAINER_LANTERN_GRUNT_2             862
 #define TRAINER_LANTERN_GRUNT_3             863
 #define TRAINER_LANTERN_GRUNT_4             864
-
+#define TRAINER_LANTERN_GRUNT_5             865
+#define TRAINER_LANTERN_GRUNT_6             866
+#define TRAINER_SKYWARD_GRUNT_5             867
+#define TRAINER_SKYWARD_GRUNT_6             868
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      865
+#define TRAINERS_COUNT                      869
 #define MAX_TRAINERS_COUNT                  900 // 864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

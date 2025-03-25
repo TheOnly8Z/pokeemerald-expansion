@@ -8018,6 +8018,9 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
             moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney;
     }
 
+    // EDIT: Increase money reward due to low amount of trainers
+    moneyReward = moneyReward * 4;
+
     return moneyReward;
 }
 
