@@ -1025,6 +1025,13 @@ static void CB2_GiveStarter(void)
         ability = 2; // ABILITY_WHITE_SMOKE
         // item = ITEM_SHELL_BELL;
         break;
+    case SPECIES_SPINDA:
+        moves[0] = MOVE_HEADBUTT;
+        moves[1] = MOVE_HELPING_HAND;
+        moves[2] = MOVE_HYPNOSIS;
+        moves[3] = MOVE_PSYBEAM;
+        ability = 2; // ABILITY_CONTRARY
+        break;
     default:
         moves[0] = MOVE_NONE;
         moves[1] = MOVE_NONE;

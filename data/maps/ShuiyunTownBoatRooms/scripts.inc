@@ -44,9 +44,9 @@ ShuiyunTownBoatRooms_EventScript_TalkExpertRepeat::
 	end
 
 ShuiyunTownBoatRooms_EventScript_TalkExpertSelectAdvice::
-	call_if_eq VAR_STARTER_MON, 0, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceLuvdisc
-	call_if_eq VAR_STARTER_MON, 1, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceCarnivine
-	call_if_eq VAR_STARTER_MON, 2, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceHeatmor
+	call_if_eq VAR_STARTER_MON, 0, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceCarnivine
+	call_if_eq VAR_STARTER_MON, 1, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceSpinda
+	call_if_eq VAR_STARTER_MON, 2, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceLuvdisc
 	call_if_unset FLAG_EXPERT_ADVICE_ITEM, ShuiyunTownBoatRooms_EventScript_TalkExpertGiveItem
 	release
 	end
@@ -68,6 +68,10 @@ ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceCarnivine::
 
 ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceHeatmor::
 	msgbox ShuiyunTownBoatRooms_Text_TalkExpertAdviceHeatmor MSGBOX_DEFAULT
+	return
+
+ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceSpinda::
+	msgbox ShuiyunTownBoatRooms_Text_TalkExpertAdviceSpinda MSGBOX_DEFAULT
 	return
 
 ShuiyunTownBoatRooms_EventScript_TalkExpertTooBad::
@@ -133,6 +137,22 @@ ShuiyunTownBoatRooms_Text_TalkExpertAdviceHeatmor:
 	.string "A jack of all trades is a master of\n"
 	.string "none. Take advantage of stat changes\l"
 	.string "to unleash HEATMOR's full potential!$"
+
+ShuiyunTownBoatRooms_Text_TalkExpertAdviceSpinda:
+	.string "I see you chose SPINDA…\p"
+	.string "It is quite unorthodox, and its\n"
+	.string "strengths are not obvious.\p"
+	.string "Its ability, CONTRARY, reverses\n"
+	.string "its stat drops and stat gains.\p"
+	.string "A move that will lower your Attack\l"
+	.string "will raise it instead!\p"
+	.string "The opposite is also true, so boosting\n"
+	.string "moves are not useful for SPINDA.\p"
+	.string "Take advantage of moves that typically\n"
+	.string "reduce your stats, as they will now\l"
+	.string "boost your stats instead!\p"
+	.string "SPINDA also has great moves to support\n"
+	.string "its partner if needed.$"
 
 ShuiyunTownBoatRooms_Text_TalkExpertAdviceGiveItem:
 	.string "I love young 'uns who are receptive to\n"

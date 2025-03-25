@@ -17017,3 +17017,149 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulk Up
 - Force Palm
 - Detect
+
+=== TRAINER_LANTERN_GRUNT_1 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Female
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move
+
+Slugma
+Level: 27
+Ability: Flame Body
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Ancient Power
+- Stealth Rock
+- Yawn
+
+Loudred
+Level: 26
+Ability: Soundproof
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Stomp
+- Roar
+- Screech
+- Sunny Day
+
+Ponyta
+Level: 25
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Charge
+- Facade
+- Flame Wheel
+- Growl
+
+=== TRAINER_LANTERN_GRUNT_2 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move
+
+Houndoom
+Level: 25
+Ability: Flash Fire
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Howl
+- Fire Fang
+- Thunder Fang
+- Bite
+
+Rhyhorn
+Level: 26
+Ability: Rock Head
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Rock Tomb
+- Scary Face
+- Heavy Slam
+
+Golbat
+Level: 27
+Ability: Inner Focus
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Fang
+- Air Cutter
+- Screech
+- Fly
+
+
+=== TRAINER_LANTERN_GRUNT_3 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move
+
+Numel
+Level: 30
+Ability: Simple
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Amnesia
+- Curse
+- Lava Plume
+- Earth Power
+
+Furret
+Level: 29
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Follow Me
+- Facade
+- Charm
+- Defense Curl
+
+Houndoom
+Level: 27
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Snarl
+- Incinerate
+- Sleep Talk
+- Rest
+
+
+=== TRAINER_LANTERN_GRUNT_4 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Female
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move
+
+Arcanine
+Level: 35
+Ability: Intimidate
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flare Blitz
+- Play Rough
+- Extreme Speed
+- Thunder Fang
+
+Grimer
+Level: 37
+Ability: Sticky Hold
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Screech
+- Toxic
+- Sludge Bomb
+- Mud Shot
+
+Magcargo
+Level: 38
+Ability: Magma Armor
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Shell Smash
+- Ancient Power
+- Lava Plume
+- Earth Power

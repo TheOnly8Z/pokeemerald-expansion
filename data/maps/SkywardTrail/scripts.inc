@@ -2,24 +2,27 @@ SkywardTrail_MapScripts::
 	.byte 0
 
 SkywardTrail_EventScript_Grunt1::
-	trainerbattle_single TRAINER_SKYWARD_GRUNT_1, SkywardTrail_Text_Grunt1Intro, SkywardTrail_Text_Grunt1Defeat
+	trainerbattle_double TRAINER_SKYWARD_GRUNT_1, SkywardTrail_Text_Grunt1Intro, SkywardTrail_Text_Grunt1Defeat, SkywardTrail_Text_GruntBringDouble
 	msgbox SkywardTrail_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 SkywardTrail_EventScript_Grunt2::
-	trainerbattle_single TRAINER_SKYWARD_GRUNT_2, SkywardTrail_Text_Grunt2Intro, SkywardTrail_Text_Grunt2Defeat
+	trainerbattle_double TRAINER_SKYWARD_GRUNT_2, SkywardTrail_Text_Grunt2Intro, SkywardTrail_Text_Grunt2Defeat, SkywardTrail_Text_GruntBringDouble
 	msgbox SkywardTrail_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 SkywardTrail_EventScript_Grunt3::
-	trainerbattle_single TRAINER_SKYWARD_GRUNT_3, SkywardTrail_Text_Grunt3Intro, SkywardTrail_Text_Grunt3Defeat
+	trainerbattle_double TRAINER_SKYWARD_GRUNT_3, SkywardTrail_Text_Grunt3Intro, SkywardTrail_Text_Grunt3Defeat, SkywardTrail_Text_GruntBringDouble
 	msgbox SkywardTrail_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 SkywardTrail_EventScript_Grunt4::
-	trainerbattle_single TRAINER_SKYWARD_GRUNT_4, SkywardTrail_Text_Grunt4Intro, SkywardTrail_Text_Grunt4Defeat
+	trainerbattle_double TRAINER_SKYWARD_GRUNT_4, SkywardTrail_Text_Grunt4Intro, SkywardTrail_Text_Grunt4Defeat, SkywardTrail_Text_GruntBringDouble
 	msgbox SkywardTrail_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+SkywardTrail_Text_GruntBringDouble:
+	.string "Bring another!$"
 
 SkywardTrail_Text_Grunt1Intro:
 	.string "I'm evil!$"

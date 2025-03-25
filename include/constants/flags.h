@@ -661,11 +661,11 @@
 #define FLAG_EXPERT_ADVICE_ITEM  0x266 // Unused Flag
 #define FLAG_HIDE_DOCKYARD_KAI  0x267 // Unused Flag
 #define FLAG_HIDE_GYM_ZHONG  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+#define FLAG_HIDE_CAVE_ZHONG  0x269 // Unused Flag
+#define FLAG_HIDE_BEACH_KAI_ZHONG  0x26A // Unused Flag
+#define FLAG_ITEM_LANTERN_CAVE_MAX_REPEL  0x26B // Unused Flag
+#define FLAG_ITEM_LANTERN_CAVE_NUGGET  0x26C // Unused Flag
+#define FLAG_ITEM_LANTERN_CAVE_REVIVE  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag

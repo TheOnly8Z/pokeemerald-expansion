@@ -1190,3 +1190,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SkywardTrail_Lab/scripts.inc"
 
 	.include "data/maps/SkywardTrail_Lab_2F/scripts.inc"
+
+	.include "data/maps/ShuiyunShores/scripts.inc"
+
+	.include "data/maps/ShuiyunTown_Mart/scripts.inc"

@@ -13,7 +13,10 @@ ShuiyunTownIntroBoat_EventScript_Intro::
 	setrespawn HEAL_LOCATION_SHUIYUN_TOWN_INTRO_BOAT
 	msgbox ShuiyunTownIntroBoat_Text_Intro, MSGBOX_DEFAULT
 	setvar VAR_ROUTE101_STATE, 1
+	setflag FLAG_HIDE_GYM_ZHONG
+	setflag FLAG_HIDE_BEACH_KAI_ZHONG
 	release
+	end
 
 ShuiyunTownIntroBoat_EventScript_BirchsBag::
 	lock

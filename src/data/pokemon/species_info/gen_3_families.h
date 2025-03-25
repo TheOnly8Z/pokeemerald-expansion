@@ -6338,12 +6338,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
+        .baseHP        = 80, // 60 + 20
+        .baseAttack    = 80, // 60 + 20
+        .baseDefense   = 80, // 60 + 20
+        .baseSpeed     = 80, // 60 + 20
+        .baseSpAttack  = 80, // 60 + 20
+        .baseSpDefense = 80, // 60 + 20
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 126 : 85,
@@ -6351,7 +6351,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW, //GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_TANGLED_FEET, ABILITY_CONTRARY },

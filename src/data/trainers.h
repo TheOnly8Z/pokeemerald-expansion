@@ -42512,3 +42512,331 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17021
+    [TRAINER_LANTERN_GRUNT_1] =
+    {
+#line 17022
+        .trainerName = _("GRUNT"),
+#line 17023
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17024
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .encounterMusic_gender =
+#line 17025
+F_TRAINER_FEMALE | 
+#line 17026
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17027
+        .doubleBattle = TRUE,
+#line 17028
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17030
+            .species = SPECIES_SLUGMA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17033
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17032
+            .ability = ABILITY_FLAME_BODY,
+#line 17031
+            .lvl = 27,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17034
+                MOVE_INCINERATE,
+                MOVE_ANCIENT_POWER,
+                MOVE_STEALTH_ROCK,
+                MOVE_YAWN,
+            },
+            },
+            {
+#line 17039
+            .species = SPECIES_LOUDRED,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17042
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17041
+            .ability = ABILITY_SOUNDPROOF,
+#line 17040
+            .lvl = 26,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17043
+                MOVE_STOMP,
+                MOVE_ROAR,
+                MOVE_SCREECH,
+                MOVE_SUNNY_DAY,
+            },
+            },
+            {
+#line 17048
+            .species = SPECIES_PONYTA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17051
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17050
+            .ability = ABILITY_RUN_AWAY,
+#line 17049
+            .lvl = 25,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17052
+                MOVE_FLAME_CHARGE,
+                MOVE_FACADE,
+                MOVE_FLAME_WHEEL,
+                MOVE_GROWL,
+            },
+            },
+        },
+    },
+#line 17057
+    [TRAINER_LANTERN_GRUNT_2] =
+    {
+#line 17058
+        .trainerName = _("GRUNT"),
+#line 17059
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17060
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17062
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17063
+        .doubleBattle = TRUE,
+#line 17064
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17066
+            .species = SPECIES_HOUNDOOM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17069
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17068
+            .ability = ABILITY_FLASH_FIRE,
+#line 17067
+            .lvl = 25,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17070
+                MOVE_HOWL,
+                MOVE_FIRE_FANG,
+                MOVE_THUNDER_FANG,
+                MOVE_BITE,
+            },
+            },
+            {
+#line 17075
+            .species = SPECIES_RHYHORN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17078
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17077
+            .ability = ABILITY_ROCK_HEAD,
+#line 17076
+            .lvl = 26,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17079
+                MOVE_BULLDOZE,
+                MOVE_ROCK_TOMB,
+                MOVE_SCARY_FACE,
+                MOVE_HEAVY_SLAM,
+            },
+            },
+            {
+#line 17084
+            .species = SPECIES_GOLBAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17087
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17086
+            .ability = ABILITY_INNER_FOCUS,
+#line 17085
+            .lvl = 27,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17088
+                MOVE_POISON_FANG,
+                MOVE_AIR_CUTTER,
+                MOVE_SCREECH,
+                MOVE_FLY,
+            },
+            },
+        },
+    },
+#line 17094
+    [TRAINER_LANTERN_GRUNT_3] =
+    {
+#line 17095
+        .trainerName = _("GRUNT"),
+#line 17096
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17097
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .encounterMusic_gender =
+#line 17099
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17100
+        .doubleBattle = TRUE,
+#line 17101
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17103
+            .species = SPECIES_NUMEL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17106
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17105
+            .ability = ABILITY_SIMPLE,
+#line 17104
+            .lvl = 30,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17107
+                MOVE_AMNESIA,
+                MOVE_CURSE,
+                MOVE_LAVA_PLUME,
+                MOVE_EARTH_POWER,
+            },
+            },
+            {
+#line 17112
+            .species = SPECIES_FURRET,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17115
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17114
+            .ability = ABILITY_RUN_AWAY,
+#line 17113
+            .lvl = 29,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17116
+                MOVE_FOLLOW_ME,
+                MOVE_FACADE,
+                MOVE_CHARM,
+                MOVE_DEFENSE_CURL,
+            },
+            },
+            {
+#line 17121
+            .species = SPECIES_HOUNDOOM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17124
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17123
+            .ability = ABILITY_RUN_AWAY,
+#line 17122
+            .lvl = 27,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17125
+                MOVE_SNARL,
+                MOVE_INCINERATE,
+                MOVE_SLEEP_TALK,
+                MOVE_REST,
+            },
+            },
+        },
+    },
+#line 17131
+    [TRAINER_LANTERN_GRUNT_4] =
+    {
+#line 17132
+        .trainerName = _("GRUNT"),
+#line 17133
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+#line 17134
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .encounterMusic_gender =
+#line 17135
+F_TRAINER_FEMALE | 
+#line 17136
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+#line 17137
+        .doubleBattle = TRUE,
+#line 17138
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17140
+            .species = SPECIES_ARCANINE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17143
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17142
+            .ability = ABILITY_INTIMIDATE,
+#line 17141
+            .lvl = 35,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17144
+                MOVE_FLARE_BLITZ,
+                MOVE_PLAY_ROUGH,
+                MOVE_EXTREME_SPEED,
+                MOVE_THUNDER_FANG,
+            },
+            },
+            {
+#line 17149
+            .species = SPECIES_GRIMER,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17152
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17151
+            .ability = ABILITY_STICKY_HOLD,
+#line 17150
+            .lvl = 37,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17153
+                MOVE_SCREECH,
+                MOVE_TOXIC,
+                MOVE_SLUDGE_BOMB,
+                MOVE_MUD_SHOT,
+            },
+            },
+            {
+#line 17158
+            .species = SPECIES_MAGCARGO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17161
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 17160
+            .ability = ABILITY_MAGMA_ARMOR,
+#line 17159
+            .lvl = 38,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17162
+                MOVE_SHELL_SMASH,
+                MOVE_ANCIENT_POWER,
+                MOVE_LAVA_PLUME,
+                MOVE_EARTH_POWER,
+            },
+            },
+        },
+    },

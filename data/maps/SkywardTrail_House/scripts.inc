@@ -30,6 +30,7 @@ SkywardTrail_House_EventScript_TalkOldMan::
 	giveitem ITEM_HM04
 	setflag FLAG_RECEIVED_HM_STRENGTH
 	msgbox SkywardTrail_House_Text_OldManGiveItem2, MSGBOX_DEFAULT
+	release
 	end
 
 SkywardTrail_House_EventScript_TalkRepeat::
@@ -49,7 +50,7 @@ SkywardTrail_House_Text_OldManGiveItem1:
 	.string "Regretfully, I do not have HM SURF.\n"
 	.string "A good friend, ZHONG, took it for\l"
 	.string "his daring rescue in LANTERN CAVE.\p"
-	.string "But that goof forgot this!\p"
+	.string "But that goof forgot this!$"
 
 SkywardTrail_House_Text_OldManGiveItem2:
 	.string "This is the Hidden Machine STRENGTH.\p"
@@ -60,7 +61,7 @@ SkywardTrail_House_Text_OldManGiveItem2:
 	.string "trapped behind several boulders, having\l"
 	.string "mighty regrets about his carelessness!\p"
 	.string "Off the trail to the west of here is\n"
-	.string "a shortcut to the cave.\l"
+	.string "a shortcut to LANTERN CAVE.\p"
 	.string "ZHONG has a habit of leaving things\n"
 	.string "behind in a hurry, so search every\l"
 	.string "corner of the cave for the HM.\p"
@@ -91,5 +92,5 @@ SkywardTrail_House_Text_WomanRestAccept:
 	.string "you're here, won't you?$"
 
 SkywardTrail_House_Text_WomanRestDone:
-	.string "You and your POKéMON look dashing!\p"
+	.string "You and your POKéMON look dashing!\n"
 	.string "Stop by some other time!$"

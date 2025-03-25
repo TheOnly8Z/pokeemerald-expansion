@@ -70,17 +70,27 @@ ShuiyunTown_Dockyard_EventScript_TalkKai::
 
 	@ First meeting
 	lock
+	call_if_eq VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongRescued
+	call_if_ne VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongNotRescued
+	msgbox ShuiyunTown_Dockyard_Text_Kai_Exposition, MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Dockyard_Text_Kai_AskFetch, MSGBOX_DEFAULT
+	setvar VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 1
+	release
+	end
+
+ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongNotRescued::
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Muttering, MSGBOX_DEFAULT
 	applymovement LOCALID_KAI, Movement_KaiSurprised
 	waitmovement 0
 	delay 20
 	faceplayer
 	msgbox ShuiyunTown_Dockyard_Text_Kai_FirstMeet, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Dockyard_Text_Kai_Exposition, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Dockyard_Text_Kai_AskFetch, MSGBOX_DEFAULT
-	setvar VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 1
-	release
-	end
+	return
+
+ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongRescued::
+	faceplayer
+	msgbox ShuiyunTown_Dockyard_Text_Kai_FirstMeetZhongRescued, MSGBOX_DEFAULT
+	return
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiRepeat::
 	lock
@@ -103,8 +113,26 @@ ShuiyunTown_Dockyard_EventScript_TalkKaiGotParts::
 	call_if_eq VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 2, ShuiyunTown_Dockyard_EventScript_TalkKaiSkip
 	setvar VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 3
 	@ TODO Set state based on state of gym leader rescue
+	call_if_eq VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiMeetAtBeach
+	call_if_ne VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiAskToRescueZhong
 	release
 	end
+
+ShuiyunTown_Dockyard_EventScript_KaiAskToRescueZhong::
+	msgbox ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong1, MSGBOX_DEFAULT
+	delay 20
+	msgbox ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong2, MSGBOX_DEFAULT
+	return
+
+ShuiyunTown_Dockyard_EventScript_KaiMeetAtBeach::
+	msgbox ShuiyunTown_Dockyard_Text_Kai_FetchHandinRescued, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_KAI
+	setflag FLAG_HIDE_GYM_ZHONG
+	setflag FLAG_HIDE_DOCKYARD_KAI
+	clearflag FLAG_HIDE_BEACH_KAI_ZHONG
+	fadescreen FADE_FROM_BLACK
+	return
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiHandin::
 	faceplayer
@@ -141,9 +169,19 @@ ShuiyunTown_Dockyard_Text_Kai_FirstMeet:
 	.string "I can explain what's going on, but\n"
 	.string "we need your assistance desperately.$"
 
+ShuiyunTown_Dockyard_Text_Kai_FirstMeetZhongRescued:
+	.string "???: {PLAYER}, right?\n"
+	.string "I'm DOCKMASTER KAI.\p"
+	.string "Thank you for rescuing ZHONG.\n"
+	.string "He is very important to me -\l"
+	.string "and everyone else, of course.\p"
+	.string "With that said, there's another matter\n"
+	.string "that requires your assistance.$"
+
 ShuiyunTown_Dockyard_Text_Kai_Exposition:
 	.string "This rain is flooding JIANGSHEN LAKE.\n"
-	.string "It is about to flood the entire island.\p"
+	.string "The water is threatening to overflow\l"
+	.string "and claim the entire island.\n"
 	.string "We are trying to evacuate everyone using\n"
 	.string "a damaged cruise ship in the docks.$"
 
@@ -203,8 +241,7 @@ ShuiyunTown_Dockyard_Text_Kai_FetchHandin2:
 ShuiyunTown_Dockyard_Text_Kai_FetchHandinRescued:
 	.string "We need to evaluate the situation with\n"
 	.string "ZHONG and consider our options.\p"
-	.string "Let’s rendezvous on the beach outside\n"
-	.string "the GYM. It's to the south of here.$"
+	.string "Let’s rendezvous outside the GYM.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong1:
 	.string "No doubt this will be helpful for the\n"

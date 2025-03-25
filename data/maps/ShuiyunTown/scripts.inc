@@ -2,6 +2,8 @@ ShuiyunTown_MapScripts::
 	.byte 0
 
 .set LOCALID_DEBUGNPC, 5
+.set LOCALID_KAI, 7
+.set LOCALID_ZHONG, 6
 
 ShuiyunTown_EventScript_DebugGiveHM::
 	lock
@@ -193,3 +195,118 @@ ShuiyunTown_Text_DebugGiveHM:
 	.string "I'm a debug NPC who will give you\n"
 	.string "a POKéMON with all the needed HMs.\p"
 	.string "Enjoy!$"
+
+ShuiyunTown_EventScript_TalkKaiZhong::
+	lock
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition1 MSGBOX_DEFAULT
+
+	@ Make it so NPCs face the player
+	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveKaiZhongLeft
+	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveKaiZhongRight
+	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveKaiZhongUp
+
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition2 MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition3 MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition4 MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	message ShuiyunTown_Text_KaiZhong_ToBeContinued
+	waitmessage
+	delay 20
+	special StartCredits
+	release
+	end
+
+ShuiyunTown_EventScript_MoveKaiZhongRight::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepUpRight
+	waitmovement 0
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceRight
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveKaiZhongLeft::
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_StepUpLeft
+	waitmovement 0
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceLeft
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveKaiZhongUp::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceUp
+	waitmovement 0
+	return
+
+ShuiyunTown_Text_KaiZhong_Exposition1:
+	.string "KAI: The rain isn’t letting up…\p"
+	.string "ZHONG: I could see the water level in\n"
+	.string "LANTERN CAVE rise with my bare eyes…$"
+
+ShuiyunTown_Text_KaiZhong_Exposition2:
+	.string "ZHONG: Ah, it's {PLAYER}! Tremendous!\n"
+	.string "Let's get this conversation started!\p"
+	.string "KAI: Pfft, you dork.\p"
+	.string "KAI: Alright, let me summarize our\n"
+	.string "current situation.\p"
+	.string "KAI: The folks at the DOCKYARD has\n"
+	.string "installed the parts you delivered.\p"
+	.string "KAI: The ship is sea-worthy now,\n"
+	.string "although the weather is still very\l"
+	.string "dangerous to sail in.\p"
+	.string "ZHONG: Doesn't take a PhD to realize\n"
+	.string "the weather is abnormal.\p"
+	.string "ZHONG: {PLAYER}, you travelled around\n"
+	.string "the most. Did you notice anything?\p"
+	.string "……$"
+
+ShuiyunTown_Text_KaiZhong_Exposition3:
+	.string "KAI: TEAM AQUA and TEAM MAGMA,\n"
+	.string "working together?\p"
+	.string "ZHONG: Huh? Those guys hate each other!\n"
+	.string "Also, they disbanded! It was all over\l"
+	.string "the news months ago!\p"
+	.string "KAI: Must be stubborn holdouts without\n"
+	.string "their original leaders in charge.\p"
+	.string "KAI: Judging by the weather, they likely\n"
+	.string "still have control of KYOGRE and GROUDON,\l"
+	.string "who are duking it out as we speak.\p"
+	.string "ZHONG: The way I see it, KYOGRE is\n"
+	.string "surrounded. But so is GROUDON!\p"
+	.string "ZHONG: They fight evenly, causing havoc\n"
+	.string "upon the weather, until RAYQUAZA shows\l"
+	.string "up and breaks up the fight!\p"
+	.string "KAI: Correct. But we can't assume\n"
+	.string "RAYQUAZA will show up and save us.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition4:
+	.string "KAI: We know too little about the teams'\n"
+	.string "plans, and there's too little time.\l"
+	.string "We must proceed with the evacuation.\p"
+	.string "KAI: {PLAYER}, you seem unhappy about\n"
+	.string "this decision somehow.$"
+
+ShuiyunTown_Text_KaiZhong_ToBeContinued:
+	.string "TO BE CONTINUED{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+
+
+ShuiyunTown_Movement_FaceUp:
+	face_up
+	step_end
+
+ShuiyunTown_Movement_FaceRight:
+	face_right
+	step_end
+
+ShuiyunTown_Movement_FaceLeft:
+	face_left
+	step_end
+
+ShuiyunTown_Movement_StepUpRight:
+	walk_up
+	walk_right
+	step_end
+
+ShuiyunTown_Movement_StepUpLeft:
+	walk_up
+	walk_left
+	step_end
