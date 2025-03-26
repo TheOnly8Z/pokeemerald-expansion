@@ -17256,7 +17256,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Poliwrath
-Level: 40
+Level: 42
 Ability: Water Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
@@ -17265,7 +17265,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Brick Break
 
 Crobat
-Level: 42
+Level: 45
 Ability: Inner Focus
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tailwind
@@ -17281,10 +17281,10 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move
+AI: Check Bad Move / HP Aware
 
 Lanturn
-Level: 42
+Level: 40
 Ability: Water Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Discharge
@@ -17293,10 +17293,56 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Ring
 
 Lanturn
-Level: 42
+Level: 40
 Ability: Volt Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Surf
-- Discharge
+- Electroball
 - Scald
 - Aqua Ring
+
+
+=== TRAINER_FLASH_HIKER ===
+Name: GUANG
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: Yes
+AI: Check Bad Move / Smart Switching
+
+Parasect @ Occa Berry
+Level: 38
+Ability: Effect Spore
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fury Cutter
+- Wide Guard
+- Stun Spore
+- Cross Poison
+
+Sudowoodo @ Passho Berry
+Level: 40
+Ability: Sturdy
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Wood Hammer
+- Stone Edge
+- Hammer Arm
+- Rock Slide
+
+Rhydon @ Sitrus Berry
+Level: 42
+Ability: Lightning Rod
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Sandstorm
+- Drill Run
+- Rock Blast
+- Giga Impact
+
+Mamoswine @ Lum Berry
+Level: 44
+Ability: Thick Fat
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Icy Wind
+- Bulldoze
+- Icicle Spear
+- Ancient Power

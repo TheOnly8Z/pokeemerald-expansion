@@ -6,6 +6,10 @@ LanternCave_1F_MapScripts::
 .set LOCALID_ZHONGINTERACT, 27
 
 
+LanternCave_1F_EventScript_Girl::
+	msgbox LanternCave_1F_Text_Girl, MSGBOX_NPC
+	end
+
 LanternCave_1F_EventScript_Grunt1::
 	trainerbattle_single TRAINER_LANTERN_GRUNT_1, LanternCave_1F_Text_Grunt1Intro, LanternCave_1F_Text_Grunt1Defeat
 	msgbox LanternCave_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
@@ -65,6 +69,11 @@ LanternCave_1F_Text_Grunt4Defeat:
 LanternCave_1F_Text_Grunt4PostBattle:
 	.string "Owww...$"
 
+LanternCave_1F_Text_Girl:
+	.string "I thought I would be safe from\n"
+	.string "the rain in this cave, but it's\l"
+	.string "so uncomfortably hot and damp!\p"
+	.string "I feel miserable!$"
 
 LanternCave_1F_EventScript_TalkZhong::
 	@ VAR_SHUIYUN_GYM_QUEST_STATE

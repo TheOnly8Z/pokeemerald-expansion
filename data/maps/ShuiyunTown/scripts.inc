@@ -126,7 +126,11 @@ ShuiyunTown_Text_TalkOldMan:
 	.string "troublesome time…\p"
 	.string "So many people are looking for a\n"
 	.string "POKéMON TRAINER to help them.\p"
-	.string "Perhaps that's why you came?$"
+	.string "Perhaps that's why you came?\p"
+	.string "If so, you should head for the\n"
+	.string "DOCKYARD north of the POKé MART.\p"
+	.string "I heard they're in need of a\n"
+	.string "capable TRAINER like you.$"
 
 ShuiyunTown_Text_TalkFisher_GiveOldRod:
 	.string "This island is great for fishing!\n"
