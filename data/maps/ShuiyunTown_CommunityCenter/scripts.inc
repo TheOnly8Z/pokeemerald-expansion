@@ -177,6 +177,9 @@ ShuiyunTown_CommunityCenter_EventScript_TalkLass::
 	msgbox ShuiyunTown_CommunityCenter_Text_Lass, MSGBOX_NPC
 	end
 
+ShuiyunTown_CommunityCenter_EventScript_TalkSchoolKid::
+	msgbox ShuiyunTown_CommunityCenter_Text_SchoolKid, MSGBOX_NPC
+	end
 
 ShuiyunTown_CommunityCenter_EventScript_TalkRichBoy::
 	lock
@@ -312,16 +315,26 @@ ShuiyunTown_CommunityCenter_Text_RichBoy:
 	.string "Can you believe it? There are nefarious\n"
 	.string "goons prowling about the island!\p"
 	.string "It's essential for me and my POKéMON to\n"
-	.string "PROTECT themselves\p"
+	.string "PROTECT themselves!\p"
 	.string "As a TRAINER, you have a responsibility\n"
 	.string "to keep your POKéMON safe, so take this!$"
 
-
 ShuiyunTown_CommunityCenter_Text_RichBoyExplain:
-	.string "PROTECT makes you invulnerable for a turn.\n"
-	.string "If used in a row, it is likely to fail.\p"
+	.string "PROTECT makes you invulnerable during\n"
+	.string "the turn. However, when used\l"
+	.string "consecutively, it is likely to fail.\p"
 	.string "During a double battle, you can PROTECT\n"
 	.string "a vulnerable POKéMON while its partner\l"
 	.string "acts freely.\p"
 	.string "It's also useful if you have an attack\n"
 	.string "that hits your partner, such as SURF.$"
+
+ShuiyunTown_CommunityCenter_Text_SchoolKid:
+	.string "Want to find out what a POKéMON's move\n"
+	.string "does during battle?\l"
+	.string "Just press L to read all about it!\p"
+	.string "This will also tell you whether the move\n"
+	.string "is a PHYSICAL, SPECIAL, or STATUS move.\p"
+	.string "Back in the day, a move's type\n"
+	.string "determined its physicality, but the\l"
+	.string "times have changed.$"

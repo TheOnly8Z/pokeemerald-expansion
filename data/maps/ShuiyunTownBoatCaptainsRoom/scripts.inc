@@ -146,7 +146,7 @@ ShuiyunTownBoatCaptainsRoom_EventScript_PostBattle::
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle7 MSGBOX_DEFAULT
 
 	giveitem ITEM_POKE_BALL, 20
-	giveitem ITEM_POTION, 10
+	giveitem ITEM_SUPER_POTION, 10
 
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_PostBattle8 MSGBOX_DEFAULT
 
