@@ -43050,7 +43050,7 @@ F_TRAINER_FEMALE |
 #line 17260
             .ability = ABILITY_WATER_ABSORB,
 #line 17259
-            .lvl = 40,
+            .lvl = 42,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -43070,7 +43070,7 @@ F_TRAINER_FEMALE |
 #line 17269
             .ability = ABILITY_INNER_FOCUS,
 #line 17268
-            .lvl = 42,
+            .lvl = 45,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -43111,7 +43111,7 @@ F_TRAINER_FEMALE |
 #line 17288
             .ability = ABILITY_WATER_ABSORB,
 #line 17287
-            .lvl = 42,
+            .lvl = 40,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -43131,13 +43131,13 @@ F_TRAINER_FEMALE |
 #line 17297
             .ability = ABILITY_VOLT_ABSORB,
 #line 17296
-            .lvl = 42,
+            .lvl = 40,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 17299
                 MOVE_SURF,
-                MOVE_DISCHARGE,
+                MOVE_ELECTRO_BALL,
                 MOVE_SCALD,
                 MOVE_AQUA_RING,
             },
@@ -43165,24 +43165,24 @@ F_TRAINER_FEMALE |
         {
             {
 #line 17314
-            .species = SPECIES_URSARING,
+            .species = SPECIES_PARASECT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17314
-            .heldItem = ITEM_CHOPLE_BERRY,
+            .heldItem = ITEM_OCCA_BERRY,
 #line 17317
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17316
-            .ability = ABILITY_LIGHTNING_ROD,
+            .ability = ABILITY_EFFECT_SPORE,
 #line 17315
             .lvl = 38,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 17318
-                MOVE_SLASH,
-                MOVE_PLAY_ROUGH,
-                MOVE_LOW_KICK,
-                MOVE_LEER,
+                MOVE_FURY_CUTTER,
+                MOVE_WIDE_GUARD,
+                MOVE_STUN_SPORE,
+                MOVE_CROSS_POISON,
             },
             },
             {
