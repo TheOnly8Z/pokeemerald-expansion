@@ -13,13 +13,13 @@ ShuiyunTown_CommunityCenter_EventScript_TMShop::
 	end
 
 ShuiyunTown_CommunityCenter_Pokemart_TMs:
-	.2byte ITEM_TM_PROTECT
 	.2byte ITEM_TM_SUNNY_DAY
 	.2byte ITEM_TM_RAIN_DANCE
 	.2byte ITEM_TM_SANDSTORM
 	.2byte ITEM_TM_HAIL
 	.2byte ITEM_TM_THUNDERBOLT
 	.2byte ITEM_TM_ICE_BEAM
+	.2byte ITEM_TM_FLAMETHROWER
 	pokemartlistend
 
 ShuiyunTown_CommunityCenter_EventScript_SpecialShop::
@@ -177,6 +177,21 @@ ShuiyunTown_CommunityCenter_EventScript_TalkLass::
 	msgbox ShuiyunTown_CommunityCenter_Text_Lass, MSGBOX_NPC
 	end
 
+
+ShuiyunTown_CommunityCenter_EventScript_TalkRichBoy::
+	lock
+	faceplayer
+	call_if_unset FLAG_COMMUNITY_CENTER_PROTECT, ShuiyunTown_CommunityCenter_EventScript_TalkRichBoyGiveItem
+	msgbox ShuiyunTown_CommunityCenter_Text_RichBoyExplain MSGBOX_DEFAULT
+	release
+	end
+
+ShuiyunTown_CommunityCenter_EventScript_TalkRichBoyGiveItem::
+	msgbox ShuiyunTown_CommunityCenter_Text_RichBoy MSGBOX_DEFAULT
+	giveitem ITEM_TM_PROTECT
+	setflag FLAG_COMMUNITY_CENTER_PROTECT
+	return
+
 ShuiyunTown_CommunityCenter_Text_ImTheMoveTutor:
 	.string "I'm a MOVE MANIAC.\p"
 	.string "Folks like me can teach POKéMON\n"
@@ -292,3 +307,21 @@ ShuiyunTown_CommunityCenter_Text_Lass:
 	.string "If only there was a handsome or\n"
 	.string "beautiful TRAINER who would\l"
 	.string "intervene and save the day!$"
+
+ShuiyunTown_CommunityCenter_Text_RichBoy:
+	.string "Can you believe it? There are nefarious\n"
+	.string "goons prowling about the island!\p"
+	.string "It's essential for me and my POKéMON to\n"
+	.string "PROTECT themselves\p"
+	.string "As a TRAINER, you have a responsibility\n"
+	.string "to keep your POKéMON safe, so take this!$"
+
+
+ShuiyunTown_CommunityCenter_Text_RichBoyExplain:
+	.string "PROTECT makes you invulnerable for a turn.\n"
+	.string "If used in a row, it is likely to fail.\p"
+	.string "During a double battle, you can PROTECT\n"
+	.string "a vulnerable POKéMON while its partner\l"
+	.string "acts freely.\p"
+	.string "It's also useful if you have an attack\n"
+	.string "that hits your partner, such as SURF.$"

@@ -688,7 +688,7 @@
 #define FLAG_COMMUNITY_CENTER_SHOWN_KANGASKHAN  0x281 // Unused Flag
 #define FLAG_ITEM_SKYWARD_TRAIL_IRON_TAIL  0x282 // Unused Flag
 #define FLAG_COMMUNITY_CENTER_UTILITY_UMBRELLA  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
+#define FLAG_COMMUNITY_CENTER_PROTECT  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag
 #define FLAG_UNUSED_0x287  0x287 // Unused Flag
