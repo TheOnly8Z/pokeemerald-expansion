@@ -17346,3 +17346,102 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
 - Icicle Spear
 - Ancient Power
+
+
+=== TRAINER_CAMEO_ETHAN ===
+Name: ETHAN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer / Double Ace Pokemon / Powerful Status
+
+Snorlax @ Leftovers  
+Ability: Thick Fat  
+Level: 60
+EVs: 252 HP / 252 Atk / 4 SpD  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Adamant Nature  
+- Curse  
+- Body Slam  
+- Rest  
+- Protect  
+
+Dragonite @ Silk Scarf
+Ability: Multiscale  
+Level: 61
+EVs: 252 HP / 252 Atk / 4 SpA  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Brave Nature  
+- Draco Meteor  
+- Tailwind
+- Extreme Speed  
+- Roost  
+
+Rotom @ Choice Scarf  
+Ability: Levitate  
+Level: 63
+EVs: 252 SpA / 4 SpD / 252 Spe  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Timid Nature  
+- Thunderbolt  
+- Shadow Ball  
+- Volt Switch  
+- Trick  
+
+Metagross @ Assault Vest  
+Ability: Clear Body  
+Level: 64
+EVs: 252 HP / 252 Atk / 4 SpD  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Adamant Nature  
+- Heavy Slam  
+- Psychic Fangs  
+- Hammer Arm  
+- Knock Off  
+
+HUSTLER (Tyranitar) @ Chople Berry  
+Ability: Sand Stream  
+Level: 66
+Shiny: Yes
+EVs: 252 HP / 252 Atk / 4 SpD  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Adamant Nature  
+- Knock Off  
+- Rock Slide  
+- Stone Edge  
+- Dragon Dance
+
+KAMINA (Excadrill) @ Air Balloon
+Ability: Sand Rush
+Level: 69
+Shiny: Yes
+EVs: 252 Atk / 4 SpD / 252 Spe  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Adamant Nature  
+- Earthquake  
+- Swords Dance  
+- Iron Head  
+- Rapid Spin  
+
+
+=== TRAINER_CAMEO_COLLIN ===
+Name: COLLIN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer
+
+Machamp @ Assault Vest  
+Ability: No Guard  
+Level: 69
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Dynamic Punch  
+- Bullet Punch  
+- High Horsepower  
+- Stone Edge
