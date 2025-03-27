@@ -17359,9 +17359,9 @@ AI: Smart Trainer / Double Ace Pokemon / Powerful Status
 
 Snorlax @ Leftovers  
 Ability: Thick Fat  
-Level: 60
+Level: 50
 EVs: 252 HP / 252 Atk / 4 SpD  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Adamant Nature  
 - Curse  
 - Body Slam  
@@ -17370,9 +17370,9 @@ Adamant Nature
 
 Dragonite @ Silk Scarf
 Ability: Multiscale  
-Level: 61
+Level: 52
 EVs: 252 HP / 252 Atk / 4 SpA  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Brave Nature  
 - Draco Meteor  
 - Tailwind
@@ -17381,9 +17381,9 @@ Brave Nature
 
 Rotom @ Choice Scarf  
 Ability: Levitate  
-Level: 63
+Level: 54
 EVs: 252 SpA / 4 SpD / 252 Spe  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Timid Nature  
 - Thunderbolt  
 - Shadow Ball  
@@ -17392,9 +17392,9 @@ Timid Nature
 
 Metagross @ Assault Vest  
 Ability: Clear Body  
-Level: 64
+Level: 56
 EVs: 252 HP / 252 Atk / 4 SpD  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Adamant Nature  
 - Heavy Slam  
 - Psychic Fangs  
@@ -17403,10 +17403,10 @@ Adamant Nature
 
 HUSTLER (Tyranitar) @ Chople Berry  
 Ability: Sand Stream  
-Level: 66
+Level: 58
 Shiny: Yes
 EVs: 252 HP / 252 Atk / 4 SpD  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Adamant Nature  
 - Knock Off  
 - Rock Slide  
@@ -17415,10 +17415,10 @@ Adamant Nature
 
 KAMINA (Excadrill) @ Air Balloon
 Ability: Sand Rush
-Level: 69
+Level: 60
 Shiny: Yes
 EVs: 252 Atk / 4 SpD / 252 Spe  
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Adamant Nature  
 - Earthquake  
 - Swords Dance  
@@ -17445,3 +17445,81 @@ Adamant Nature
 - Bullet Punch  
 - High Horsepower  
 - Stone Edge
+
+=== TRAINER_CAMEO_NELLIE ===
+Name: NELLIE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon / Powerful Status
+
+Tinkaton (F) @ Room Service  
+Ability: Mold Breaker  
+Level: 50
+EVs: 252 Atk / 4 Def / 252 SpD  
+Brave Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Gigaton Hammer  
+- Knock Off  
+- Thunder Wave  
+- Play Rough  
+
+Musharna @ Terrain Extender  
+Ability: Synchronize  
+Level: 52
+EVs: 252 HP / 252 Def / 4 SpD  
+Relaxed Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Psychic Terrain  
+- Trick Room  
+- Reflect  
+- Yawn  
+
+Hatterene @ Life Orb  
+Ability: Magic Bounce  
+Level: 54
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Expanding Force  
+- Trick Room  
+- Calm Mind  
+- Draining Kiss  
+
+Tsareena (F) @ Lum Berry  
+Ability: Queenly Majesty  
+Level: 56
+EVs: 252 Atk / 4 SpD  
+Adamant Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Power Whip  
+- Knock Off  
+- Triple Axel  
+- U-turn  
+
+Polteageist @ Focus Sash  
+Ability: Weak Armor  
+Shiny: Yes  
+Level: 58
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Shell Smash  
+- Stored Power  
+- Shadow Ball  
+- Protect  
+
+Ampharos @ Assault Vest  
+Ability: Static  
+Shiny: Yes  
+Level: 60
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Dragon Pulse  
+- Thunderbolt  
+- Focus Blast  
+- Volt Switch  
+
