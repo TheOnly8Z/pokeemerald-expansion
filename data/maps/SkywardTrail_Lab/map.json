@@ -81,6 +81,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 15,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_MAGNET",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_MAGNET"
+    },
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "item": "ITEM_GRIP_CLAW",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_GRIP_CLAW"
+    }
   ]
 }

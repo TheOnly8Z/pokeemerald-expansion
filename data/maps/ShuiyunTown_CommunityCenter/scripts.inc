@@ -47,59 +47,8 @@ ShuiyunTown_CommunityCenter_Pokemart_SpecialShop:
 	.2byte ITEM_JOLLY_MINT
 	pokemartlistend
 
-ShuiyunTown_CommunityCenter_EventScript_MoveRelearner::
-	lockall
-	applymovement LOCALID_MOVE_RELEARNER, Common_Movement_FacePlayer
-	waitmovement 0
-	goto_if_set FLAG_TEMP_1, ShuiyunTown_CommunityCenter_EventScript_AskTeachMove
-	msgbox ShuiyunTown_CommunityCenter_Text_ImTheMoveTutor, MSGBOX_DEFAULT
-	setflag FLAG_TEMP_1
-	goto ShuiyunTown_CommunityCenter_EventScript_AskTeachMove
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_AskTeachMove::
-	@ checkitem ITEM_HEART_SCALE
-	@ goto_if_eq VAR_RESULT, FALSE, ShuiyunTown_CommunityCenter_EventScript_ComeBackWithHeartScale
-	msgbox ShuiyunTown_CommunityCenter_Text_ThatsAHeartScaleWantMeToTeachMove, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, ShuiyunTown_CommunityCenter_EventScript_ComeBackWithHeartScale
-	goto ShuiyunTown_CommunityCenter_EventScript_ChooseMon
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_ChooseMon::
-	msgbox ShuiyunTown_CommunityCenter_Text_TutorWhichMon, MSGBOX_DEFAULT
-	special ChooseMonForMoveRelearner
-	waitstate
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, ShuiyunTown_CommunityCenter_EventScript_ComeBackWithHeartScale
-	special IsSelectedMonEgg
-	goto_if_eq VAR_RESULT, TRUE, ShuiyunTown_CommunityCenter_EventScript_CantTeachEgg
-	goto_if_eq VAR_0x8005, 0, ShuiyunTown_CommunityCenter_EventScript_NoMoveToTeachMon
-	goto ShuiyunTown_CommunityCenter_EventScript_ChooseMove
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_ChooseMove::
-	msgbox ShuiyunTown_CommunityCenter_Text_TeachWhichMove, MSGBOX_DEFAULT
-	special TeachMoveRelearnerMove
-	waitstate
-	goto_if_eq VAR_0x8004, 0, ShuiyunTown_CommunityCenter_EventScript_ChooseMon
-	@ msgbox ShuiyunTown_CommunityCenter_Text_HandedOverHeartScale, MSGBOX_DEFAULT
-	@ removeitem ITEM_HEART_SCALE
-	goto ShuiyunTown_CommunityCenter_EventScript_ComeBackWithHeartScale
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_NoMoveToTeachMon::
-	msgbox ShuiyunTown_CommunityCenter_Text_DontHaveMoveToTeachPokemon, MSGBOX_DEFAULT
-	goto ShuiyunTown_CommunityCenter_EventScript_ChooseMon
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_CantTeachEgg::
-	msgbox ShuiyunTown_CommunityCenter_Text_CantTeachEgg, MSGBOX_DEFAULT
-	goto ShuiyunTown_CommunityCenter_EventScript_ChooseMon
-	end
-
-ShuiyunTown_CommunityCenter_EventScript_ComeBackWithHeartScale::
-	msgbox ShuiyunTown_CommunityCenter_Text_ComeBackWithHeartScale, MSGBOX_DEFAULT
-	releaseall
+ShuiyunTown_CommunityCenter_EventScript_TalkRelearn::
+	msgbox ShuiyunTown_CommunityCenter_Text_TalkRelearn, MSGBOX_NPC
 	end
 
 ShuiyunTown_CommunityCenter_EventScript_TalkHost::
@@ -195,36 +144,29 @@ ShuiyunTown_CommunityCenter_EventScript_TalkRichBoyGiveItem::
 	setflag FLAG_COMMUNITY_CENTER_PROTECT
 	return
 
-ShuiyunTown_CommunityCenter_Text_ImTheMoveTutor:
-	.string "I'm a MOVE MANIAC.\p"
-	.string "Folks like me can teach POKéMON\n"
-	.string "moves it used to know but forgot.\p"
-	.string "Don't worry, I won't charge you\n"
-	.string "anything!$"
 
-ShuiyunTown_CommunityCenter_Text_ThatsAHeartScaleWantMeToTeachMove:
-	.string "So, ya want me to teach a move?$"
+ShuiyunTown_CommunityCenter_EventScript_TalkLittleGirl::
+	lock
+	faceplayer
+	call_if_unset FLAG_COMMUNITY_CENTER_TWISTED_SPOON, ShuiyunTown_CommunityCenter_EventScript_TalkLittleGirlGiveItem
+	msgbox ShuiyunTown_CommunityCenter_Text_LittleGirlExplain MSGBOX_DEFAULT
+	release
+	end
 
-ShuiyunTown_CommunityCenter_Text_TutorWhichMon:
-	.string "Which POKéMON needs tutoring?$"
+ShuiyunTown_CommunityCenter_EventScript_TalkLittleGirlGiveItem::
+	msgbox ShuiyunTown_CommunityCenter_Text_LittleGirl MSGBOX_DEFAULT
+	giveitem ITEM_TWISTED_SPOON
+	setflag FLAG_COMMUNITY_CENTER_TWISTED_SPOON
+	return
 
-ShuiyunTown_CommunityCenter_Text_TeachWhichMove:
-	.string "Which move should I teach?$"
-
-ShuiyunTown_CommunityCenter_Text_DontHaveMoveToTeachPokemon:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that POKéMON.$"
-
-ShuiyunTown_CommunityCenter_Text_HandedOverHeartScale:
-	.string "{PLAYER} handed over one HEART SCALE\n"
-	.string "in exchange.$"
-
-ShuiyunTown_CommunityCenter_Text_ComeBackWithHeartScale:
-	.string "You know where to find me!$"
-
-ShuiyunTown_CommunityCenter_Text_CantTeachEgg:
-	.string "That's an EGG. It can't learn moves!$"
+ShuiyunTown_CommunityCenter_Text_TalkRelearn:
+	.string "If you want your POKéMON to remember\n"
+	.string "a move it used to know, all you have\l"
+	.string "to do is go to its BATTLE SUMMARY\l"
+	.string "page, and press START.\p"
+	.string "Similarly, in the POKéMON INFO page,\n"
+	.string "press A to rename your POKéMON!\p"
+	.string "It's so convenient!$"
 
 ShuiyunTown_CommunityCenter_Text_TMShop:
 	.string "I have a lot of Technical Machines!\n"
@@ -311,6 +253,17 @@ ShuiyunTown_CommunityCenter_Text_Lass:
 	.string "beautiful TRAINER who would\l"
 	.string "intervene and save the day!$"
 
+ShuiyunTown_CommunityCenter_Text_LassGiveItem:
+	.string "Oh, {PLAYER}, you're the talk of the\n"
+	.string "town!\p"
+	.string "You have brought a sliver of hope to\n"
+	.string "everyone here!\p"
+	.string "Please accept this gift!$"
+
+ShuiyunTown_CommunityCenter_Text_LassExplainItem:
+	.string "Give this toyour POKéMON, and they can\n"
+	.string "gain experience even faster!$"
+
 ShuiyunTown_CommunityCenter_Text_RichBoy:
 	.string "Can you believe it? There are nefarious\n"
 	.string "goons prowling about the island!\p"
@@ -338,3 +291,18 @@ ShuiyunTown_CommunityCenter_Text_SchoolKid:
 	.string "Back in the day, a move's type\n"
 	.string "determined its physicality, but the\l"
 	.string "times have changed.$"
+
+
+ShuiyunTown_CommunityCenter_Text_LittleGirl:
+	.string "Ummm, I bent this, and I don't want my\n"
+	.string "mom to find out. Can you take it?$"
+
+ShuiyunTown_CommunityCenter_Text_LittleGirlExplain:
+	.string "Teacher said POKéMON can hold items\n"
+	.string "like this for an effect in battle.\p"
+	.string "Umm… This TWISTED SPOON gives Psychic-\n"
+	.string "type moves a 20% boost in power.\p"
+	.string "It's not the strongest boosting item,\n"
+	.string "but, umm, there's no drawback to it.\p"
+	.string "Umm, teacher said there's one of these\n"
+	.string "for each type! Look around for them!$"

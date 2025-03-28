@@ -34,7 +34,7 @@ SkywardTrail_House_EventScript_TalkOldMan::
 	end
 
 SkywardTrail_House_EventScript_TalkRepeat::
-	msgbox SkywardTrail_House_Text_OldManReminder, MSGBOX_DEFAULT
+	msgbox SkywardTrail_House_Text_OldManReminder, MSGBOX_NPC
 	end
 
 SkywardTrail_House_Text_OldManGiveItem1:

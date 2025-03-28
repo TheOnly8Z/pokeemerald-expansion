@@ -1194,3 +1194,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShuiyunShores/scripts.inc"
 
 	.include "data/maps/ShuiyunTown_Mart/scripts.inc"
+
+	.include "data/maps/JiangshenLake/scripts.inc"
+
+	.include "data/maps/LanternCave_2F_IceRoom/scripts.inc"
+
+	.include "data/maps/LanternCave_1F_IceRoom/scripts.inc"

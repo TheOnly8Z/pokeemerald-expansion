@@ -4514,7 +4514,7 @@
     {
       "id": "LAYOUT_SHUIYUN_TOWN_GYM",
       "name": "ShuiyunTown_Gym_Layout",
-      "width": 11,
+      "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PetalburgGym",
@@ -4620,6 +4620,36 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/ShuiyunTown_Mart/border.bin",
       "blockdata_filepath": "data/layouts/ShuiyunTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_JIANGSHEN_LAKE",
+      "name": "JiangshenLake_Layout",
+      "width": 100,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/JiangshenLake/border.bin",
+      "blockdata_filepath": "data/layouts/JiangshenLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_2F_ICE_ROOM",
+      "name": "LanternCave_2F_IceRoom_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_2F_IceRoom/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_2F_IceRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_1F_ICE_ROOM",
+      "name": "LanternCave_1F_IceRoom_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_1F_IceRoom/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_1F_IceRoom/map.bin"
     }
   ]
 }

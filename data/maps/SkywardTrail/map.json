@@ -17,6 +17,11 @@
       "map": "MAP_SHUIYUN_TOWN",
       "offset": 57,
       "direction": "left"
+    },
+    {
+      "map": "MAP_JIANGSHEN_LAKE",
+      "offset": -20,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -87,13 +92,13 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 26,
-      "y": 31,
+      "x": 27,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_DOWN_UP_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SkywardTrail_EventScript_Grunt4",
       "flag": "0"
@@ -113,21 +118,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 26,
-      "y": 42,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM51",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_SKYWARD_TRAIL_TRICK_ROOM"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 38,
-      "y": 39,
+      "x": 24,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -139,7 +131,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 11,
+      "x": 26,
       "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -165,8 +157,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 34,
-      "y": 39,
+      "x": 26,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -178,8 +170,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 48,
-      "y": 47,
+      "x": 12,
+      "y": 63,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -204,8 +196,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 24,
-      "y": 41,
+      "x": 11,
+      "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -253,6 +245,45 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM_IRON_TAIL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_SKYWARD_TRAIL_IRON_TAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 43,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DRAGON_FANG",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SKYWARD_TRAIL_DRAGON_FANG"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 48,
+      "y": 47,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SHARP_BEAK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SKYWARD_TRAIL_SHARP_BEAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_L",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SKYWARD_TRAIL_EXP_CANDY_L"
     }
   ],
   "warp_events": [
@@ -297,6 +328,62 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SkywardTrail_EventScript_SignLab"
+    },
+    {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 38,
+      "elevation": 0,
+      "item": "ITEM_EXP_CANDY_L",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_EXP_CANDY_L"
+    },
+    {
+      "type": "hidden_item",
+      "x": 39,
+      "y": 64,
+      "elevation": 0,
+      "item": "ITEM_PP_MAX",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_PP_MAX"
+    },
+    {
+      "type": "hidden_item",
+      "x": 13,
+      "y": 48,
+      "elevation": 0,
+      "item": "ITEM_TM_REST",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_REST"
+    },
+    {
+      "type": "hidden_item",
+      "x": 47,
+      "y": 43,
+      "elevation": 0,
+      "item": "ITEM_SOOTHE_BELL",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_SOOTHE_BELL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 67,
+      "elevation": 0,
+      "item": "ITEM_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_ZINC"
+    },
+    {
+      "type": "hidden_item",
+      "x": 29,
+      "y": 54,
+      "elevation": 0,
+      "item": "ITEM_EXP_CANDY_M",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_EXP_CANDY_M"
+    },
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 56,
+      "elevation": 0,
+      "item": "ITEM_IRON",
+      "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_IRON"
     }
   ]
 }

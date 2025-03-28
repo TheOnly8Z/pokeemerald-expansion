@@ -1,0 +1,112 @@
+{
+  "id": "MAP_LANTERN_CAVE_2F_ICE_ROOM",
+  "name": "LanternCave_2F_IceRoom",
+  "layout": "LAYOUT_LANTERN_CAVE_2F_ICE_ROOM",
+  "music": "MUS_AQUA_MAGMA_HIDEOUT",
+  "region_map_section": "MAPSEC_LANTERN_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_BRIGHT_POWDER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_BRIGHT_POWDER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 4,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_QUICK_CLAW",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_QUICK_CLAW"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 11,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 10,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_StrengthBoulder",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 9,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_LANTERN_CAVE_2F_CONNECTOR",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 23,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LANTERN_CAVE_1F_ICE_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "item": "ITEM_HARD_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_LANTERN_CAVE_HARD_STONE"
+    }
+  ]
+}

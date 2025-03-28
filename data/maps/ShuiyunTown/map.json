@@ -66,7 +66,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 24,
+      "x": 23,
       "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -115,6 +115,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ShuiyunTown_EventScript_TalkKaiZhong",
       "flag": "FLAG_HIDE_BEACH_KAI_ZHONG"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 36,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_M",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_SHUIYUN_TOWN_EXP_CANDY_M"
     }
   ],
   "warp_events": [
@@ -217,6 +230,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ShuiyunTown_EventScript_Clubhouse"
+    },
+    {
+      "type": "hidden_item",
+      "x": 26,
+      "y": 26,
+      "elevation": 0,
+      "item": "ITEM_LEMONADE",
+      "flag": "FLAG_HIDDEN_ITEM_SHUIYUN_TOWN_LEMONADE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 41,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_MIRACLE_SEED",
+      "flag": "FLAG_HIDDEN_ITEM_SHUIYUN_TOWN_MIRACLE_SEED"
     }
   ]
 }

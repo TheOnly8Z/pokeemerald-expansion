@@ -17360,11 +17360,10 @@ Mugshot: Blue
 
 Salamence (F) @ Safety Goggles  
 Ability: Intimidate  
-Level: 60
-EVs: 252 HP / 252 SpA / 4 SpD  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 HP / 128 SpA
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Modest Nature  
-IVs: 0 Atk  
 - Air Slash  
 - Roost  
 - Draco Meteor  
@@ -17372,9 +17371,9 @@ IVs: 0 Atk
 
 Tyranitar (M) @ Smooth Rock
 Ability: Sand Stream  
-Level: 60
-EVs: 252 HP / 252 Atk / 4 SpD  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 HP / 128 Atk
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature  
 - Knock Off  
 - Rock Slide  
@@ -17383,13 +17382,10 @@ Adamant Nature
 
 Gastrodon (M) @ Sitrus Berry  
 Ability: Storm Drain  
-Tera Type: Water  
-Level: 60
-Gender: Male
-EVs: 252 HP / 252 Def / 4 SpD  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 HP / 128 Def 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Bold Nature  
-IVs: 0 Atk  
 - Muddy Water
 - Icy Wind
 - Earth Power
@@ -17397,15 +17393,15 @@ IVs: 0 Atk
 
 KAMINA (Excadrill) (M) @ Focus Sash
 Ability: Sand Rush
-Level: 60
+Level: 50
 Shiny: Yes
-EVs: 252 Atk / 4 SpD / 252 Spe  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 128 Atk / 128 Spe  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature  
 - Earthquake  
 - Swords Dance  
 - Iron Head  
-- Rapid Spin  
+- Drill Run  
 
 
 === TRAINER_CAMEO_COLLIN ===
@@ -17420,9 +17416,9 @@ Mugshot: Yellow
 
 Machamp @ Focus Sash
 Ability: No Guard
-Level: 60
-EVs: 252 Atk / 252 HP / 4 Def
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 Atk / 128 HP
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature
 -Dynamic Punch
 -Bullet Punch
@@ -17431,9 +17427,9 @@ Adamant Nature
 
 Slowking @ Lum Berry
 Ability: Regenerator
-Level: 60
-EVs: 252 Def / 252 HP / 4 Atk
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 Def / 128 HP
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Calm Nature
 -Slack Off
 -Future Sight
@@ -17442,9 +17438,9 @@ Calm Nature
 
 Politoed @ Damp Rock
 Ability: Drizzle
-Level: 60
-EVs: 252 SpA / 252 HP / 4 SpD
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Level: 50
+EVs: 128 SpA / 128 HP
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Modest Nature
 -Psychic
 -Ice Beam
@@ -17453,10 +17449,10 @@ Modest Nature
 
 Probopass @ Leftovers
 Ability: Sturdy
-Level: 60
+Level: 50
 Shiny: Yes
-EVs: 252 SpA / 252 HP / 4 SpD
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 128 SpA / 128 HP
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Quiet Nature
 -Volt Switch
 -Thunder
@@ -17476,10 +17472,10 @@ Mugshot: Pink
 
 Tinkaton (F) @ Room Service  
 Ability: Mold Breaker  
-Level: 60
-EVs: 252 Atk / 4 Def / 252 SpD  
+Level: 50
+EVs: 128 Atk / 128 SpD  
 Brave Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Gigaton Hammer  
 - Knock Off  
 - Thunder Wave  
@@ -17487,10 +17483,10 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Hatterene @ Life Orb  
 Ability: Magic Bounce  
-Level: 60
-EVs: 252 HP / 252 SpA / 4 SpD  
+Level: 50
+EVs: 128 HP / 128 SpA
 Modest Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic Noise  
 - Trick Room  
 - Calm Mind  
@@ -17498,10 +17494,10 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Tsareena (F) @ Lum Berry  
 Ability: Queenly Majesty  
-Level: 60
-EVs: 252 Atk / 4 SpD  
+Level: 50
+EVs: 128 Atk / 128 SpD  
 Adamant Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Power Whip  
 - Knock Off  
 - Triple Axel  
@@ -17510,10 +17506,10 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Ampharos @ Assault Vest  
 Ability: Static  
 Shiny: Yes  
-Level: 60
-EVs: 252 HP / 4 Def / 252 SpA  
+Level: 50
+EVs: 128 HP / 128 SpA  
 Modest Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse  
 - Thunderbolt  
 - Focus Blast  

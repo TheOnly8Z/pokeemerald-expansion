@@ -1,0 +1,92 @@
+{
+  "id": "MAP_LANTERN_CAVE_1F_ICE_ROOM",
+  "name": "LanternCave_1F_IceRoom",
+  "layout": "LAYOUT_LANTERN_CAVE_1F_ICE_ROOM",
+  "music": "MUS_AQUA_MAGMA_HIDEOUT",
+  "region_map_section": "MAPSEC_LANTERN_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_NEVER_MELT_ICE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_NEVER_MELT_ICE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 22,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ICE_STONE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_ICE_STONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 23,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EVIOLITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_EVIOLITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_BIG_NUGGET",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_BIG_NUGGET"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 23,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_LANTERN_CAVE_2F_ICE_ROOM",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LanternCave_1F_IceRoom_EventScript_Sign"
+    }
+  ]
+}
