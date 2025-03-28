@@ -17350,61 +17350,29 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMEO_ETHAN ===
 Name: ETHAN
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Collector
+Pic: Collector
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Double Ace Pokemon / Powerful Status
+AI: Smart Trainer / Powerful Status
+Mugshot: Blue
 
-Snorlax @ Leftovers  
-Ability: Thick Fat  
-Level: 50
-EVs: 252 HP / 252 Atk / 4 SpD  
+Salamence (F) @ Safety Goggles  
+Ability: Intimidate  
+Level: 60
+EVs: 252 HP / 252 SpA / 4 SpD  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Adamant Nature  
-- Curse  
-- Body Slam  
-- Rest  
-- Protect  
-
-Dragonite @ Silk Scarf
-Ability: Multiscale  
-Level: 52
-EVs: 252 HP / 252 Atk / 4 SpA  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Brave Nature  
+Modest Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Roost  
 - Draco Meteor  
 - Tailwind
-- Extreme Speed  
-- Roost  
 
-Rotom @ Choice Scarf  
-Ability: Levitate  
-Level: 54
-EVs: 252 SpA / 4 SpD / 252 Spe  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Timid Nature  
-- Thunderbolt  
-- Shadow Ball  
-- Volt Switch  
-- Trick  
-
-Metagross @ Assault Vest  
-Ability: Clear Body  
-Level: 56
-EVs: 252 HP / 252 Atk / 4 SpD  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Adamant Nature  
-- Heavy Slam  
-- Psychic Fangs  
-- Hammer Arm  
-- Knock Off  
-
-HUSTLER (Tyranitar) @ Chople Berry  
+Tyranitar (M) @ Smooth Rock
 Ability: Sand Stream  
-Level: 58
-Shiny: Yes
+Level: 60
 EVs: 252 HP / 252 Atk / 4 SpD  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Adamant Nature  
@@ -17413,7 +17381,21 @@ Adamant Nature
 - Stone Edge  
 - Dragon Dance
 
-KAMINA (Excadrill) @ Air Balloon
+Gastrodon (M) @ Sitrus Berry  
+Ability: Storm Drain  
+Tera Type: Water  
+Level: 60
+Gender: Male
+EVs: 252 HP / 252 Def / 4 SpD  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Bold Nature  
+IVs: 0 Atk  
+- Muddy Water
+- Icy Wind
+- Earth Power
+- Recover
+
+KAMINA (Excadrill) (M) @ Focus Sash
 Ability: Sand Rush
 Level: 60
 Shiny: Yes
@@ -17428,23 +17410,59 @@ Adamant Nature
 
 === TRAINER_CAMEO_COLLIN ===
 Name: COLLIN
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
 Gender: Male
-Music: Cool
+Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Risky
+Mugshot: Yellow
 
-Machamp @ Assault Vest  
-Ability: No Guard  
-Level: 69
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-EVs: 248 HP / 252 Atk / 8 SpD  
-Adamant Nature  
-- Dynamic Punch  
-- Bullet Punch  
-- High Horsepower  
-- Stone Edge
+Machamp @ Focus Sash
+Ability: No Guard
+Level: 60
+EVs: 252 Atk / 252 HP / 4 Def
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Adamant Nature
+-Dynamic Punch
+-Bullet Punch
+-Stone Edge
+-Cross Chop
+
+Slowking @ Lum Berry
+Ability: Regenerator
+Level: 60
+EVs: 252 Def / 252 HP / 4 Atk
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Calm Nature
+-Slack Off
+-Future Sight
+-Flamethrower
+-Drain Punch
+
+Politoed @ Damp Rock
+Ability: Drizzle
+Level: 60
+EVs: 252 SpA / 252 HP / 4 SpD
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Modest Nature
+-Psychic
+-Ice Beam
+-Whirlpool
+-Perish Song
+
+Probopass @ Leftovers
+Ability: Sturdy
+Level: 60
+Shiny: Yes
+EVs: 252 SpA / 252 HP / 4 SpD
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Quiet Nature
+-Volt Switch
+-Thunder
+-Flash Cannon
+-Earth Power
+
 
 === TRAINER_CAMEO_NELLIE ===
 Name: NELLIE
@@ -17453,11 +17471,12 @@ Pic: Aroma Lady
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon / Powerful Status
+AI: Smart Trainer / Powerful Status
+Mugshot: Pink
 
 Tinkaton (F) @ Room Service  
 Ability: Mold Breaker  
-Level: 50
+Level: 60
 EVs: 252 Atk / 4 Def / 252 SpD  
 Brave Nature  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
@@ -17466,50 +17485,27 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Thunder Wave  
 - Play Rough  
 
-Musharna @ Terrain Extender  
-Ability: Synchronize  
-Level: 52
-EVs: 252 HP / 252 Def / 4 SpD  
-Relaxed Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
-- Psychic Terrain  
-- Trick Room  
-- Reflect  
-- Yawn  
-
 Hatterene @ Life Orb  
 Ability: Magic Bounce  
-Level: 54
+Level: 60
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
-- Expanding Force  
+- Psychic Noise  
 - Trick Room  
 - Calm Mind  
 - Draining Kiss  
 
 Tsareena (F) @ Lum Berry  
 Ability: Queenly Majesty  
-Level: 56
+Level: 60
 EVs: 252 Atk / 4 SpD  
 Adamant Nature  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
 - Power Whip  
 - Knock Off  
 - Triple Axel  
-- U-turn  
-
-Polteageist @ Focus Sash  
-Ability: Weak Armor  
-Shiny: Yes  
-Level: 58
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Modest Nature  
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
-- Shell Smash  
-- Stored Power  
-- Shadow Ball  
-- Protect  
+- U-turn   
 
 Ampharos @ Assault Vest  
 Ability: Static  
