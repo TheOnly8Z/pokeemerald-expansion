@@ -53,7 +53,9 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(TRICK_ROOM) \
-    F(GIGA_IMPACT)
+    F(GIGA_IMPACT) \
+    F(FALSE_SWIPE) \
+    F(TELEPORT)
 
 #define FOREACH_HM(F) \
     F(CUT) \

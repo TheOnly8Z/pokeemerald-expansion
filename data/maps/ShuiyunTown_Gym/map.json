@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN_GYM",
   "name": "ShuiyunTown_Gym",
   "layout": "LAYOUT_SHUIYUN_TOWN_GYM",
-  "music": "MUS_ABNORMAL_WEATHER",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -11,7 +11,7 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": false,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
   "connections": 0,
   "object_events": [
     {

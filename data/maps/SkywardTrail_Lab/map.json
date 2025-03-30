@@ -2,8 +2,8 @@
   "id": "MAP_SKYWARD_TRAIL_LAB",
   "name": "SkywardTrail_Lab",
   "layout": "LAYOUT_SKYWARD_TRAIL_LAB",
-  "music": "MUS_OCEANIC_MUSEUM",
-  "region_map_section": "MAPSEC_SKYWARD_TRAIL",
+  "music": "MUS_MT_PYRE",
+  "region_map_section": "MAPSEC_YONGTAI_LABS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -52,6 +52,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM_HYPER_BEAM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_SKYWARD_TRAIL_HYPER_BEAM"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SkywardTrail_Lab_EventScript_TalkBlockerGrunt",
+      "flag": "FLAG_HIDE_LAB_BLOCKER_GRUNT"
     }
   ],
   "warp_events": [
@@ -75,6 +88,13 @@
       "elevation": 0,
       "dest_map": "MAP_SKYWARD_TRAIL_LAB_2F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SKYWARD_TRAIL_LAB_B1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -91,8 +111,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 4,
+      "x": 1,
+      "y": 7,
       "elevation": 0,
       "item": "ITEM_GRIP_CLAW",
       "flag": "FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_GRIP_CLAW"

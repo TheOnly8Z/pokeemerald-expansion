@@ -1200,3 +1200,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LanternCave_2F_IceRoom/scripts.inc"
 
 	.include "data/maps/LanternCave_1F_IceRoom/scripts.inc"
+
+	.include "data/maps/SkywardTrail_Lab_B1/scripts.inc"

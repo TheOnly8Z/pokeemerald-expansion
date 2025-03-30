@@ -10,6 +10,10 @@ LanternCave_1F_EventScript_Girl::
 	msgbox LanternCave_1F_Text_Girl, MSGBOX_NPC
 	end
 
+LanternCave_1F_EventScript_LittleBoy::
+	msgbox LanternCave_1F_Text_LittleBoy, MSGBOX_NPC
+	end
+
 LanternCave_1F_EventScript_Grunt1::
 	trainerbattle_single TRAINER_LANTERN_GRUNT_1, LanternCave_1F_Text_Grunt1Intro, LanternCave_1F_Text_Grunt1Defeat
 	msgbox LanternCave_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
@@ -74,6 +78,10 @@ LanternCave_1F_Text_Girl:
 	.string "the rain in this cave, but it's\l"
 	.string "so uncomfortably hot and damp!\p"
 	.string "I feel miserable!$"
+	
+LanternCave_1F_Text_LittleBoy:
+	.string "Wow! You and your POKéMON\n"
+	.string "pushed away those boulders so easily!$"
 
 LanternCave_1F_EventScript_TalkZhong::
 	@ VAR_SHUIYUN_GYM_QUEST_STATE

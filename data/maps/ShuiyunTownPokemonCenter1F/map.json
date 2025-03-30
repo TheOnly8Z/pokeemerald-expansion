@@ -30,13 +30,6 @@
   ],
   "warp_events": [
     {
-      "x": 6,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_SHUIYUN_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 7,
       "y": 8,
       "elevation": 0,
@@ -44,8 +37,15 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 0,
-      "y": -2,
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SHUIYUN_TOWN_POKEMON_CENTER2F",
       "dest_warp_id": "0"

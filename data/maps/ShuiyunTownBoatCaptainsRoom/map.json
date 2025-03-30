@@ -2,7 +2,7 @@
   "id": "MAP_SHUIYUN_TOWN_BOAT_CAPTAINS_ROOM",
   "name": "ShuiyunTownBoatCaptainsRoom",
   "layout": "LAYOUT_SHUIYUN_TOWN_BOAT_CAPTAINS_ROOM",
-  "music": "MUS_ABNORMAL_WEATHER",
+  "music": "MUS_OCEANIC_MUSEUM",
   "region_map_section": "MAPSEC_SHUIYUN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

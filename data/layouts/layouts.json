@@ -4475,7 +4475,7 @@
       "id": "LAYOUT_SKYWARD_TRAIL",
       "name": "SkywardTrail_Layout",
       "width": 60,
-      "height": 80,
+      "height": 92,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/SkywardTrail/border.bin",
@@ -4604,10 +4604,10 @@
     {
       "id": "LAYOUT_SHUIYUN_SHORES",
       "name": "ShuiyunShores_Layout",
-      "width": 40,
-      "height": 10,
+      "width": 110,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ShuiyunShores/border.bin",
       "blockdata_filepath": "data/layouts/ShuiyunShores/map.bin"
     },
@@ -4650,6 +4650,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/LanternCave_1F_IceRoom/border.bin",
       "blockdata_filepath": "data/layouts/LanternCave_1F_IceRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_LAB_B1",
+      "name": "SkywardTrail_Lab_B1_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/SkywardTrail_Lab_B1/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_Lab_B1/map.bin"
     }
   ]
 }

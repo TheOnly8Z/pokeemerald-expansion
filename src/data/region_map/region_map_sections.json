@@ -1735,6 +1735,22 @@
       "y": 11,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SHUIYUN_SHORES",
+      "name": "SHUIYUN SHORES",
+      "x": 13,
+      "y": 14,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_YONGTAI_LABS",
+      "name": "YONGTAI LABS",
+      "x": 13,
+      "y": 15,
+      "width": 1,
+      "height": 1
     }
   ]
 }

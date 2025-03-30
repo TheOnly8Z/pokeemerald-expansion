@@ -218,9 +218,11 @@
 #define MAPSEC_SHUIYUN_TOWN                 0xD5
 #define MAPSEC_LANTERN_CAVE                 0xD6
 #define MAPSEC_SKYWARD_TRAIL                0xD7
-#define MAPSEC_JIANGSHEN_LAKE               0xD8
+#define MAPSEC_YONGTAI_LABS                 0xD8
+#define MAPSEC_SHUIYUN_SHORES               0xD9
+#define MAPSEC_JIANGSHEN_LAKE               0xDA
 
-#define MAPSEC_NONE                         0xD9
+#define MAPSEC_NONE                         0xDB
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

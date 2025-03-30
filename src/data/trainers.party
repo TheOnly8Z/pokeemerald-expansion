@@ -17515,3 +17515,84 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Focus Blast  
 - Volt Switch  
 
+=== TRAINER_SHORE_SHIRE ===
+Name: SHIRE
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Double Battle: Yes
+AI: Check Bad Move
+
+Porygon
+Level: 25
+Ability: Trace
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Thunder
+- Discharge
+- Recover
+- Conversion
+
+Metang
+Level: 25
+Ability: Clear Body
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bullet Punch
+- Zen Headbutt
+- Iron Head
+- Light Screen
+
+=== TRAINER_SHORE_LANCELOT ===
+Name: LANCELOT
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Check Bad Move
+
+Mantine
+Level: 25
+Ability: Water Absorb
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Wing Attack
+- Water Pulse
+- Wide Guard
+- Bullet Seed
+
+Goldeen
+Level: 25
+Ability: Lightning Rod
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Horn Attack
+- Water Pulse
+- Supersonic
+- Icy Wind
+
+
+=== TRAINER_LANTERN_JAK ===
+Name: JAK
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Intense
+Double Battle: Yes
+AI: Check Bad Move
+
+Dragonair
+Level: 45
+Ability: Shed Skin
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Dragon Tail
+- Dragon Rush
+- Aqua Tail
+- Thunder Wave
+
+Vibrava
+Level: 43
+Ability: Levitate
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Stealth Rock
+- Bug Buzz
+- Bulldoze
+- Dragon Tail

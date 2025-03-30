@@ -45,8 +45,8 @@ SkywardTrail_Lab_2F_Text_ScientistGiveItemNoQuest:
 	.string "TEAM AQUA at all!\p"
 	.string "If you made it this far, you must\n"
 	.string "be quite the capable TRAINER.\p"
-	.string "Can you bring this to the DOCKYARD\n"
-	.string "in SHUIYUN TOWN?$"
+	.string "Can you bring this to KAI at the\n"
+	.string "DOCKYARD in SHUIYUN TOWN?\p"
 
 SkywardTrail_Lab_2F_Text_ScientistGiveItemQuest:
 	.string "I'll never give you what you want,\n"
@@ -58,10 +58,10 @@ SkywardTrail_Lab_2F_Text_ScientistGiveItemQuest:
 	.string "Here it is!$"
 
 SkywardTrail_Lab_2F_Text_ScientistGiveItemPost:
-	.string "They were supposed to pick it up,\n"
-	.string "but the condition of the trail\l"
-	.string "speaks for itself.\p"
-	.string "Now hurry, before the water\n"
+	.string "They were supposed to pick it up\n"
+	.string "earlier, but the condition of the\l"
+	.string "trail speaks for itself.\p"
+	.string "Now hurry, before the rain\n"
 	.string "swallows us all!$"
 
 SkywardTrail_Lab_2F_Text_ScientistReminder:
