@@ -16919,7 +16919,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Kingler
-Level: 28
+Level: 24
 Ability: Hyper Cutter
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hammer Arm
@@ -16928,7 +16928,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Wide Guard
 
 Furret
-Level: 24
+Level: 22
 Ability: Keen Eye
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Follow Me
@@ -16946,7 +16946,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Slowbro
-Level: 27
+Level: 24
 Ability: Own Tempo
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Yawn
@@ -16955,7 +16955,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
 
 Grimer
-Level: 26
+Level: 25
 Ability: Stench
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
@@ -16972,23 +16972,23 @@ Music: Aqua
 Double Battle: Yes
 AI: Check Bad Move
 
-Octillery
-Level: 32
-Ability: Moody
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Octazooka
-- Protect
-- Dive
-- Aurora Beam
-
 Seviper
-Level: 28
+Level: 27
 Ability: Shed Skin
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Tail
 - Helping Hand
 - Bite
 - Glare
+
+Octillery
+Level: 28
+Ability: Moody
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Octazooka
+- Protect
+- Dive
+- Aurora Beam
 
 
 === TRAINER_SKYWARD_GRUNT_4 ===
@@ -17001,7 +17001,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Sharpedo
-Level: 31
+Level: 27
 Ability: Rough Skin
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Jet
@@ -17010,7 +17010,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Ice Fang
 
 Hariyama
-Level: 30
+Level: 28
 Ability: Guts
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out
@@ -17028,7 +17028,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Slugma
-Level: 27
+Level: 22
 Ability: Flame Body
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Incinerate
@@ -17037,7 +17037,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Yawn
 
 Loudred
-Level: 26
+Level: 23
 Ability: Soundproof
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Stomp
@@ -17101,7 +17101,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Numel
-Level: 30
+Level: 27
 Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Amnesia
@@ -17110,7 +17110,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Earth Power
 
 Furret
-Level: 29
+Level: 28
 Ability: Run Away
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Follow Me
@@ -17119,7 +17119,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 
 Houndoom
-Level: 27
+Level: 30
 Ability: Run Away
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Snarl
@@ -17138,7 +17138,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Arcanine
-Level: 35
+Level: 33
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flare Blitz
@@ -17147,7 +17147,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Grimer
-Level: 37
+Level: 35
 Ability: Sticky Hold
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Screech
@@ -17174,7 +17174,7 @@ Double Battle: Yes
 AI: Check Bad Move / Powerful Status
 
 Magmortar
-Level: 40
+Level: 34
 Ability: Flame Body
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fire Punch
@@ -17183,7 +17183,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smokescreen
 
 Xatu
-Level: 38
+Level: 35
 Ability: Early Bird
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Trick Room
@@ -17192,7 +17192,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Light Screen
 
 Houndoom
-Level: 42
+Level: 37
 Ability: Flash Fire
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Howl
@@ -17210,7 +17210,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Growlithe
-Level: 34
+Level: 30
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17219,7 +17219,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 34
+Level: 30
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17228,7 +17228,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 34
+Level: 30
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17237,7 +17237,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 34
+Level: 30
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17256,7 +17256,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Poliwrath
-Level: 42
+Level: 38
 Ability: Water Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
@@ -17265,7 +17265,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Brick Break
 
 Crobat
-Level: 45
+Level: 40
 Ability: Inner Focus
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tailwind
@@ -17284,7 +17284,7 @@ Double Battle: Yes
 AI: Check Bad Move / HP Aware
 
 Lanturn
-Level: 40
+Level: 38
 Ability: Water Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Discharge
@@ -17293,7 +17293,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Ring
 
 Lanturn
-Level: 40
+Level: 38
 Ability: Volt Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Surf
@@ -17312,7 +17312,7 @@ Double Battle: Yes
 AI: Check Bad Move / Smart Switching
 
 Parasect @ Occa Berry
-Level: 38
+Level: 32
 Ability: Effect Spore
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fury Cutter
@@ -17321,7 +17321,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Cross Poison
 
 Sudowoodo @ Passho Berry
-Level: 40
+Level: 35
 Ability: Sturdy
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Wood Hammer
@@ -17330,7 +17330,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Slide
 
 Rhydon @ Sitrus Berry
-Level: 42
+Level: 37
 Ability: Lightning Rod
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sandstorm
@@ -17339,7 +17339,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Giga Impact
 
 Mamoswine @ Lum Berry
-Level: 44
+Level: 39
 Ability: Thick Fat
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Icy Wind
@@ -17618,3 +17618,78 @@ Adamant Nature
 - Fly  
 - Hyper Beam  
 - Dragon Claw  
+
+
+=== TRAINER_KAI_1 ===
+Name: KAI
+Class: PkMn Trainer
+Pic: Anabel
+Gender: Male
+Music: Elite Four
+Double Battle: Yes
+AI: Basic Trainer
+Mugshot: Blue
+
+Electabuzz @ Shuca Berry
+Ability: Static
+Level: 36
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Thunder Punch  
+- Fire Punch
+- Trailblaze
+- Low Kick 
+
+Manectric @ Lum Berry
+Ability: Lightning Rod  
+Level: 38
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Shock Wave  
+- Discharge
+- Thunder Wave
+- Volt Switch
+
+Rotom-Wash @ Rindo Berry
+Ability: Levitate  
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Electroweb  
+- Hydro Pump
+- Will-o-Wisp 
+- Protect
+
+=== TRAINER_ZHONG_1 ===
+Name: ZHONG
+Class: Leader
+Pic: Brawly
+Gender: Male
+Music: Elite Four
+Double Battle: Yes
+AI: Basic Trainer
+Mugshot: Yellow
+
+Kangaskhan @ Chople Berry
+Ability: Scrappy
+Level: 36
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Fake Out  
+- Sucker Punch
+- Double Hit
+- Drain Punch 
+
+Exploud @ Sitrus Berry
+Ability: Soundproof  
+Level: 38
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Uproar  
+- Supersonic
+- Focus Blast
+- Flamethrower
+
+Slaking @ Leftovers
+Ability: Truant  
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Yawn  
+- Giga Impact
+- Slack Off
+- Curse
