@@ -314,3 +314,19 @@ ShuiyunTown_Movement_StepUpLeft:
 	walk_up
 	walk_left
 	step_end
+
+
+ShuiyunTown_EventScript_TestBattleColress::
+	lock
+	faceplayer
+	trainerbattle_single TRAINER_COLRESS_RAYQUAZA, ShuiyunTown_Text_ColressIntro, ShuiyunTown_Text_ColressDefeated
+	cleartrainerflag TRAINER_COLRESS_RAYQUAZA
+	release
+	end
+
+ShuiyunTown_Text_ColressIntro:
+	.string "go go gadget mega rayquaza$"
+
+ShuiyunTown_Text_ColressDefeated:
+	.string "wtf are your zu shitmon strats$"
+	

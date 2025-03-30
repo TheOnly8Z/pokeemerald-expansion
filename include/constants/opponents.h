@@ -880,13 +880,14 @@
 #define TRAINER_SHORE_SHIRE                 874
 #define TRAINER_SHORE_LANCELOT              875
 #define TRAINER_LANTERN_JAK                 876
+#define TRAINER_COLRESS_RAYQUAZA            877
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      877
+#define TRAINERS_COUNT                      878
 #define MAX_TRAINERS_COUNT                  900 // 864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

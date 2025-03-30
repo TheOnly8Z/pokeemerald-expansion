@@ -4592,7 +4592,7 @@ static void Cmd_getexp(void)
                 calculatedExp /= 7;
 
             // EDIT: Drastically increase XP gain
-            calculatedExp = calculatedExp * 5;
+            calculatedExp = calculatedExp * 3;
 
             if (B_TRAINER_EXP_MULTIPLIER <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 calculatedExp = (calculatedExp * 150) / 100;
@@ -8019,7 +8019,7 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     }
 
     // EDIT: Increase money reward due to low amount of trainers
-    moneyReward = moneyReward * 4;
+    // moneyReward = moneyReward * 2;
 
     return moneyReward;
 }

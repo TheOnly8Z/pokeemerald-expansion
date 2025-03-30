@@ -43824,3 +43824,52 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17601
+    [TRAINER_COLRESS_RAYQUAZA] =
+    {
+#line 17602
+        .trainerName = _("COLRESS"),
+#line 17603
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
+#line 17604
+        .trainerPic = TRAINER_PIC_COLRESS,
+        .encounterMusic_gender =
+#line 17606
+            TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+#line 17607
+        .doubleBattle = TRUE,
+#line 17608
+        .aiFlags = AI_FLAG_SMART_TRAINER,
+#line 17609
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
+        .partySize = 1,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17611
+            .species = SPECIES_RAYQUAZA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17611
+            .heldItem = ITEM_LIFE_ORB,
+#line 17615
+            .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
+#line 17614
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17612
+            .ability = ABILITY_AIR_LOCK,
+#line 17613
+            .lvl = 60,
+#line 17616
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17617
+                MOVE_DRAGON_ASCENT,
+                MOVE_FLY,
+                MOVE_HYPER_BEAM,
+                MOVE_DRAGON_CLAW,
+            },
+            },
+        },
+    },
