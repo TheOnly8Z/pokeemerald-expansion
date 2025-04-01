@@ -539,32 +539,31 @@ ShuiyunTown_Gym_Text_AskBattleTrainer:
 	.string "(4 Lv.50 POKéMON w/ Held Items)$"
 
 ShuiyunTown_Gym_Text_EthanTalk:
-	.string "ETHAN: Want to challenge me?\p"
-	.string "My EXCADRILL and TYRANITAR have\n"
-	.string "an unbreakable bond forged in battle.\p"
-	.string "You'll be swept away in the sand!$"
+	.string "ETHAN: My EXCADRILL is the coolest.\n"
+	.string "Want to battle and see him in action?$"
 
 ShuiyunTown_Gym_Text_EthanIntro:
 	.string "Alright, you asked for it!$"
 
 ShuiyunTown_Gym_Text_EthanDefeated:
-	.string "Woah! What a match!$"
+	.string "Ah… Good game…$"
 	
 ShuiyunTown_Gym_Text_CollinTalk:
-	.string "COLLIN: ...$"
+	.string "COLLIN: I'm down for a battle.\n"
+	.string "Don't be surprised if you lose, though.$"
 	
 ShuiyunTown_Gym_Text_CollinIntro:
-	.string "Let's battle!$"
+	.string "Sure.$"
 
 ShuiyunTown_Gym_Text_CollinDefeated:
-	.string "I lost!!$"
+	.string "Damn…$"
 
 ShuiyunTown_Gym_Text_NellieTalk:
-	.string "NELLIE: Check out my team!\p"
+	.string "NELLIE: Check out my team!\n"
 	.string "It's all made up of pink POKéMON!$"
 	
 ShuiyunTown_Gym_Text_NellieIntro:
-	.string "Let's battle!$"
+	.string "Get ready to get dazzled!$"
 
 ShuiyunTown_Gym_Text_NellieDefeated:
 	.string "Maybe I should take off my rose-tinted\n"
