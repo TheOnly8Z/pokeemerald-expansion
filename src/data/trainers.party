@@ -17064,7 +17064,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Houndoom
-Level: 25
+Level: 24
 Ability: Flash Fire
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Howl
@@ -17073,7 +17073,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 
 Rhyhorn
-Level: 26
+Level: 25
 Ability: Rock Head
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
@@ -17082,7 +17082,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Heavy Slam
 
 Golbat
-Level: 27
+Level: 26
 Ability: Inner Focus
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Fang
@@ -17210,7 +17210,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Growlithe
-Level: 30
+Level: 32
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17219,7 +17219,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 30
+Level: 32
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17228,7 +17228,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 30
+Level: 32
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17237,7 +17237,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Fang
 
 Growlithe
-Level: 30
+Level: 32
 Ability: Intimidate
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Wheel
@@ -17284,7 +17284,7 @@ Double Battle: Yes
 AI: Check Bad Move / HP Aware
 
 Lanturn
-Level: 38
+Level: 35
 Ability: Water Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Discharge
@@ -17293,7 +17293,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Ring
 
 Lanturn
-Level: 38
+Level: 35
 Ability: Volt Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Surf
@@ -17312,7 +17312,7 @@ Double Battle: Yes
 AI: Check Bad Move / Smart Switching
 
 Parasect @ Occa Berry
-Level: 32
+Level: 30
 Ability: Effect Spore
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fury Cutter
@@ -17321,7 +17321,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Cross Poison
 
 Sudowoodo @ Passho Berry
-Level: 35
+Level: 32
 Ability: Sturdy
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Wood Hammer
@@ -17329,17 +17329,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hammer Arm
 - Rock Slide
 
-Rhydon @ Sitrus Berry
-Level: 37
-Ability: Lightning Rod
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sandstorm
-- Drill Run
-- Rock Blast
-- Giga Impact
-
 Mamoswine @ Lum Berry
-Level: 39
+Level: 35
 Ability: Thick Fat
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Icy Wind
@@ -17703,7 +17694,7 @@ AI: Smart Trainer / Powerful Status
 
 Luxray @ Assault Vest
 Ability: Intimidate  
-Level: 40
+Level: 37
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Supercell Slam  
 - Play Rough
@@ -17712,7 +17703,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Murkrow @ Eviolite
 Ability: Prankster  
-Level: 40
+Level: 38
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Taunt
 - Tailwind
@@ -17721,7 +17712,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Raichu @ Focus Sash
 Ability: Lightning Rod  
-Level: 42
+Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Surf  
 - Volt Switch
@@ -17730,7 +17721,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Scyther @ Focus Sash
 Ability: Technician
-Level: 42
+Level: 37
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Swords Dance
 - Wing Attack
@@ -17739,7 +17730,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Gliscor @ Assault Vest
 Ability: Hyper Cutter  
-Level: 45
+Level: 38
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - High Horsepower
 - Dual Wingbeat
@@ -17748,7 +17739,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Rotom-Wash @ Sitrus Berry
 Ability: Levitate  
-Level: 45
+Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Thunderbolt
 - Hydro Pump

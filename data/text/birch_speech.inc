@@ -18,7 +18,7 @@ gText_Birch_MainSpeech::
 	.string "I understand you have only just\n"
 	.string "become a LEAGUE REPRESENTATIVE…\p"
 	.string "But you are the only person\n"
-	.string "nearby who can help out.$"
+	.string "nearby who can help out.\p$"
 
 gText_Birch_AndYouAre::
 	.string "Oh, but I never asked…$"
@@ -35,7 +35,7 @@ gText_Birch_SoItsPlayer::
 gText_Birch_YourePlayer::
 	.string "Got it.\p"
 	.string "You're representative {PLAYER}{KUN},\n"
-	.string "currently on your way to TIANLAN ISLAND.\p"
+	.string "on your way to TIANLAN ISLAND.\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
@@ -45,4 +45,4 @@ gText_Birch_AreYouReady::
 	.string "Oh, and...\p"
 	.string "This may be a dangerous task, so I\n"
 	.string "prepared something special for you.\p"
-	.string "Look for a bag in your boat cabin.$"
+	.string "Look for a bag in your boat cabin.\p$"

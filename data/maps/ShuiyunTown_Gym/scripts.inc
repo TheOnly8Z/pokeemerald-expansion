@@ -239,8 +239,8 @@ ShuiyunTown_Gym_Text_AdviceGuy_PreBattle:
 	.string "Finally, I can give some advice!\p"
 	.string "ZHONG uses Flying-type POKéMON, while\n"
 	.string "KAI uses Electric-type POKéMON.\p"
-	.string "Their team levels range from 40-45,\n"
-	.string "and all have battle items equipped.\p"
+	.string "Their team is around Level 40, and\n"
+	.string "everyone has a held item equipped.\p"
 	.string "If you want, I can tell you all the\n"
 	.string "juicy team details! Be warned, it'll\l"
 	.string "take me a while to go through the list.$"
@@ -424,6 +424,69 @@ ShuiyunTown_Gym_Text_ZhongRemindLake:
 ShuiyunTown_Gym_Text_KaiNotSupposedToBeHere:
 	.string "KAI: Wait, I'm not supposed to be here.$"
 
+ShuiyunTown_Gym_EventScript_CameoGiveItem::
+	msgbox ShuiyunTown_Gym_Text_DefeatedGiveItem, MSGBOX_DEFAULT
+	random 10
+	switch VAR_RESULT
+	case 0, Script_Give_BigNugget
+	case 1, Script_Give_BigNugget
+	case 2, Script_Give_ExpCandy
+	case 3, Script_Give_ExpCandy
+	case 4, Script_Give_EjectButton
+	case 5, Script_Give_RedCard
+	case 6, Script_Give_FocusSash
+	case 7, Script_Give_AirBalloon
+	case 8, Script_Give_WhiteHerb
+	case 9, Script_Give_PowerHerb
+	end
+
+Script_Give_ExpCandy::
+	giveitem ITEM_EXP_CANDY_M, 3
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_BigNugget::
+	giveitem ITEM_BIG_NUGGET
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+	
+Script_Give_EjectButton::
+	giveitem ITEM_EJECT_BUTTON
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_RedCard::
+	giveitem ITEM_RED_CARD
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_FocusSash::
+	giveitem ITEM_FOCUS_SASH
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_AirBalloon::
+	giveitem ITEM_AIR_BALLOON
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_WhiteHerb::
+	giveitem ITEM_WHITE_HERB
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
+
+Script_Give_PowerHerb::
+	giveitem ITEM_POWER_HERB
+	msgbox ShuiyunTown_Gym_Text_DefeatedBattleAgain, MSGBOX_DEFAULT
+	release
+	end
 
 ShuiyunTown_Gym_EventScript_BattleEthan::
 	lock
@@ -435,6 +498,7 @@ ShuiyunTown_Gym_EventScript_BattleEthan::
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
 	trainerbattle_single TRAINER_CAMEO_ETHAN, ShuiyunTown_Gym_Text_EthanIntro, ShuiyunTown_Gym_Text_EthanDefeated
 	cleartrainerflag TRAINER_CAMEO_ETHAN
+	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -448,6 +512,7 @@ ShuiyunTown_Gym_EventScript_BattleCollin::
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
 	trainerbattle_single TRAINER_CAMEO_COLLIN, ShuiyunTown_Gym_Text_CollinIntro, ShuiyunTown_Gym_Text_CollinDefeated
 	cleartrainerflag TRAINER_CAMEO_COLLIN
+	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -461,6 +526,7 @@ ShuiyunTown_Gym_EventScript_BattleNellie::
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
 	trainerbattle_single TRAINER_CAMEO_NELLIE, ShuiyunTown_Gym_Text_NellieIntro, ShuiyunTown_Gym_Text_NellieDefeated
 	cleartrainerflag TRAINER_CAMEO_NELLIE
+	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -494,13 +560,23 @@ ShuiyunTown_Gym_Text_CollinDefeated:
 	.string "I lost!!$"
 
 ShuiyunTown_Gym_Text_NellieTalk:
-	.string "NELLIE: ...$"
+	.string "NELLIE: Check out my team!\p"
+	.string "It's all made up of pink POKéMON!$"
 	
 ShuiyunTown_Gym_Text_NellieIntro:
 	.string "Let's battle!$"
 
 ShuiyunTown_Gym_Text_NellieDefeated:
-	.string "I lost!$"
+	.string "Maybe I should take off my rose-tinted\n"
+	.string "glasses and look at other colors…$"
+
+ShuiyunTown_Gym_Text_DefeatedGiveItem:
+	.string "{STR_VAR_2}: Thanks for the battle!\n"
+	.string "Take this item for your victory!$"
+
+ShuiyunTown_Gym_Text_DefeatedBattleAgain:
+	.string "{STR_VAR_2}: Let's battle again\n"
+	.string "sometime!$"
 
 ShuiyunTown_Movement_PlayerStepRight:
 	walk_right

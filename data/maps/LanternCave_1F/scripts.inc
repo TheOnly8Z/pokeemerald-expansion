@@ -1,10 +1,8 @@
 LanternCave_1F_MapScripts::
 	.byte 0
 
-.set LOCALID_ZHONG, 18
-.set LOCALID_KID, 26
-.set LOCALID_ZHONGINTERACT, 27
-
+.set LOCALID_ZHONG, 14
+.set LOCALID_KID, 22
 
 LanternCave_1F_EventScript_Girl::
 	msgbox LanternCave_1F_Text_Girl, MSGBOX_NPC
@@ -105,7 +103,6 @@ LanternCave_1F_EventScript_TalkZhong::
 	clearflag FLAG_HIDE_GYM_ZHONG
 	removeobject LOCALID_ZHONG
 	removeobject LOCALID_KID
-	removeobject LOCALID_ZHONGINTERACT
 	fadescreen FADE_FROM_BLACK
 	release
 	end
