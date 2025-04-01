@@ -17622,74 +17622,135 @@ Adamant Nature
 
 === TRAINER_KAI_1 ===
 Name: KAI
-Class: PkMn Trainer
-Pic: Anabel
+Class: PkMn Trainer 1
+Pic: Salon Maiden Anabel
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Basic Trainer
-Mugshot: Blue
+AI: Smart Trainer / Powerful Status
 
-Electabuzz @ Shuca Berry
-Ability: Static
-Level: 36
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Thunder Punch  
-- Fire Punch
-- Trailblaze
-- Low Kick 
-
-Manectric @ Lum Berry
-Ability: Lightning Rod  
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Shock Wave  
-- Discharge
-- Thunder Wave
-- Volt Switch
-
-Rotom-Wash @ Rindo Berry
-Ability: Levitate  
+Luxray @ Assault Vest
+Ability: Intimidate  
 Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Electroweb  
+- Supercell Slam  
+- Play Rough
+- Fire Fang
+- Volt Switch
+
+Raichu @ Focus Sash
+Ability: Lightning Rod  
+Level: 42
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Surf  
+- Volt Switch
+- Thunderbolt
+- Nuzzle 
+
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate  
+Level: 45
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Thunderbolt
 - Hydro Pump
 - Will-o-Wisp 
-- Protect
+- Nasty Plot
 
 === TRAINER_ZHONG_1 ===
 Name: ZHONG
 Class: Leader
-Pic: Brawly
+Pic: Factory Head Noland
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Basic Trainer
-Mugshot: Yellow
+AI: Smart Trainer
 
-Kangaskhan @ Chople Berry
-Ability: Scrappy
-Level: 36
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Fake Out  
-- Sucker Punch
-- Double Hit
-- Drain Punch 
-
-Exploud @ Sitrus Berry
-Ability: Soundproof  
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Uproar  
-- Supersonic
-- Focus Blast
-- Flamethrower
-
-Slaking @ Leftovers
-Ability: Truant  
+Murkrow @ Eviolite
+Ability: Prankster  
 Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Yawn  
-- Giga Impact
-- Slack Off
-- Curse
+- Taunt
+- Tailwind
+- Thunder Wave
+- Foul Play
+
+Scyther @ Focus Sash
+Ability: Technician
+Level: 42
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Swords Dance
+- Wing Attack
+- Quick Attack
+- Bug Bite  
+
+Gliscor @ Assault Vest
+Ability: Hyper Cutter  
+Level: 45
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- High Horsepower
+- Dual Wingbeat
+- X-Scissor
+- Crabhammer
+
+=== TRAINER_KAI_AND_ZHONG ===
+Name: KAI&ZHONG
+Class: PkMn Trainer 1
+Pic: Kai Zhong
+Gender: Male
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status
+
+Luxray @ Assault Vest
+Ability: Intimidate  
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Supercell Slam  
+- Play Rough
+- Fire Fang
+- Volt Switch
+
+Murkrow @ Eviolite
+Ability: Prankster  
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Taunt
+- Tailwind
+- Thunder Wave
+- Foul Play
+
+Raichu @ Focus Sash
+Ability: Lightning Rod  
+Level: 42
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Surf  
+- Volt Switch
+- Thunderbolt
+- Nuzzle 
+
+Scyther @ Focus Sash
+Ability: Technician
+Level: 42
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Swords Dance
+- Wing Attack
+- Quick Attack
+- Bug Bite  
+
+Gliscor @ Assault Vest
+Ability: Hyper Cutter  
+Level: 45
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- High Horsepower
+- Dual Wingbeat
+- X-Scissor
+- Crabhammer
+
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate  
+Level: 45
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Thunderbolt
+- Hydro Pump
+- Will-o-Wisp 
+- Nasty Plot

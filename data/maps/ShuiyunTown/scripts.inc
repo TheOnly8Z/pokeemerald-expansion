@@ -1,9 +1,9 @@
 ShuiyunTown_MapScripts::
 	.byte 0
 
-.set LOCALID_DEBUGNPC, 5
-.set LOCALID_KAI, 7
-.set LOCALID_ZHONG, 6
+.set LOCALID_DEBUGNPC, 1
+.set LOCALID_KAI, 6
+.set LOCALID_ZHONG, 5
 
 ShuiyunTown_EventScript_DebugGiveHM::
 	lock
@@ -202,23 +202,105 @@ ShuiyunTown_Text_DebugGiveHM:
 
 ShuiyunTown_EventScript_TalkKaiZhong::
 	lock
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition1 MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition1, MSGBOX_DEFAULT
+	closemessage
 
-	@ Make it so NPCs face the player
+	delay 40
+
+	@ Zhong notices player
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_Surprise
+	waitmovement 0
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FacePlayer
+	waitmovement 0
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition1NoticePlayer, MSGBOX_DEFAULT
+
+	@ Zhong and Kai move into dialog position
+	@ If player talks from the east or west, one NPC has to move north
 	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveKaiZhongLeft
 	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveKaiZhongRight
 	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveKaiZhongUp
 
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition2 MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition3 MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition4 MSGBOX_DEFAULT
-	fadescreen FADE_TO_BLACK
-	message ShuiyunTown_Text_KaiZhong_ToBeContinued
-	waitmessage
-	delay 20
-	special StartCredits
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition2, MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition3, MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition4, MSGBOX_DEFAULT
+	closemessage
+
+	delay 40
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition4Turn, MSGBOX_DEFAULT
+
+	@ Kai and Zhong turn to each other for a few sentences
+	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_ZhongKaiFaceEachOtherEast
+	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_ZhongKaiFaceEachOtherWest
+	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_ZhongKaiFaceEachOtherSouth
+
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, ShuiyunTown_EventScript_TalkKaiZhongExposition5He
+	call_if_eq VAR_RESULT, FEMALE, ShuiyunTown_EventScript_TalkKaiZhongExposition5She
+
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_Surprise
+	waitmovement 0
+
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition6, MSGBOX_DEFAULT
+
+	@ Turn back to face player
+	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_ZhongKaiFacePlayerEast
+	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_ZhongKaiFacePlayerWest
+	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_ZhongKaiFacePlayerSouth
+
+	@ blah blah blah
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition7, MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition8, MSGBOX_DEFAULT
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition9, MSGBOX_DEFAULT
+	closemessage
+
+	@ Zhong goes into the gym
+	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveZhongGymRight
+	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveZhongGymUpRight
+	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveZhongGymRightUp
+	opendoor 13, 20
+	waitdooranim
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_StepUp
+	waitmovement 0
+	removeobject LOCALID_ZHONG
+	closedoor 13, 20
+	
+	@ Kai goes into the gym
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition10 MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveKaiGymRightUp
+	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveKaiGymRight
+	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveKaiGymRightUp
+	opendoor 13, 20
+	waitdooranim
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepUp
+	waitmovement 0
+	removeobject LOCALID_KAI
+	closedoor 13, 20
+	waitdooranim
+
+	@ Donezos
+	setflag FLAG_HIDE_BEACH_KAI_ZHONG
+	clearflag FLAG_HIDE_GYM_KAI
+	clearflag FLAG_HIDE_GYM_ZHONG
+	setvar VAR_KAI_ZHONG_BATTLE_STATE 1
 	release
 	end
+
+	@ fadescreen FADE_TO_BLACK
+	@ message ShuiyunTown_Text_KaiZhong_ToBeContinued
+	@ waitmessage
+	@ delay 20
+	@ special StartCredits
+
+
+ShuiyunTown_EventScript_TalkKaiZhongExposition5He::
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition5He MSGBOX_DEFAULT
+	return
+
+ShuiyunTown_EventScript_TalkKaiZhongExposition5She::
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition5She MSGBOX_DEFAULT
+	return
+
 
 ShuiyunTown_EventScript_MoveKaiZhongRight::
 	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepUpRight
@@ -241,14 +323,82 @@ ShuiyunTown_EventScript_MoveKaiZhongUp::
 	waitmovement 0
 	return
 
+ShuiyunTown_EventScript_MoveZhongGymUpRight::
+	@ Player is to the right and Kai is above, so Kai takes a step back
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepLeftFaceRight
+	waitmovement 0
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_StepUp1Right2
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveZhongGymRightUp::
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_StepRight2Up1
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveZhongGymRight::
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_StepRight3
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveKaiGymRight::
+	@ In Kai's original position it would only take 2 steps,
+	@ But he steps left to make space for Zhong
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepRight3
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_MoveKaiGymRightUp::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_StepRight3Up1
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_ZhongKaiFaceEachOtherEast::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceUp
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceDown
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_ZhongKaiFaceEachOtherWest::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceDown
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceUp
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_ZhongKaiFaceEachOtherSouth::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceRight
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceLeft
+	waitmovement 0
+	return
+
+ShuiyunTown_EventScript_ZhongKaiFacePlayerEast::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceLeft
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceLeft
+	waitmovement 0
+	return
+	
+ShuiyunTown_EventScript_ZhongKaiFacePlayerWest::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceRight
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceRight
+	waitmovement 0
+	return
+	
+ShuiyunTown_EventScript_ZhongKaiFacePlayerSouth::
+	applymovement LOCALID_KAI, ShuiyunTown_Movement_FaceUp
+	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FaceUp
+	waitmovement 0
+	return
+
 ShuiyunTown_Text_KaiZhong_Exposition1:
 	.string "KAI: The rain isn’t letting up…\p"
 	.string "ZHONG: I could see the water level in\n"
 	.string "LANTERN CAVE rise with my bare eyes…$"
 
-ShuiyunTown_Text_KaiZhong_Exposition2:
+ShuiyunTown_Text_KaiZhong_Exposition1NoticePlayer:
 	.string "ZHONG: Ah, it's {PLAYER}! Tremendous!\n"
-	.string "Let's get this conversation started!\p"
+	.string "Let's get this conversation started!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition2:
 	.string "KAI: Pfft, you dork.\p"
 	.string "KAI: Alright, let me summarize our\n"
 	.string "current situation.\p"
@@ -285,13 +435,66 @@ ShuiyunTown_Text_KaiZhong_Exposition3:
 ShuiyunTown_Text_KaiZhong_Exposition4:
 	.string "KAI: We know too little about the teams'\n"
 	.string "plans, and there's too little time.\l"
-	.string "We must proceed with the evacuation.\p"
+	.string "We must proceed with the evacuation.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition4Turn:
 	.string "KAI: {PLAYER}, you seem unhappy about\n"
 	.string "this decision somehow.$"
 
+ShuiyunTown_Text_KaiZhong_Exposition5He:
+	.string "ZHONG: Of course he would! He saved\n"
+	.string "my sorry arse, picked up your slack,\l"
+	.string "and we're just gonna shrug and not\l"
+	.string "repay the favor?\p"
+	.string "KAI: How? By sending him to his doom\n"
+	.string "against the two teams and their\l"
+	.string "legendary POKéMON?\p"
+	.string "ZHONG: Well, maybe he's stronger than\n"
+	.string "you think.\p"
+	.string "ZHONG: If only there was a way to prove\n"
+	.string "someone's skills at POKéMON battles!\p"
+	.string "KAI: {PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition5She:
+	.string "ZHONG: Of course she would! She saved\n"
+	.string "my sorry arse, picked up your slack,\l"
+	.string "and we're just gonna shrug and not\l"
+	.string "repay the favor?\p"
+	.string "KAI: How? By sending her to her doom\n"
+	.string "against the two teams and their\l"
+	.string "legendary POKéMON?\p"
+	.string "ZHONG: Well, maybe she's stronger than\n"
+	.string "you think.\p"
+	.string "ZHONG: If only there was a way to prove\n"
+	.string "someone's skills at POKéMON battles!\p"
+	.string "KAI: {PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition6:
+	.string "ZHONG: Oh wait, I'm a GYM LEADER!\n"
+	.string "We can just battle it out at my GYM!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition7:
+	.string "KAI: Oh my god.\p"
+	.string "ZHONG: I had this whole thing where\n"
+	.string "you had to do a quiz while balancing\l"
+	.string "on a unicycle, but we can skip the\l"
+	.string "formalities.\p"
+	.string "ZHONG: KAI, you should come as well.\n"
+	.string "It's been a while, right?$"
+
+ShuiyunTown_Text_KaiZhong_Exposition8:
+	.string "KAI: Can't argue with that. Besides,\n"
+	.string "I want to test {PLAYER}'s skills myself.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition9:
+	.string "ZHONG: Perfectamundo!\n"
+	.string "See you at the GYM, {PLAYER}!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition10:
+	.string "KAI: At least he's in good spirits…$"
+
 ShuiyunTown_Text_KaiZhong_ToBeContinued:
 	.string "TO BE CONTINUED{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
-
 
 ShuiyunTown_Movement_FaceUp:
 	face_up
@@ -305,6 +508,18 @@ ShuiyunTown_Movement_FaceLeft:
 	face_left
 	step_end
 
+ShuiyunTown_Movement_FaceDown:
+	face_down
+	step_end
+
+ShuiyunTown_Movement_FacePlayer:
+	face_player
+	step_end
+
+ShuiyunTown_Movement_StepRight:
+	walk_right
+	step_end
+
 ShuiyunTown_Movement_StepUpRight:
 	walk_up
 	walk_right
@@ -315,6 +530,53 @@ ShuiyunTown_Movement_StepUpLeft:
 	walk_left
 	step_end
 
+ShuiyunTown_Movement_StepLeftFaceRight:
+	walk_left
+	face_right
+	step_end
+
+ShuiyunTown_Movement_StepUp:
+	walk_up
+	step_end
+
+ShuiyunTown_Movement_StepUp1Right2:
+	walk_up
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+ShuiyunTown_Movement_StepRight2Up1:
+	walk_right
+	walk_right
+	walk_up
+	face_up
+	step_end
+	
+ShuiyunTown_Movement_StepRight3Up1:
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	face_up
+	step_end
+
+ShuiyunTown_Movement_StepRight2:
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+ShuiyunTown_Movement_StepRight3:
+	walk_right
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+ShuiyunTown_Movement_Surprise:
+	emote_exclamation_mark
+	step_end
 
 ShuiyunTown_EventScript_TestBattleColress::
 	lock

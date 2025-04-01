@@ -295,6 +295,9 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 const u32 gTrainerFrontPic_Colress[] = INCBIN_U32("graphics/trainers/front_pics/colress.4bpp.lz");
 const u32 gTrainerPalette_Colress[] = INCBIN_U32("graphics/trainers/front_pics/colress.gbapal.lz");
 
+const u32 gTrainerFrontPic_KaiZhong[] = INCBIN_U32("graphics/trainers/front_pics/kai_zhong.4bpp.lz");
+const u32 gTrainerPalette_KaiZhong[] = INCBIN_U32("graphics/trainers/front_pics/kai_zhong.gbapal.lz");
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -406,6 +409,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
     // Custom
     TRAINER_SPRITE(TRAINER_PIC_COLRESS, gTrainerFrontPic_Colress, gTrainerPalette_Colress),
+    TRAINER_SPRITE(TRAINER_PIC_KAI_ZHONG, gTrainerFrontPic_KaiZhong, gTrainerPalette_KaiZhong),
+
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

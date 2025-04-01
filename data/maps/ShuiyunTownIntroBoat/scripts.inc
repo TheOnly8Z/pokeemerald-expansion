@@ -15,6 +15,7 @@ ShuiyunTownIntroBoat_EventScript_Intro::
 	setvar VAR_ROUTE101_STATE, 1
 	setflag FLAG_HIDE_GYM_ZHONG
 	setflag FLAG_HIDE_BEACH_KAI_ZHONG
+	setflag FLAG_HIDE_GYM_KAI
 	release
 	end
 
