@@ -11,6 +11,14 @@ ShuiyunTownIntroBoat_OnFrame:
 ShuiyunTownIntroBoat_EventScript_Intro::
 	lock
 	setrespawn HEAL_LOCATION_SHUIYUN_TOWN_INTRO_BOAT
+
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+
 	msgbox ShuiyunTownIntroBoat_Text_Intro, MSGBOX_DEFAULT
 	setvar VAR_ROUTE101_STATE, 1
 	setflag FLAG_HIDE_GYM_ZHONG
@@ -85,19 +93,13 @@ ShuiyunTownIntroBoat_Text_BirchsBag2:
 	.string "Hold the B Button to run faster.$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag3:
-	.string "You also found a note addressed to you.\p"
+	.string "There is a letter addressed to you.\p"
 	.string "“{PLAYER}{KUN}, I realized you don't have\n"
 	.string "a POKéMON partner yet.\p"
 	.string "In this bag are three capable POKéMON\n"
-	.string "with unique abilities.\l"
-	.string "You'll find them quite different to\l"
-	.string "what you might expect.\n"
-	@.string "LUVDISC has the ability FRIEND GUARD.\n"
-	@.string "It's a great supporting POKéMON.\p"
-	@.string "CARNIVINE has the ability STRONG JAW.\n"
-	@.string "It's a slow but tough POKéMON.\p"
-	@.string "HEATMOR has the ability WHITE SMOKE.\n"
-	@.string "It's well-rounded POKéMON.\p"
+	.string "with unique abilities.\p"
+	.string "You'll find them quite different to\n"
+	.string "what you might expect.\p"
 	.string "Pick one of these POKéMON for your\n"
 	.string "journey ahead.\p"
 	.string "I also asked the captain to prepare some\n"

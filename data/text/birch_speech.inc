@@ -9,16 +9,16 @@ gText_Birch_Pokemon::
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "There is a place far from Hoenn\n"
-	.string "called Tianlan Island.\p"
+	.string "There is a place far from HOENN\n"
+	.string "called TIANLAN ISLAND.\p"
 	.string "Last week, we received reports\n"
 	.string "of anomalous weather on the island.\p"
 	.string "Something terrible might have\n"
 	.string "happened there!\p"
 	.string "I understand you have only just\n"
 	.string "become a LEAGUE REPRESENTATIVE…\p"
-	.string "But you are the nearest person\n"
-	.string "who can help out.\p$"
+	.string "But you are the only person\n"
+	.string "nearby who can help out.$"
 
 gText_Birch_AndYouAre::
 	.string "Oh, but I never asked…$"
@@ -35,15 +35,14 @@ gText_Birch_SoItsPlayer::
 gText_Birch_YourePlayer::
 	.string "Got it.\p"
 	.string "You're representative {PLAYER}{KUN},\n"
-	.string "currently on your way to Tianlan Island.\p"
+	.string "currently on your way to TIANLAN ISLAND.\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
 	.string "Are you ready?\p"
-	.string "Investigate the island, and find out\n"
-	.string "What is happening to the place.\p"
+	.string "Investigate the situation on the\n"
+	.string "island and try to resolve the crisis.\p"
 	.string "Oh, and...\p"
-	.string "This is a dangerous task, so\l"
-	.string "I have arranged something for you.\n"
-	.string "Look for a bag in your boat cabin.\p"
-	.string "$"
+	.string "This may be a dangerous task, so I\n"
+	.string "prepared something special for you.\p"
+	.string "Look for a bag in your boat cabin.$"
