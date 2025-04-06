@@ -2,7 +2,7 @@
   "id": "MAP_SKYWARD_TRAIL_LAB",
   "name": "SkywardTrail_Lab",
   "layout": "LAYOUT_SKYWARD_TRAIL_LAB",
-  "music": "MUS_MT_PYRE",
+  "music": "MUS_LILYCOVE_MUSEUM",
   "region_map_section": "MAPSEC_YONGTAI_LABS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

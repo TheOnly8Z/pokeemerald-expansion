@@ -37,10 +37,18 @@ ShuiyunTownIntroBoat_EventScript_BirchsBag::
 	waitfanfare
 	waitmessage
 
+	playfanfare MUS_OBTAIN_ITEM
+	message ShuiyunTownIntroBoat_Text_BirchsBagPokedex
+	waitfanfare
+	waitmessage
+
 	msgbox ShuiyunTownIntroBoat_Text_BirchsBag3, MSGBOX_DEFAULT
 
+	msgbox ShuiyunTownIntroBoat_Text_PickStarter, MSGBOX_DEFAULT
+
 	setflag FLAG_SYS_B_DASH
-	@ setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
@@ -86,16 +94,23 @@ ShuiyunTownIntroBoat_Text_Intro:
 	.string "like you're finally at your destination.$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag1:
-	.string "This looks like the bag STEVEN mentioned.$"
+	.string "You open the bag from STEVEN.$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag2:
-	.string "You got the RUNNING SHOES!\n"
+	.string "{PLAYER} received the RUNNING SHOES!\n"
 	.string "Hold the B Button to run faster.$"
+
+ShuiyunTownIntroBoat_Text_BirchsBagPokedex:
+	.string "{PLAYER} received the POKéDEX!$"
 
 ShuiyunTownIntroBoat_Text_BirchsBag3:
 	.string "There is a letter addressed to you.\p"
-	.string "“{PLAYER}{KUN}, I realized you don't have\n"
-	.string "a POKéMON partner yet.\p"
+	.string "“{PLAYER}{KUN}, here are two things\n"
+	.string "essential for a new TRAINER like you.\p"
+	.string "The first is a POKéDEX. Use it to\n"
+	.string "record and learn about the POKéMON you\l"
+	.string "encounter in your travels.\p"
+	.string "The second is a POKéMON partner.\p"
 	.string "In this bag are three capable POKéMON\n"
 	.string "with unique abilities.\p"
 	.string "You'll find them quite different to\n"
@@ -107,6 +122,10 @@ ShuiyunTownIntroBoat_Text_BirchsBag3:
 	.string "talk to him before you go.\p"
 	.string "I hope to hear from you soon.”\n"
 	.string "- STEVEN STONE$"
+
+ShuiyunTownIntroBoat_Text_PickStarter:
+	.string "There are some POKé BALLS in the bag.\n"
+	.string "Time to pick a partner!$"
 
 ShuiyunTownIntroBoat_Text_Received:
 	.string "{PLAYER} received the {STR_VAR_1}!$"

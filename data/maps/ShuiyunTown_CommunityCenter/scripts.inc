@@ -41,10 +41,6 @@ ShuiyunTown_CommunityCenter_Pokemart_SpecialShop:
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_ADAMANT_MINT
-	.2byte ITEM_MODEST_MINT
-	.2byte ITEM_TIMID_MINT
-	.2byte ITEM_JOLLY_MINT
 	pokemartlistend
 
 ShuiyunTown_CommunityCenter_EventScript_TalkRelearn::
@@ -306,3 +302,36 @@ ShuiyunTown_CommunityCenter_Text_LittleGirlExplain:
 	.string "but, umm, there's no drawback to it.\p"
 	.string "Umm, teacher said there's one of these\n"
 	.string "for each type! Look around for them!$"
+
+
+ShuiyunTown_CommunityCenter_EventScript_TalkLostAndFound::
+	lock
+	faceplayer
+	msgbox ShuiyunTown_CommunityCenter_Text_LostAndFound, MSGBOX_DEFAULT
+
+	call_if_unset FLAG_SYS_POKEDEX_GET, ShuiyunTown_CommunityCenter_EventScript_LostAndFound_Pokedex
+
+	release
+	end
+
+ShuiyunTown_CommunityCenter_EventScript_LostAndFound_Pokedex::
+	msgbox ShuiyunTown_CommunityCenter_Text_LostAndFound_Pokedex, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message ShuiyunTown_CommunityCenter_Text_LostAndFound_PokedexMessage
+	waitfanfare
+	waitmessage
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	return
+
+ShuiyunTown_CommunityCenter_Text_LostAndFound:
+	.string "This is the LOST AND FOUND. If you're\n"
+	.string "supposed to have something but don't,\l"
+	.string "I might be able to give it to you.$"
+
+ShuiyunTown_CommunityCenter_Text_LostAndFound_Pokedex:
+	.string "Someone found this on the boat. It looks\n"
+	.string "like it belongs to you!$"
+
+ShuiyunTown_CommunityCenter_Text_LostAndFound_PokedexMessage:
+	.string "{PLAYER} received the POKéDEX!$"
