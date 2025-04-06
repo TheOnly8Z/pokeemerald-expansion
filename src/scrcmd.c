@@ -2550,3 +2550,17 @@ bool8 Scrcmd_getobjectfacingdirection(struct ScriptContext *ctx)
 
     return FALSE;
 }
+
+bool8 ScrCmd_setspeaker(struct ScriptContext *ctx)
+{
+    const u8 *name = (const u8 *)ScriptReadWord(ctx);
+    SetSpeakerName(name);
+    return FALSE;
+}
+
+bool8 ScrCmd_setspeakerfromvar(struct ScriptContext *ctx)
+{
+    u8 stringVarIndex = ScriptReadByte(ctx);
+    SetSpeakerName(sScriptStringVars[stringVarIndex]);
+    return FALSE;
+}

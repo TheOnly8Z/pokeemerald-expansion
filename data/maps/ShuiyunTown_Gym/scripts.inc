@@ -107,38 +107,67 @@ ShuiyunTown_Gym_EventScript_AdviceGuy_Saved::
 ShuiyunTown_Gym_EventScript_BattleKaiZhong::
 	@ First time player attempts battle
 	lock
-	msgbox ShuiyunTown_Gym_Text_KaiZhongBattlePreamble, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongBattlePreamble1Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongBattlePreamble2Kai, MSGBOX_DEFAULT
+	speakername NULL
 	setvar VAR_KAI_ZHONG_BATTLE_STATE, 2
 	setflag FLAG_SYS_SET_BATTLE_BGM
 	setvar VAR_TEMP_F, MUS_VS_GYM_LEADER
-	@ trainerbattle_two_trainers TRAINER_KAI_1, ShuiyunTown_Gym_Text_BattleDefeatKai, TRAINER_ZHONG_1, ShuiyunTown_Gym_Text_BattleDefeatZhong
 	trainerbattle_double TRAINER_KAI_AND_ZHONG, ShuiyunTown_Gym_Text_BattleIntroKaiZhong, ShuiyunTown_Gym_Text_BattleDefeatKaiZhong, ShuiyunTown_Gym_Text_BattleNotEnoughMons, ShuiyunTown_Gym_EventScript_KaiZhongPostBattle
 	release
 	end
 
 ShuiyunTown_Gym_EventScript_BattleKaiZhongRematch::
 	lock
-	msgbox ShuiyunTown_Gym_Text_KaiZhongBattleRematch, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongRematchPreamble1Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongRematchPreamble2Zhong, MSGBOX_DEFAULT
+	speakername NULL
 	setflag FLAG_SYS_SET_BATTLE_BGM
 	setvar VAR_TEMP_F, MUS_VS_GYM_LEADER
-	@ trainerbattle_two_trainers TRAINER_KAI_1, ShuiyunTown_Gym_Text_BattleDefeatKai, TRAINER_ZHONG_1, ShuiyunTown_Gym_Text_BattleDefeatZhong
 	trainerbattle_double TRAINER_KAI_AND_ZHONG, ShuiyunTown_Gym_Text_BattleIntroKaiZhong, ShuiyunTown_Gym_Text_BattleDefeatKaiZhong, ShuiyunTown_Gym_Text_BattleNotEnoughMons, ShuiyunTown_Gym_EventScript_KaiZhongPostBattle
 	release
 	end
 
 ShuiyunTown_Gym_EventScript_KaiZhongPostBattle::
 	setvar VAR_KAI_ZHONG_BATTLE_STATE, 3
-	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle, MSGBOX_DEFAULT
+	@ msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle1Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle2Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle3Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle4Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle5Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle6Kai, MSGBOX_DEFAULT
+	speakername NULL
+
 	giveitem ITEM_HM07
 	giveitem ITEM_HM08
-	msgbox ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall, MSGBOX_DEFAULT
+
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall1Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall2Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall3Kai, MSGBOX_DEFAULT
 	closemessage
+
 	call_if_set FLAG_TEMP_1, ShuiyunTown_Gym_EventScript_PlayerStepRight
 	applymovement LOCALID_KAI, ShuiyunTown_Movement_KaiLeave
 	waitmovement 0
 	removeobject LOCALID_KAI
 	setflag FLAG_HIDE_GYM_KAI
 	clearflag FLAG_HIDE_DOCKYARD_KAI
+
+	speakername CommonName_Text_Zhong
 	msgbox ShuiyunTown_Gym_Text_KaiZhongGoodbye, MSGBOX_DEFAULT
 	closemessage
 	delay 60
@@ -333,32 +362,29 @@ ShuiyunTown_Gym_Text_ManiacGiveItem:
 ShuiyunTown_Gym_Text_ManiacPostBattle:
 	.string "I really thought I had you…$"
 
-ShuiyunTown_Gym_Text_KaiZhongBattlePreamble:
-	.string "ZHONG: {PLAYER}, you look determined.\n"
-	.string "Hope you're ready for the both of us!\p"
-	.string "KAI: I figured that if TEAM AQUA and\n"
-	.string "TEAM MAGMA are working together, you\l"
-	.string "will have to fight double battles.\p"
-	.string "KAI: Prove to us that you have what\n"
+ShuiyunTown_Gym_Text_KaiZhongBattlePreamble1Zhong:
+	.string "{PLAYER}, you look determined.\n"
+	.string "Hope you're ready for the both of us!$"
+
+ShuiyunTown_Gym_Text_KaiZhongBattlePreamble2Kai:
+	.string "I figured that if TEAM AQUA and MAGMA\n"
+	.string "are working together, you will have to\l"
+	.string "fight in many double battles.\p"
+	.string "Prove to us that you have what\n"
 	.string "it takes to take on them together!$"
 
-ShuiyunTown_Gym_Text_KaiZhongBattleRematch:
-	.string "KAI: I don't mind a rematch, but don't\n"
-	.string "expect us to go easy on you now.\p"
-	.string "ZHONG: TEAM AQUA and TEAM MAGMA\n"
-	.string "certainly won't!\p"
-	.string "ZHONG: Now come on!$"
+ShuiyunTown_Gym_Text_KaiZhongRematchPreamble1Kai:
+	.string "I don't mind a rematch, but don't expect\n"
+	.string "us to go easy on you.$"
 
-ShuiyunTown_Gym_Text_BattleDefeatKai:
-	.string "I… what just happened?$"
-
-ShuiyunTown_Gym_Text_BattleDefeatZhong:
-	.string "Yowzers!$"
+ShuiyunTown_Gym_Text_KaiZhongRematchPreamble2Zhong:
+	.string "TEAM AQUA and TEAM MAGMA certainly\n"
+	.string "won't! Now come on!$"
 
 ShuiyunTown_Gym_Text_BattleIntroKaiZhong:
 	.string "ZHONG: It's time to d-d-d-d-d-d-d-\n"
 	.string "battle!\p"
-	.string "KAI: Sigh…$"
+	.string "KAI: Let's test your mettle.$"
 
 ShuiyunTown_Gym_Text_BattleNotEnoughMons:
 	.string "Bring two!$" @ Should never trigger
@@ -370,45 +396,58 @@ ShuiyunTown_Gym_Text_BattleDefeatKaiZhong:
 ShuiyunTown_Gym_Text_KaiZhongPostBattleToBeContinued:
 	.string "TO BE CONTINUED{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
 
-ShuiyunTown_Gym_Text_KaiZhongPostBattle:
-	.string "ZHONG: A full beatdown was delivered!\n"
-	.string "to us! KAI, what do you think?\p"
-	.string "KAI: You have proved you and your\n"
-	.string "POKéMON's capabilities in battle.\p"
-	.string "At this rate, TEAM AQUA and TEAM MAGMA\n"
-	.string "won't stand a chance against you.\p"
-	.string "ZHONG: Uhh… But where would they be?\n"
-	.string "We've seen the grunts out and about,\l"
-	.string "but not where their base is.\p"
-	.string "KAI: I'm certain they will be at\n"
-	.string "JIANGSHEN LAKE, north of SKYWARD TRAIL.\p"
-	.string "If I needed a quiet spot to scheme,\n"
-	.string "that's where I'd go.\p"
-	.string "ZHONG: Scheme is a funny way to say\n"
-	.string "“planning our honeymoon to Paldea”.\p"
-	.string "KAI: ZHONG!\p"
-	.string "KAI: Ahem. To go there, you'll need this.$"
+ShuiyunTown_Gym_Text_KaiZhongPostBattle1Zhong:
+	.string "A full beatdown was delivered! To us!\n"
+	.string "KAI, what do you think?$"
 
-ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall:
-	.string "KAI: You may have seen the large waterfall\n"
+ShuiyunTown_Gym_Text_KaiZhongPostBattle2Kai:
+	.string "You have proved you and your POKéMON's\n"
+	.string "capabilities in battle.\p"
+	.string "At this rate, TEAM AQUA and TEAM MAGMA\n"
+	.string "won't stand a chance against you.$"
+
+ShuiyunTown_Gym_Text_KaiZhongPostBattle3Zhong:
+	.string "Uhh… But where would they be?\p"
+	.string "We've seen the grunts out and about,\n"
+	.string "but not where their base is.$"
+
+ShuiyunTown_Gym_Text_KaiZhongPostBattle4Kai:
+	.string "At JIANGSHEN LAKE, I'm sure of it.\n"
+	.string "The lake is north of SKYWARD TRAIL.\p"
+	.string "If I needed a quiet spot to scheme,\n"
+	.string "that's where I'd go.$"
+
+ShuiyunTown_Gym_Text_KaiZhongPostBattle5Zhong:
+	.string "Scheme is a funny way to say\n"
+	.string "“Planning our honeymoon to Paldea”.$"
+
+ShuiyunTown_Gym_Text_KaiZhongPostBattle6Kai:
+	.string "ZHONG!\p"
+	.string "Ahem. To go there, you'll need this.$"
+
+ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall1Kai:
+	.string "You may have seen the large waterfall\n"
 	.string "north of the house on SKYWARD TRAIL.\p"
 	.string "Ascend the waterfall with WATERFALL, and\n"
 	.string "you will reach JIANGSHEN LAKE.\p"
-	.string "KAI: I also gave you DIVE, just in case\n"
-	.string "there is a hidden entrance underwater.\p"
-	.string "ZHONG: And definitely stop by our little\n"
-	.string "hideaway house by the lake!\p"
-	.string "ZHONG: Rest on the bed there, and feel\n"
-	.string "free to take anything you need.\p"
-	.string "KAI: ZHONG and I will stay here and\n"
-	.string "continue preparing for the evacuation,\l"
-	.string "just in case.\p"
-	.string "KAI: Not that I'm implying you might fail…\n"
-	.string "Sniffle… But please stay safe!$"
+	.string "I also gave you the HM for DIVE, in case\n"
+	.string "there is a hidden entrance underwater.$"
+
+ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall2Zhong:
+	.string "Definitely stop by our little hideaway\n"
+	.string "house by the lake!\p"
+	.string "You can use the bed to rest, and feel\n"
+	.string "free to take anything you need.$"
+
+ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall3Kai:
+	.string "ZHONG and I will stay here and continue\n"
+	.string "preparing the evacuation, just in case.\p"
+	.string "Not that I'm implying you might fail…\n"
+	.string "But please stay safe!$"
 
 ShuiyunTown_Gym_Text_KaiZhongGoodbye:
-	.string "ZHONG: KAI's just a worrywart. Go show\n"
-	.string "those punks who's boss, {PLAYER}.$"
+	.string "KAI's just a worrywart. Go show those\n"
+	.string "punks who's boss, {PLAYER}.$"
 
 ShuiyunTown_Gym_Text_ZhongRemindLake:
 	.string "ZHONG: Ah, you're still here.\n"
@@ -425,6 +464,7 @@ ShuiyunTown_Gym_Text_KaiNotSupposedToBeHere:
 	.string "KAI: Wait, I'm not supposed to be here.$"
 
 ShuiyunTown_Gym_EventScript_CameoGiveItem::
+	speakernamefromvar STR_VAR_2
 	msgbox ShuiyunTown_Gym_Text_DefeatedGiveItem, MSGBOX_DEFAULT
 	random 10
 	switch VAR_RESULT
@@ -493,12 +533,13 @@ ShuiyunTown_Gym_EventScript_BattleEthan::
 	faceplayer
 	buffertrainerclassname STR_VAR_1, TRAINER_CAMEO_ETHAN
 	buffertrainername STR_VAR_2, TRAINER_CAMEO_ETHAN
+	speakernamefromvar STR_VAR_2
 	msgbox ShuiyunTown_Gym_Text_EthanTalk, MSGBOX_DEFAULT
+	speakername NULL
 	msgbox ShuiyunTown_Gym_Text_AskBattleTrainer, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
-	trainerbattle_single TRAINER_CAMEO_ETHAN, ShuiyunTown_Gym_Text_EthanIntro, ShuiyunTown_Gym_Text_EthanDefeated
 	cleartrainerflag TRAINER_CAMEO_ETHAN
-	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
+	trainerbattle_single TRAINER_CAMEO_ETHAN, ShuiyunTown_Gym_Text_EthanIntro, ShuiyunTown_Gym_Text_EthanDefeated, ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -507,12 +548,13 @@ ShuiyunTown_Gym_EventScript_BattleCollin::
 	faceplayer
 	buffertrainerclassname STR_VAR_1, TRAINER_CAMEO_COLLIN
 	buffertrainername STR_VAR_2, TRAINER_CAMEO_COLLIN
+	speakernamefromvar STR_VAR_2
 	msgbox ShuiyunTown_Gym_Text_CollinTalk, MSGBOX_DEFAULT
+	speakername NULL
 	msgbox ShuiyunTown_Gym_Text_AskBattleTrainer, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
-	trainerbattle_single TRAINER_CAMEO_COLLIN, ShuiyunTown_Gym_Text_CollinIntro, ShuiyunTown_Gym_Text_CollinDefeated
-	cleartrainerflag TRAINER_CAMEO_COLLIN
-	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
+	cleartrainerflag TRAINER_CAMEO_ETHAN
+	trainerbattle_single TRAINER_CAMEO_COLLIN, ShuiyunTown_Gym_Text_CollinIntro, ShuiyunTown_Gym_Text_CollinDefeated, ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -521,12 +563,13 @@ ShuiyunTown_Gym_EventScript_BattleNellie::
 	faceplayer
 	buffertrainerclassname STR_VAR_1, TRAINER_CAMEO_NELLIE
 	buffertrainername STR_VAR_2, TRAINER_CAMEO_NELLIE
+	speakernamefromvar STR_VAR_2
 	msgbox ShuiyunTown_Gym_Text_NellieTalk, MSGBOX_DEFAULT
+	speakername NULL
 	msgbox ShuiyunTown_Gym_Text_AskBattleTrainer, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ShuiyunTown_Gym_EventScript_DeclineBattle
-	trainerbattle_single TRAINER_CAMEO_NELLIE, ShuiyunTown_Gym_Text_NellieIntro, ShuiyunTown_Gym_Text_NellieDefeated
 	cleartrainerflag TRAINER_CAMEO_NELLIE
-	goto ShuiyunTown_Gym_EventScript_CameoGiveItem
+	trainerbattle_single TRAINER_CAMEO_NELLIE, ShuiyunTown_Gym_Text_NellieIntro, ShuiyunTown_Gym_Text_NellieDefeated, ShuiyunTown_Gym_EventScript_CameoGiveItem
 	release
 	end
 
@@ -594,3 +637,12 @@ ShuiyunTown_Movement_KaiLeave:
 	walk_fast_down
 	walk_fast_down
 	step_end
+
+CommonName_Text_Kai:
+	.string "KAI$"
+
+CommonName_Text_Zhong:
+	.string "ZHONG$"
+
+CommonName_Text_Unknown:
+	.string "???$"
