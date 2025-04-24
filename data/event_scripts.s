@@ -1202,3 +1202,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LanternCave_1F_IceRoom/scripts.inc"
 
 	.include "data/maps/SkywardTrail_Lab_B1/scripts.inc"
+
+	.include "data/maps/JiangshenLake_House/scripts.inc"
+
+	.include "data/maps/JiangshenLake_Connector/scripts.inc"
+
+	.include "data/maps/JiangshenLake_Peak/scripts.inc"

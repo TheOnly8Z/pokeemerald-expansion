@@ -173,11 +173,11 @@ ShuiyunTown_Gym_EventScript_KaiZhongPostBattle::
 	delay 60
 
 	@ Temporary
-	fadescreen FADE_TO_BLACK
-	message ShuiyunTown_Gym_Text_KaiZhongPostBattleToBeContinued
-	waitmessage
-	delay 40
-	special StartCredits
+	@ fadescreen FADE_TO_BLACK
+	@ message ShuiyunTown_Gym_Text_KaiZhongPostBattleToBeContinued
+	@ waitmessage
+	@ delay 40
+	@ special StartCredits
 
 	release
 	end
@@ -582,7 +582,7 @@ ShuiyunTown_Gym_Text_AskBattleTrainer:
 	.string "(4 Lv.50 POKéMON w/ Held Items)$"
 
 ShuiyunTown_Gym_Text_EthanTalk:
-	.string "ETHAN: My EXCADRILL is the coolest.\n"
+	.string "My EXCADRILL is the coolest.\n"
 	.string "Want to battle and see him in action?$"
 
 ShuiyunTown_Gym_Text_EthanIntro:
@@ -592,7 +592,7 @@ ShuiyunTown_Gym_Text_EthanDefeated:
 	.string "Ah… Good game…$"
 	
 ShuiyunTown_Gym_Text_CollinTalk:
-	.string "COLLIN: I'm down for a battle.\n"
+	.string "I'm down for a battle.\n"
 	.string "Don't be surprised if you lose, though.$"
 	
 ShuiyunTown_Gym_Text_CollinIntro:
@@ -602,7 +602,7 @@ ShuiyunTown_Gym_Text_CollinDefeated:
 	.string "Damn…$"
 
 ShuiyunTown_Gym_Text_NellieTalk:
-	.string "NELLIE: Check out my team!\n"
+	.string "Check out my team!\n"
 	.string "It's all made up of pink POKéMON!$"
 	
 ShuiyunTown_Gym_Text_NellieIntro:
@@ -613,12 +613,11 @@ ShuiyunTown_Gym_Text_NellieDefeated:
 	.string "glasses and look at other colors…$"
 
 ShuiyunTown_Gym_Text_DefeatedGiveItem:
-	.string "{STR_VAR_2}: Thanks for the battle!\n"
-	.string "Take this item for your victory!$"
+	.string "Thanks for the battle!\n"
+	.string "Since you won, take this item!$"
 
 ShuiyunTown_Gym_Text_DefeatedBattleAgain:
-	.string "{STR_VAR_2}: Let's battle again\n"
-	.string "sometime!$"
+	.string "Let's battle again sometime!$"
 
 ShuiyunTown_Movement_PlayerStepRight:
 	walk_right

@@ -74,40 +74,52 @@ ShuiyunTown_Dockyard_EventScript_TalkKai::
 	lock
 	call_if_eq VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongRescued
 	call_if_ne VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongNotRescued
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Exposition, MSGBOX_DEFAULT
 	msgbox ShuiyunTown_Dockyard_Text_Kai_AskFetch, MSGBOX_DEFAULT
 	setvar VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 1
+	speakername NULL
 	release
 	end
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiPostBattle::
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_PostBattle, MSGBOX_NPC
+	speakername NULL
+	end
 
 ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongNotRescued::
+	speakername CommonName_Text_Unknown
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Muttering, MSGBOX_DEFAULT
 	applymovement LOCALID_KAI, Movement_KaiSurprised
 	waitmovement 0
 	delay 20
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_FirstMeet, MSGBOX_DEFAULT
 	return
 
 ShuiyunTown_Dockyard_EventScript_KaiFirstMeetZhongRescued::
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_FirstMeetZhongRescued, MSGBOX_DEFAULT
 	return
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiRepeat::
 	lock
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Repeat, MSGBOX_DEFAULT
+	speakername NULL
 	release
 	end
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiRescueZhong::
 	lock
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_RescueZhong, MSGBOX_DEFAULT
+	speakername NULL
 	release
 	end
 
@@ -118,8 +130,10 @@ ShuiyunTown_Dockyard_EventScript_TalkKaiGotParts::
 	call_if_eq VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 2, ShuiyunTown_Dockyard_EventScript_TalkKaiSkip
 	setvar VAR_SHUIYUN_DOCKYARD_QUEST_STATE, 3
 	@ TODO Set state based on state of gym leader rescue
+	speakername CommonName_Text_Kai
 	call_if_eq VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiMeetAtBeach
 	call_if_ne VAR_SHUIYUN_GYM_QUEST_STATE, 3, ShuiyunTown_Dockyard_EventScript_KaiAskToRescueZhong
+	speakername NULL
 	release
 	end
 
@@ -141,6 +155,7 @@ ShuiyunTown_Dockyard_EventScript_KaiMeetAtBeach::
 
 ShuiyunTown_Dockyard_EventScript_TalkKaiHandin::
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_FetchHandin1, MSGBOX_DEFAULT
 	giveitem ITEM_MACH_BIKE
 	msgbox ShuiyunTown_Dockyard_Text_Kai_FetchHandin2, MSGBOX_DEFAULT
@@ -149,11 +164,13 @@ ShuiyunTown_Dockyard_EventScript_TalkKaiHandin::
 ShuiyunTown_Dockyard_EventScript_TalkKaiSkip::
 	@ Handle edge case where player went to get parts before talking to Kai
 	@ This effectively merges first meet dialog with handin dialog
+	speakername CommonName_Text_Unknown
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Muttering, MSGBOX_DEFAULT
 	applymovement LOCALID_KAI, Movement_KaiSurprised
 	waitmovement 0
 	delay 20
 	faceplayer
+	speakername CommonName_Text_Kai
 	msgbox ShuiyunTown_Dockyard_Text_Kai_SkipHandin1, MSGBOX_DEFAULT
 	msgbox ShuiyunTown_Dockyard_Text_Kai_Exposition, MSGBOX_DEFAULT
 	msgbox ShuiyunTown_Dockyard_Text_Kai_SkipHandin2, MSGBOX_DEFAULT
@@ -162,7 +179,7 @@ ShuiyunTown_Dockyard_EventScript_TalkKaiSkip::
 	return
 
 ShuiyunTown_Dockyard_Text_Kai_Muttering:
-	.string "???: What am I supposed to do…\n"
+	.string "What am I supposed to do…\n"
 	.string "First the rain, now you're missing too…$"
 
 ShuiyunTown_Dockyard_Text_Kai_FirstMeet:
@@ -175,7 +192,7 @@ ShuiyunTown_Dockyard_Text_Kai_FirstMeet:
 	.string "we need your assistance desperately.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FirstMeetZhongRescued:
-	.string "???: {PLAYER}, right?\n"
+	.string "You are {PLAYER}, right?\n"
 	.string "I'm DOCKMASTER KAI.\p"
 	.string "Thank you for rescuing ZHONG.\n"
 	.string "He is very important to me -\l"
@@ -184,15 +201,15 @@ ShuiyunTown_Dockyard_Text_Kai_FirstMeetZhongRescued:
 	.string "that requires your assistance.$"
 
 ShuiyunTown_Dockyard_Text_Kai_Exposition:
-	.string "KAI: This rain is flooding JIANGSHEN LAKE.\n"
+	.string "This rain is flooding JIANGSHEN LAKE.\n"
 	.string "The water is threatening to overflow\l"
 	.string "and claim the entire island.\n"
 	.string "We are trying to evacuate everyone using\n"
 	.string "a damaged cruise ship in the docks.$"
 
 ShuiyunTown_Dockyard_Text_Kai_AskFetch:
-	.string "KAI: Some critical parts for the repair\n"
-	.string "are in the LABORATORY on SKYWARD TRAIL.\p"
+	.string "Some critical parts for the repair are\n"
+	.string "at the LABORATORY on SKYWARD TRAIL.\p"
 	.string "Both the weather and interference from\n"
 	.string "TEAM AQUA make the journey difficult\l"
 	.string "for anyone who isn't a TRAINER.\p"
@@ -203,54 +220,53 @@ ShuiyunTown_Dockyard_Text_Kai_AskFetch:
 	.string "Exercise caution.$"
 
 ShuiyunTown_Dockyard_Text_Kai_Repeat:
-	.string "KAI: Ah, did you get the ship parts?\p"
+	.string "Ah, did you get the ship parts?\p"
 	.string "The parts are in the LABORATORY on top\n"
 	.string "of SKYWARD TRAIL."
 	.string "There's a house on the way there.\n"
 	.string "Visit there if you need help.$"
 
 ShuiyunTown_Dockyard_Text_Kai_SkipHandin1:
-	.string "???: Ah-{PAUSE 15}Ahem. You must be new.\n"
+	.string "Ah-{PAUSE 15}Ahem. You must be new.\n"
 	.string "What's that? You have a package for me?\p"
 	.string "{PLAYER} handed over the SHIP PARTS.\p"
-	.string "???: Thank you. This is very important.\p"
-	.string "KAI: I'm DOCKMASTER KAI.\n"
-	.string "What's your name?\p"
-	.string "…{PAUSE 15}…\p"
+	.string "Thank you. This is very important.\p"
+	.string "I'm DOCKMASTER KAI. What's your name?\p"
+	.string "…\p"
 	.string "{PLAYER}, and you're here on behalf\n"
 	.string "of the POKéMON LEAGUE?\p"
 	.string "I am glad the LEAGUE sent such a\n"
-	.string "capable TRAINER. Let me explain what\l"
-	.string "is going on here.$"
+	.string "capable TRAINER. Let me explain the\l"
+	.string "situation.$"
 
 ShuiyunTown_Dockyard_Text_Kai_SkipHandin2:
-	.string "KAI: The parts you just delievered\n"
+	.string "The parts you just delievered\n"
 	.string "were crucial to the repair effort.\p"
 	.string "I'd like you to have this as thanks.$"
 
 ShuiyunTown_Dockyard_Text_Kai_SkipHandin3:
-	.string "KAI: This will allow you to travel\n"
+	.string "This bike will allow you to travel\n"
 	.string "quickly, even up slippery cliff slopes.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandin1:
 	.string "{PLAYER} handed over the SHIP PARTS.\p"
-	.string "KAI: That's it! I'm so glad I could…\p"
+	.string "That's it! I'm so glad I could…\p"
 	.string "No, it is not yet time for celebration.\p"
 	.string "First, you should take this.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandin2:
-	.string "KAI: I found this in our warehouses\n"
+	.string "I found this in our warehouses\n"
 	.string "while you were away.\p"
 	.string "It allows you to travel quickly, and\n"
 	.string "also ascend steep slopes on the trail.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandinRescued:
-	.string "KAI: We need to evaluate the situation with\n"
+	.string "We need to evaluate the situation with\n"
 	.string "ZHONG and consider our options.\p"
 	.string "Let’s rendezvous outside the GYM.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong1:
-	.string "KAI: No doubt this will be helpful for the\n"
+	.string "No doubt this will be helpful for the\n"
 	.string "second favor I must ask for.\p"
 	.string "If you have not heard the news yet,\n"
 	.string "the GYM LEADER of this town, ZHONG,\l"
@@ -260,15 +276,15 @@ ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong1:
 	.string "He is important to this town{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
 
 ShuiyunTown_Dockyard_Text_Kai_FetchHandinZhong2:
-	.string "KAI: I miss him so much…\n"
+	.string "I miss him so much…\n"
 	.string "You'll find him, right?$"
 
 ShuiyunTown_Dockyard_Text_Kai_RescueZhong:
-	.string "KAI: Have you found ZHONG yet?\n"
+	.string "Have you found ZHONG yet?\n"
 	.string "He is likely still in LANTERN CAVE.$"
 
 ShuiyunTown_Dockyard_Text_Kai_PostBattle:
-	.string "KAI: How goes your investigation?\p"
+	.string "How goes your investigation?\p"
 	.string "In case you forgot, you can reach\l"
 	.string "JIANGSHEN LAKE using WATERFALL.\p"
 	.string "Ascend the waterfall north of the\n"

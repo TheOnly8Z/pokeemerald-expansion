@@ -4624,10 +4624,10 @@
     {
       "id": "LAYOUT_JIANGSHEN_LAKE",
       "name": "JiangshenLake_Layout",
-      "width": 100,
+      "width": 90,
       "height": 45,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/JiangshenLake/border.bin",
       "blockdata_filepath": "data/layouts/JiangshenLake/map.bin"
     },
@@ -4660,6 +4660,36 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/SkywardTrail_Lab_B1/border.bin",
       "blockdata_filepath": "data/layouts/SkywardTrail_Lab_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JIANGSHEN_LAKE_HOUSE",
+      "name": "JiangshenLake_House_Layout",
+      "width": 16,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/JiangshenLake_House/border.bin",
+      "blockdata_filepath": "data/layouts/JiangshenLake_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_JIANGSHEN_LAKE_CONNECTOR",
+      "name": "JiangshenLake_Connector_Layout",
+      "width": 42,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JiangshenLake_Connector/border.bin",
+      "blockdata_filepath": "data/layouts/JiangshenLake_Connector/map.bin"
+    },
+    {
+      "id": "LAYOUT_JIANGSHEN_LAKE_PEAK",
+      "name": "JiangshenLake_Peak_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JiangshenLake_Peak/border.bin",
+      "blockdata_filepath": "data/layouts/JiangshenLake_Peak/map.bin"
     }
   ]
 }

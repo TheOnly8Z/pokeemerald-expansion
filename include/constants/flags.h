@@ -710,9 +710,9 @@
 #define FLAG_COMMUNITY_CENTER_LUCKY_EGG  0x297 // Unused Flag
 #define FLAG_HIDE_LAB_BLOCKER_GRUNT  0x298 // Unused Flag
 #define FLAG_HIDE_GYM_KAI  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
+#define FLAG_HIDE_JIANGSHEN_BATTLE_GRUNTS  0x29A // Unused Flag
+#define FLAG_HIDE_JIANGSHEN_AQUA_GRUNT  0x29B // Unused Flag
+#define FLAG_HIDE_JIANGSHEN_MAGMA_GRUNT  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag

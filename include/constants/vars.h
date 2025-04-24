@@ -268,7 +268,7 @@
 #define VAR_SHUIYUN_DOCKYARD_QUEST_STATE                 0x40F8 // Unused Var
 #define VAR_SHUIYUN_GYM_QUEST_STATE                      0x40F9 // Unused Var
 #define VAR_KAI_ZHONG_BATTLE_STATE                       0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_JIANGSHEN_GRUNT_BATTLE_STATE                 0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
