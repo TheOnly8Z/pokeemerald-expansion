@@ -198,80 +198,80 @@ ShuiyunTownBoatCaptainsRoom_EventScript_CutsceneEnd::
 	release
 	end
 
-ShuiyunTownBoatCaptainsRoom_Text_1:
+ShuiyunTownBoatCaptainsRoom_Text_1::
 	.string "Oh captain, my captain…{EMOJI_HEART}\n"
 	.string "You're not supposed to sail here…$"
 
-ShuiyunTownBoatCaptainsRoom_Text_2:
+ShuiyunTownBoatCaptainsRoom_Text_2::
 	.string "I bet you're illegally fishing!\n"
 	.string "We'll have to impound your ship!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_3:
+ShuiyunTownBoatCaptainsRoom_Text_3::
 	.string "Uhhhh… Behind you!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_4:
+ShuiyunTownBoatCaptainsRoom_Text_4::
 	.string "Oh look, a hero…{EMOJI_HEART}\p"
 	.string "Are you really going to stand up\n"
 	.string "against the two of us alone? {EMOJI_HEART}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_5:
+ShuiyunTownBoatCaptainsRoom_Text_5::
 	.string "That's right! This cowardly CAPTAIN\n"
 	.string "isn't even a TRAINER! He's helpless!\p"
 	.string "Go on, run for your life!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_6:
+ShuiyunTownBoatCaptainsRoom_Text_6::
 	.string "Wahhhhh!! Leave me alone!!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_7:
+ShuiyunTownBoatCaptainsRoom_Text_7::
 	.string "The CAPTAIN secretly hands you\n"
 	.string "a POKé BALL.$"
 
-ShuiyunTownBoatCaptainsRoom_Text_8:
+ShuiyunTownBoatCaptainsRoom_Text_8::
 	.string "Okay, buddy.\n"
 	.string "You're in for a world of pain!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_Rematch:
+ShuiyunTownBoatCaptainsRoom_Text_Rematch::
 	.string "Why, you persistent little…\p"
 	.string "We'll simply have to beat you\n"
 	.string "again!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_Magma_Grunt_LoseText:
+ShuiyunTownBoatCaptainsRoom_Text_Magma_Grunt_LoseText::
 	.string "Hey! This is supposed to be easy!$"
 	
-ShuiyunTownBoatCaptainsRoom_Text_Aqua_Grunt_LoseText:
+ShuiyunTownBoatCaptainsRoom_Text_Aqua_Grunt_LoseText::
 	.string "What a feisty Trainer…{EMOJI_HEART}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle1:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle1::
 	.string "Tsk… I knew working with TEAM AQUA was\n"
 	.string "a mistake. You're dead weight!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle2:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle2::
 	.string "Now, now…{EMOJI_HEART}\p"
 	.string "COURTNEY did mention a certain someone\n"
 	.string "sent by the POKéMON LEAGUE…{EMOJI_HEART}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle3:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle3::
 	.string "Right, right! We were supposed to find\n"
 	.string "this repar-{PAUSE 15} rap-{PAUSE 15} reprare-{PAUSE 15} repair-{PAUSE 15}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle4:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle4::
 	.string "Representative {PLAYER}. {EMOJI_HEART}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle5:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle5::
 	.string "Yes! Exactly! That's you, isn't it?!\p"
 	.string "We need to tell COURTNEY and MATT!\n"
 	.string "Grab the others! Let's go!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle6:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle6::
 	.string "Time to bid adieu… {EMOJI_HEART}$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle7:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle7::
 	.string "Ah, sorry for the trouble.\p"
 	.string "They rushed inside as soon as I docked.\p"
 	.string "Here are the supplies STEVEN asked me\n"
 	.string "to give you.$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle8:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle8::
 	.string "Oh, and about the EEVEE…\p"
 	.string "I saw you battle with the grunts.\n"
 	.string "You're quite capable!\p"
@@ -279,10 +279,10 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle8:
 	.string "with you as well.\p"
 	.string "Why don't you raise it instead?$"
 
-ShuiyunTownBoatCaptainsRoom_Text_GetEevee:
+ShuiyunTownBoatCaptainsRoom_Text_GetEevee::
 	.string "{PLAYER} received EEVEE!$"
 
-ShuiyunTownBoatCaptainsRoom_Text_PostBattle9:
+ShuiyunTownBoatCaptainsRoom_Text_PostBattle9::
 	.string "Well, here's our stop - TIANLAN ISLAND.\p"
 	.string "It's a tourist hotspot known for its\n"
 	.string "hospitality.\p"
@@ -293,57 +293,57 @@ ShuiyunTownBoatCaptainsRoom_Text_PostBattle9:
 	.string "That said, it never rains this much on\n"
 	.string "this island. I wonder what's going on.$"
 
-ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain:
+ShuiyunTownBoatCaptainsRoom_Text_TalkCaptain::
 	.string "Maybe I should have paid attention\n"
 	.string "during TRAINER school…$"
 
-Movement_WalkUp2:
+Movement_WalkUp2::
 	walk_up
 	walk_up
 	step_end
 
-Movement_WalkSlowUp:
+Movement_WalkSlowUp::
 	walk_slow_up
 	step_end
 
-Movement_WalkSlowDown:
+Movement_WalkSlowDown::
 	walk_slow_down
 	step_end
 
-Movement_LookRight:
+Movement_LookRight::
 	face_right
 	emote_question_mark
 	step_end
 
-Movement_LookUp:
+Movement_LookUp::
 	face_up
 	step_end
 
-Movement_LookDown:
+Movement_LookDown::
 	face_down
 	step_end
 
-Movement_LookDownExclamation:
+Movement_LookDownExclamation::
 	face_down
 	emote_exclamation_mark
 	step_end
 
-Movement_LookLeft:
+Movement_LookLeft::
 	face_left
 	step_end
 
-Movement_JumpInPlaceRight:
+Movement_JumpInPlaceRight::
 	jump_in_place_right
 	jump_in_place_right
 	step_end
 
-Movement_JumpInPlace:
+Movement_JumpInPlace::
 	jump_in_place_down
 	jump_in_place_down
 	step_end
 
 	
-Movement_MagmaGruntThink:
+Movement_MagmaGruntThink::
 	walk_slow_left
 	walk_slow_up
 	walk_slow_right
@@ -351,7 +351,7 @@ Movement_MagmaGruntThink:
 	emote_question_mark
 	step_end
 	
-Movement_CaptainLeave1:
+Movement_CaptainLeave1::
 	walk_faster_right
 	walk_faster_right
 	walk_faster_down
@@ -360,12 +360,12 @@ Movement_CaptainLeave1:
 	walk_faster_left
 	step_end
 
-Movement_CaptainLeave2:
+Movement_CaptainLeave2::
 	walk_faster_down
 	walk_faster_down
 	step_end
 
-Movement_MagmaGruntLeave:
+Movement_MagmaGruntLeave::
 	walk_faster_left
 	walk_faster_down
 	walk_faster_down
@@ -373,19 +373,19 @@ Movement_MagmaGruntLeave:
 	walk_faster_down
 	step_end
 
-Movement_AquaGruntLeave:
+Movement_AquaGruntLeave::
 	walk_faster_down
 	walk_faster_down
 	walk_faster_down
 	step_end
 	
-Movement_CaptainReturn:
+Movement_CaptainReturn::
 	walk_up
 	face_left
 	step_end
 
 	
-Movement_CaptainReturn2:
+Movement_CaptainReturn2::
 	walk_up
 	face_left
 	walk_up
@@ -393,7 +393,7 @@ Movement_CaptainReturn2:
 	walk_up
 	step_end
 
-Movement_PlayerUp:
+Movement_PlayerUp::
 	walk_up
 	walk_up
 	walk_up

@@ -713,8 +713,8 @@
 #define FLAG_HIDE_JIANGSHEN_BATTLE_GRUNTS  0x29A // Unused Flag
 #define FLAG_HIDE_JIANGSHEN_AQUA_GRUNT  0x29B // Unused Flag
 #define FLAG_HIDE_JIANGSHEN_MAGMA_GRUNT  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
+#define FLAG_HIDE_JIANGSHEN_MATT  0x29D // Unused Flag
+#define FLAG_HIDE_JIANGSHEN_COURTNEY  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag

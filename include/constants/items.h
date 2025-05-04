@@ -996,11 +996,11 @@
 
 // Custom
 #define ITEM_SHIP_PARTS 829
-
+#define ITEM_JIANGSHEN_KEY 830
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 830
+#define ITEMS_COUNT 831
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

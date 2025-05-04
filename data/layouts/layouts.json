@@ -4674,7 +4674,7 @@
     {
       "id": "LAYOUT_JIANGSHEN_LAKE_CONNECTOR",
       "name": "JiangshenLake_Connector_Layout",
-      "width": 42,
+      "width": 63,
       "height": 25,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",

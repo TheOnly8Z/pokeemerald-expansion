@@ -14123,4 +14123,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_DevonParts,
     },
 
+    [ITEM_JIANGSHEN_KEY] =
+    {
+        .name = _("Keycard"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A card scribbled\n"
+            "with both AQUA\n"
+            "and MAGMA symbols."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CardKey,
+        .iconPalette = gItemIconPalette_CardKey,
+    },
+
 };

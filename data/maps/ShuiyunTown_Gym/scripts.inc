@@ -172,6 +172,9 @@ ShuiyunTown_Gym_EventScript_KaiZhongPostBattle::
 	closemessage
 	delay 60
 
+	setflag FLAG_HIDE_JIANGSHEN_AQUA_GRUNT
+	setflag FLAG_HIDE_JIANGSHEN_MAGMA_GRUNT
+
 	@ Temporary
 	@ fadescreen FADE_TO_BLACK
 	@ message ShuiyunTown_Gym_Text_KaiZhongPostBattleToBeContinued

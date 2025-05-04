@@ -298,6 +298,9 @@ const u32 gTrainerPalette_Colress[] = INCBIN_U32("graphics/trainers/front_pics/c
 const u32 gTrainerFrontPic_KaiZhong[] = INCBIN_U32("graphics/trainers/front_pics/kai_zhong.4bpp.lz");
 const u32 gTrainerPalette_KaiZhong[] = INCBIN_U32("graphics/trainers/front_pics/kai_zhong.gbapal.lz");
 
+const u32 gTrainerFrontPic_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.4bpp.lz");
+const u32 gTrainerPalette_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.gbapal.lz");
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -410,6 +413,7 @@ const struct TrainerSprite gTrainerSprites[] =
     // Custom
     TRAINER_SPRITE(TRAINER_PIC_COLRESS, gTrainerFrontPic_Colress, gTrainerPalette_Colress),
     TRAINER_SPRITE(TRAINER_PIC_KAI_ZHONG, gTrainerFrontPic_KaiZhong, gTrainerPalette_KaiZhong),
+    TRAINER_SPRITE(TRAINER_PIC_MAGMA_ADMIN_F, gTrainerFrontPic_MagmaAdminF, gTrainerPalette_MagmaAdminF),
 
 };
 

@@ -886,13 +886,14 @@
 #define TRAINER_KAI_AND_ZHONG               880
 #define TRAINER_NEW_GRUNT_AQUA_2            881 // Jiangshen Lake rematch
 #define TRAINER_NEW_GRUNT_MAGMA_2           882 // Jiangshen Lake rematch
-
+#define TRAINER_JIANGSHEN_MATT              883
+#define TRAINER_JIANGSHEN_COURTNEY          884
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      883
+#define TRAINERS_COUNT                      885
 #define MAX_TRAINERS_COUNT                  900 // 864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
