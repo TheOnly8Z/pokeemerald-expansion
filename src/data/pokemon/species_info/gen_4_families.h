@@ -4620,11 +4620,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CARNIVINE
     [SPECIES_CARNIVINE] =
     {
-        .baseHP        = 114, // 84 + 30
-        .baseAttack    = 135, // 100 + 35
+        // 504 BST
+        .baseHP        = 115, // 84
+        .baseAttack    = 135, // 100
         .baseDefense   = 72,
-        .baseSpeed     = 31, // 46 - 15
-        .baseSpAttack  = 80, // 90 - 10
+        .baseSpeed     = 30, // 46
+        .baseSpAttack  = 80, // 90
         .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 200,

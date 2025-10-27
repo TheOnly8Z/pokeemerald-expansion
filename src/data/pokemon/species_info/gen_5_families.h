@@ -10502,12 +10502,13 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_HEATMOR
     [SPECIES_HEATMOR] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 97, // 97
-        .baseDefense   = 66,
-        .baseSpeed     = 85, // 65 + 20
-        .baseSpAttack  = 105,
-        .baseSpDefense = 66,
+        // 504 BST
+        .baseHP        = 85, // 85
+        .baseAttack    = 75, // 97
+        .baseDefense   = 66, // 66
+        .baseSpeed     = 92, // 65
+        .baseSpAttack  = 120, // 105
+        .baseSpDefense = 66, // 66
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 90,
         .expYield = 169,
@@ -10517,7 +10518,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST, // GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FLAME_BODY, ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Heatmor"),
         .cryId = CRY_HEATMOR,

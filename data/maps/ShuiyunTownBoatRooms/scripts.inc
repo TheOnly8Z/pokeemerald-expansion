@@ -45,7 +45,7 @@ ShuiyunTownBoatRooms_EventScript_TalkExpertRepeat::
 
 ShuiyunTownBoatRooms_EventScript_TalkExpertSelectAdvice::
 	call_if_eq VAR_STARTER_MON, 0, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceCarnivine
-	call_if_eq VAR_STARTER_MON, 1, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceSpinda
+	call_if_eq VAR_STARTER_MON, 1, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceHeatmor
 	call_if_eq VAR_STARTER_MON, 2, ShuiyunTownBoatRooms_EventScript_TalkExpertAdviceLuvdisc
 	call_if_unset FLAG_EXPERT_ADVICE_ITEM, ShuiyunTownBoatRooms_EventScript_TalkExpertGiveItem
 	release
@@ -96,8 +96,8 @@ ShuiyunTownBoatRooms_Text_TalkExpertTooBad:
 ShuiyunTownBoatRooms_Text_TalkExpertAdviceLuvdisc:
 	.string "I see you chose LUVDISC…\p"
 	.string "It might not have powerful attacks,\n"
-	.string "but it's great at protecting and\l"
-	.string "supporting its partner.\p"
+	.string "but it's fast and durable, with many\l"
+	.string "ways to support and enable its partner.\p"
 	.string "Its ability, FRIEND GUARD, is especially\n"
 	.string "impactful. Just by being next to its\l"
 	.string "partner, they will take less damage!\p"
@@ -108,10 +108,10 @@ ShuiyunTownBoatRooms_Text_TalkExpertAdviceLuvdisc:
 ShuiyunTownBoatRooms_Text_TalkExpertAdviceCarnivine:
 	.string "I see you chose CARNIVINE…\p"
 	.string "It's incredibly slow, but that just\n"
-	.string "means it's more durable and powerful.\p"
+	.string "means it's very durable and powerful.\p"
 	.string "Its ability, STRONG JAW, boosts the\n"
 	.string "power of biting moves.\l"
-	.string "With that ability, BITE becomes much\l"
+	.string "With this ability, BITE becomes much\l"
 	.string "stronger than VINE WHIP!\p"
 	.string "Use GROWTH and SYNTHESIS to gain power\n"
 	.string "while staying healthy.\p"
@@ -124,16 +124,14 @@ ShuiyunTownBoatRooms_Text_TalkExpertAdviceCarnivine:
 
 ShuiyunTownBoatRooms_Text_TalkExpertAdviceHeatmor:
 	.string "I see you chose HEATMOR…\p"
-	.string "It is quite well rounded, able to\n"
-	.string "both attack and provide utility.\p"
-	.string "Its ability, WHITE SMOKE, prevents\n"
-	.string "stat drops cuased by the opponent.\l"
-	.string "This makes it quite consistent!\p"
-	.string "Use WILL-O-WISP to burn opponents,\n"
-	.string "weakening their physical attacks.\p"
-	.string "Then, take that chance to set up\n"
-	.string "FOCUS ENERGY, so your SLASH becomes\l"
-	.string "a guaranteed critical hit!\p"
+	.string "It is a well-rounded offensive\n"
+	.string "POKéMON, but not very durable.\p"
+	.string "Its ability, EARTH EATER, makes\n"
+	.string "GROUND-type moves heal it instead.\l"
+	.string "Use this immunity to switch into\l"
+	.string "battle or use a boosting move!\p"
+	.string "Use FOCUS ENERGY with SLASH\n"
+	.string "to get a guaranteed critical hit!\p"
 	.string "A jack of all trades is a master of\n"
 	.string "none. Take advantage of stat changes\l"
 	.string "to unleash HEATMOR's full potential!$"

@@ -1018,11 +1018,11 @@ static void CB2_GiveStarter(void)
         // item = ITEM_ROCKY_HELMET;
         break;
     case SPECIES_HEATMOR:
-        moves[0] = MOVE_SLASH;
-        moves[1] = MOVE_EMBER;
+        moves[0] = MOVE_INCINERATE;
+        moves[1] = MOVE_SLASH;
         moves[2] = MOVE_WILL_O_WISP;
         moves[3] = MOVE_FOCUS_ENERGY;
-        ability = 2; // ABILITY_WHITE_SMOKE
+        ability = 0; // ABILITY_EARTH_EATER
         // item = ITEM_SHELL_BELL;
         break;
     case SPECIES_SPINDA:

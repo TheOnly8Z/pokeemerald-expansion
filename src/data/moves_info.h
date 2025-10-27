@@ -15993,21 +15993,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_FIRE_LASH] =
     {
         .name = COMPOUND_STRING("Fire Lash"),
+        // .description = COMPOUND_STRING(
+        //     "Whips the foe with fire\n"
+        //     "lowering its Defense."),
         .description = COMPOUND_STRING(
-            "Whips the foe with fire\n"
-            "lowering its Defense."),
+            "Whips with a high critical-\n"
+            "hit ratio. May cause a burn."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 70,
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 15,
+        .criticalHitStage = 1,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        // .additionalEffects = ADDITIONAL_EFFECTS({
+        //     .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+        //     .chance = 100,
+        // }),
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 100,
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
