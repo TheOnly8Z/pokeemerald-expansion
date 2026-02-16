@@ -4690,6 +4690,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/JiangshenLake_Peak/border.bin",
       "blockdata_filepath": "data/layouts/JiangshenLake_Peak/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOINT_HIDEOUT_1F",
+      "name": "JointHideout_1F_Layout",
+      "width": 51,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JointHideout_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JointHideout_1F/map.bin"
     }
   ]
 }

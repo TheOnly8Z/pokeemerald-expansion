@@ -1208,3 +1208,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/JiangshenLake_Connector/scripts.inc"
 
 	.include "data/maps/JiangshenLake_Peak/scripts.inc"
+
+	.include "data/maps/JointHideout_1F/scripts.inc"
