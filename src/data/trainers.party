@@ -17847,3 +17847,86 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Golbat
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+
+
+=== TRAINER_COLRESS_1_SUN ===
+Name: COLRESS
+Class: Scientist
+Pic: Colress
+Gender: Male
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status / Force Setup First Turn
+Mugshot: Blue
+
+Castform @ Heat Rock  
+Ability: Forecast  
+Level: 35  
+Timid Nature  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Weather Ball  
+- Sunny Day  
+- Tailwind  
+- Protect  
+
+Forretress @ Sitrus Berry  
+Ability: Sturdy  
+Level: 32  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Solar Beam  
+- Gyro Ball  
+- Reflect  
+- Protect  
+
+Magneton @ Salac Berry  
+Ability: Sturdy  
+Level: 35  
+Modest Nature  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Thunder  
+- Volt Switch  
+- Flash Cannon  
+- Light Screen  
+
+
+
+=== TRAINER_COLRESS_1_RAIN ===
+Name: COLRESS
+Class: Scientist
+Pic: Colress
+Gender: Male
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status / Force Setup First Turn
+Mugshot: Blue
+
+Castform @ Damp Rock  
+Ability: Forecast  
+Level: 35  
+Timid Nature  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Weather Ball  
+- Rain Dance  
+- Tailwind  
+- Protect  
+
+Forretress @ Sitrus Berry  
+Ability: Sturdy  
+Level: 32  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Solar Beam  
+- Gyro Ball  
+- Reflect  
+- Protect  
+
+Magneton @ Salac Berry  
+Ability: Sturdy  
+Level: 35  
+Modest Nature  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Thunder  
+- Volt Switch  
+- Flash Cannon  
+- Light Screen  
+

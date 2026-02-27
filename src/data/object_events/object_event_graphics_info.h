@@ -4688,7 +4688,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Colress = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
-    .anims = sAnimTable_Asym,
+    .anims = sAnimTable_Standard, // sAnimTable_Asym
     .images = sPicTable_Colress,
     .affineAnims = gDummySpriteAffineAnimTable,
 };

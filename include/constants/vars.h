@@ -270,7 +270,7 @@
 #define VAR_KAI_ZHONG_BATTLE_STATE                       0x40FA // Unused Var
 #define VAR_JIANGSHEN_GRUNT_BATTLE_STATE                 0x40FB // Unused Var
 #define VAR_JIANGSHEN_PEAK_STATE                         0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
+#define VAR_COLRESS_1_STATE                              0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define FLAG_SYS_SET_BATTLE_BGM                          0x40FF // Unused Var
 

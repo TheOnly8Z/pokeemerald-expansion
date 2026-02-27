@@ -44429,3 +44429,187 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17853
+    [TRAINER_COLRESS_1_SUN] =
+    {
+#line 17854
+        .trainerName = _("COLRESS"),
+#line 17855
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
+#line 17856
+        .trainerPic = TRAINER_PIC_COLRESS,
+        .encounterMusic_gender =
+#line 17858
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+#line 17859
+        .doubleBattle = TRUE,
+#line 17860
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_POWERFUL_STATUS | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+#line 17861
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17863
+            .species = SPECIES_CASTFORM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17863
+            .heldItem = ITEM_HEAT_ROCK,
+#line 17867
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17864
+            .ability = ABILITY_FORECAST,
+#line 17865
+            .lvl = 35,
+#line 17866
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17868
+                MOVE_WEATHER_BALL,
+                MOVE_SUNNY_DAY,
+                MOVE_TAILWIND,
+                MOVE_PROTECT,
+            },
+            },
+            {
+#line 17873
+            .species = SPECIES_FORRETRESS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17873
+            .heldItem = ITEM_SITRUS_BERRY,
+#line 17876
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17874
+            .ability = ABILITY_STURDY,
+#line 17875
+            .lvl = 32,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17877
+                MOVE_SOLAR_BEAM,
+                MOVE_GYRO_BALL,
+                MOVE_REFLECT,
+                MOVE_PROTECT,
+            },
+            },
+            {
+#line 17882
+            .species = SPECIES_MAGNETON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17882
+            .heldItem = ITEM_SALAC_BERRY,
+#line 17886
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17883
+            .ability = ABILITY_STURDY,
+#line 17884
+            .lvl = 35,
+#line 17885
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17887
+                MOVE_THUNDER,
+                MOVE_VOLT_SWITCH,
+                MOVE_FLASH_CANNON,
+                MOVE_LIGHT_SCREEN,
+            },
+            },
+        },
+    },
+#line 17894
+    [TRAINER_COLRESS_1_RAIN] =
+    {
+#line 17895
+        .trainerName = _("COLRESS"),
+#line 17896
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
+#line 17897
+        .trainerPic = TRAINER_PIC_COLRESS,
+        .encounterMusic_gender =
+#line 17899
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+#line 17900
+        .doubleBattle = TRUE,
+#line 17901
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_POWERFUL_STATUS | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+#line 17902
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17904
+            .species = SPECIES_CASTFORM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17904
+            .heldItem = ITEM_DAMP_ROCK,
+#line 17908
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17905
+            .ability = ABILITY_FORECAST,
+#line 17906
+            .lvl = 35,
+#line 17907
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17909
+                MOVE_WEATHER_BALL,
+                MOVE_RAIN_DANCE,
+                MOVE_TAILWIND,
+                MOVE_PROTECT,
+            },
+            },
+            {
+#line 17914
+            .species = SPECIES_FORRETRESS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17914
+            .heldItem = ITEM_SITRUS_BERRY,
+#line 17917
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17915
+            .ability = ABILITY_STURDY,
+#line 17916
+            .lvl = 32,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17918
+                MOVE_SOLAR_BEAM,
+                MOVE_GYRO_BALL,
+                MOVE_REFLECT,
+                MOVE_PROTECT,
+            },
+            },
+            {
+#line 17923
+            .species = SPECIES_MAGNETON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17923
+            .heldItem = ITEM_SALAC_BERRY,
+#line 17927
+            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+#line 17924
+            .ability = ABILITY_STURDY,
+#line 17925
+            .lvl = 35,
+#line 17926
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17928
+                MOVE_THUNDER,
+                MOVE_VOLT_SWITCH,
+                MOVE_FLASH_CANNON,
+                MOVE_LIGHT_SCREEN,
+            },
+            },
+        },
+    },
