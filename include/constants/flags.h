@@ -1243,8 +1243,8 @@
 #define FLAG_HIDDEN_ITEM_LANTERN_CAVE_HARD_STONE                    0x4A5 // Unused Flag
 #define FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_MAGNET                       0x4A6 // Unused Flag
 #define FLAG_HIDDEN_ITEM_SKYWARD_TRAIL_GRIP_CLAW                    0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
+#define FLAG_ITEM_SHUIYUN_TOWN_REVIVE_2                             0x4A8 // Unused Flag
+#define FLAG_ITEM_LANTERN_CAVE_REVIVE_2                             0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag

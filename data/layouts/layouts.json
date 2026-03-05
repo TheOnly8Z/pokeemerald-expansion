@@ -4425,7 +4425,7 @@
       "id": "LAYOUT_SHUIYUN_TOWN_INTRO_BOAT",
       "name": "ShuiyunTownIntroBoat_Layout",
       "width": 16,
-      "height": 16,
+      "height": 24,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/ShuiyunTownIntroBoat/border.bin",

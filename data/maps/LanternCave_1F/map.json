@@ -2,7 +2,7 @@
   "id": "MAP_LANTERN_CAVE_1F",
   "name": "LanternCave_1F",
   "layout": "LAYOUT_LANTERN_CAVE_1F",
-  "music": "MUS_AQUA_MAGMA_HIDEOUT",
+  "music": "MUS_MT_CHIMNEY",
   "region_map_section": "MAPSEC_LANTERN_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_DROUGHT",
@@ -198,8 +198,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 20,
-      "y": 14,
+      "x": 8,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -211,8 +211,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 32,
-      "y": 29,
+      "x": 24,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
       "movement_range_x": 1,
@@ -263,7 +263,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 7,
+      "x": 14,
       "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -276,10 +276,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 9,
-      "y": 38,
+      "x": 24,
+      "y": 40,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -328,7 +328,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 3,
+      "x": 7,
       "y": 44,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -354,7 +354,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 30,
+      "x": 31,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -377,6 +377,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_EVERSTONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_LANTERN_CAVE_EVERSTONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 52,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LANTERN_CAVE_REVIVE_2"
     }
   ],
   "warp_events": [
@@ -430,24 +443,24 @@
     },
     {
       "type": "hidden_item",
-      "x": 24,
-      "y": 23,
+      "x": 34,
+      "y": 27,
       "elevation": 0,
       "item": "ITEM_EXP_CANDY_L",
       "flag": "FLAG_HIDDEN_ITEM_LANTERN_CAVE_EXP_CANDY_L"
     },
     {
       "type": "hidden_item",
-      "x": 15,
-      "y": 56,
+      "x": 55,
+      "y": 43,
       "elevation": 0,
       "item": "ITEM_DEEP_SEA_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_LANTERN_CAVE_DEEP_SEA_SCALE"
     },
     {
       "type": "hidden_item",
-      "x": 29,
-      "y": 18,
+      "x": 21,
+      "y": 15,
       "elevation": 0,
       "item": "ITEM_PEAT_BLOCK",
       "flag": "FLAG_HIDDEN_ITEM_LANTERN_CAVE_PEAT_BLOCK"

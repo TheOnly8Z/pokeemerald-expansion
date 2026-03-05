@@ -477,7 +477,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Cuts the foe sharply.\n"
             "Always a critical hit."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 70,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 30,
@@ -1843,8 +1843,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Strength"),
         .description = COMPOUND_STRING(
-            "Slams the foe with\n"
-            "massive power."),
+            "A powerful slam that may\n"
+            "raise the user's Defense."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_NORMAL,
@@ -1858,6 +1858,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_PLUS_1,
+            .chance = 30,
+        }),
         .battleAnimScript = gBattleAnimMove_Strength,
     },
 
@@ -3798,15 +3802,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Flash"),
         .description = COMPOUND_STRING(
-            "Looses a powerful light,\n"
-            "cutting accuracy harshly."),
+            "Light that harshly lowers\n"
+            "accuracy. Always goes first."),
         .effect = EFFECT_ACCURACY_DOWN_2,
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 70,
         .pp = 5,
         .target = MOVE_TARGET_FOES_AND_ALLY,
-        .priority = 0,
+        .priority = 1,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_EVSN_UP_1 },
         .magicCoatAffected = TRUE,
@@ -6329,7 +6333,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "A rock-crushing attack\n"
             "that lowers Defense."),
         .effect = EFFECT_HIT,
-        .power = 50, // B_UPDATED_MOVE_DATA >= GEN_4 ? 40 : 20,
+        .power = 70, // B_UPDATED_MOVE_DATA >= GEN_4 ? 40 : 20,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 15,

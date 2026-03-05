@@ -239,6 +239,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 
 // CUSTOM
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Colress;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PremierBall;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -497,6 +498,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     // CUSTOM
     [OBJ_EVENT_GFX_COLRESS] =                  &gObjectEventGraphicsInfo_Colress,
+    [OBJ_EVENT_GFX_PREMIER_BALL] =             &gObjectEventGraphicsInfo_PremierBall,
+
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

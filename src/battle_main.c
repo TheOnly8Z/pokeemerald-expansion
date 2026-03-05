@@ -6027,6 +6027,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         if (species == SPECIES_TERAPAGOS_STELLAR)
             return TYPE_STELLAR;
         break;
+    // CUSTOM
+    case EFFECT_USER_TYPE:
+        return type1;
     }
 
     if (gMovesInfo[move].soundMove && ability == ABILITY_LIQUID_VOICE)

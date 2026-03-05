@@ -23,12 +23,12 @@ SkywardTrail_House_EventScript_DeclineRest::
 	end
 
 SkywardTrail_House_EventScript_TalkOldMan::
-	goto_if_set FLAG_RECEIVED_HM_STRENGTH, SkywardTrail_House_EventScript_TalkRepeat
+	goto_if_set FLAG_RECEIVED_HM_FLASH, SkywardTrail_House_EventScript_TalkRepeat
 	lock
 	faceplayer
 	msgbox SkywardTrail_House_Text_OldManGiveItem1, MSGBOX_DEFAULT
-	giveitem ITEM_HM04
-	setflag FLAG_RECEIVED_HM_STRENGTH
+	giveitem ITEM_HM_FLASH
+	setflag FLAG_RECEIVED_HM_FLASH
 	msgbox SkywardTrail_House_Text_OldManGiveItem2, MSGBOX_DEFAULT
 	release
 	end
@@ -53,15 +53,12 @@ SkywardTrail_House_Text_OldManGiveItem1:
 	.string "But that goof forgot this!$"
 
 SkywardTrail_House_Text_OldManGiveItem2:
-	.string "This is the Hidden Machine STRENGTH.\p"
-	.string "Teach STRENGTH to one of your POKéMON.\n"
-	.string "Then, you can push those boulders out\l"
-	.string "of your way.\p"
-	.string "I bet that sorry chap is currently\n"
-	.string "trapped behind several boulders, having\l"
-	.string "mighty regrets about his carelessness!\p"
-	.string "Off the trail to the west of here is\n"
-	.string "a shortcut to LANTERN CAVE.\p"
+	.string "This is the Hidden Machine FLASH.\p"
+	.string "Teach FLASH to one of your POKéMON.\n"
+	.string "It will light up dark areas, and\l"
+	.string "lower accuracy harshly in battle.\p"
+	.string "Go west of here for a shortcut\n"
+	.string "into LANTERN CAVE.\p"
 	.string "ZHONG has a habit of leaving things\n"
 	.string "behind in a hurry, so search every\l"
 	.string "corner of the cave for the HM.\p"

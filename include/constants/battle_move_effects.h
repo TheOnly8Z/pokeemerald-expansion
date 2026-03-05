@@ -349,6 +349,9 @@ enum {
     EFFECT_SHELL_SIDE_ARM,
     EFFECT_ORDER_UP,
     EFFECT_RAPID_SPIN,
+    // CUSTOM EFFECTS START
+    EFFECT_USER_TYPE, // Move uses user's primary type
+    // END CUSTOM EFFECTS
     NUM_BATTLE_MOVE_EFFECTS,
 };
 

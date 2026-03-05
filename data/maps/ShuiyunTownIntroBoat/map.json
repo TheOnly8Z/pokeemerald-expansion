@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
-      "x": 9,
+      "x": 8,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -26,6 +26,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ShuiyunTownIntroBoat_EventScript_BirchsBag",
       "flag": "FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SHUIYUN_TOWN_REVIVE_2"
     }
   ],
   "warp_events": [
@@ -35,6 +48,20 @@
       "elevation": 3,
       "dest_map": "MAP_SHUIYUN_TOWN_BOAT_HALLWAY",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_HALLWAY",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 8,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_SHUIYUN_TOWN_BOAT_HALLWAY",
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [

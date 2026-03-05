@@ -32,25 +32,33 @@ LanternCave_2F_Text_Grunt6PostBattle:
 	.string "Owww...$"
 
 
+LanternCave_2F_EventScript_ColressTrigger::
+	setvar VAR_COLRESS_1_STATE 1
+	setflag FLAG_HIDE_SKYWARD_TRAIL_COLRESS
+	setflag FLAG_RECEIVED_HM_STRENGTH
+	end 
+
 LanternCave_2F_EventScript_Colress::
 	@ VAR_COLRESS_1_STATE
 	@ 0: Never encountered Colress
-	@ 1: Chose sun, not defeated
-	@ 2: Chose rain, not defeated
-	@ 3: Defeated
+	@ 1: Met in Lantern Cave
+	@ 2: Met in Skyward Trail
+	@ 3: Met in Lantern Cave, answered yes (sun)
+	@ 4: Met in Lantern Cave, answered no (rain)
+	@ 5: Met in Skyward Trail, answered yes (rain)
+	@ 6: Met in Skyward Trail, answered no (sun)
 
 	lock
 	faceplayer
 
 	@ First encounter variables and event
-	goto_if_eq VAR_COLRESS_1_STATE, 0, LanternCave_2F_EventScript_Colress_1
+	goto_if_eq VAR_COLRESS_1_STATE, 1, LanternCave_2F_EventScript_Colress_1
 
 	@ Otherwise, go straight to battle prompt
 	goto LanternCave_2F_EventScript_Colress_Battle
 	end
 
 LanternCave_2F_EventScript_Colress_1::
-	setflag FLAG_HIDE_SKYWARD_TRAIL_COLRESS
 	speakername CommonName_Text_Colress
 	msgbox LanternCave_2F_Text_Colress_1, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LanternCave_2F_EventScript_Colress_1_NO
@@ -78,7 +86,7 @@ LanternCave_2F_EventScript_Colress_2::
 	end
 
 LanternCave_2F_EventScript_Colress_3_YES::
-	setvar VAR_COLRESS_1_STATE 1
+	setvar VAR_COLRESS_1_STATE 3
 	speakername CommonName_Text_Colress
 	msgbox LanternCave_2F_Text_Colress_3_YES, MSGBOX_DEFAULT
 	msgbox LanternCave_2F_Text_Colress_4, MSGBOX_DEFAULT
@@ -88,7 +96,7 @@ LanternCave_2F_EventScript_Colress_3_YES::
 	end
 
 LanternCave_2F_EventScript_Colress_3_NO::
-	setvar VAR_COLRESS_1_STATE 2
+	setvar VAR_COLRESS_1_STATE 4
 	speakername CommonName_Text_Colress
 	msgbox LanternCave_2F_Text_Colress_3_NO, MSGBOX_DEFAULT
 	msgbox LanternCave_2F_Text_Colress_4, MSGBOX_DEFAULT
@@ -100,20 +108,20 @@ LanternCave_2F_EventScript_Colress_3_NO::
 LanternCave_2F_EventScript_Colress_Battle::
 	faceplayer
 	speakername CommonName_Text_Colress
-	msgbox LanternCave_2F_Text_Colress_5, MSGBOX_YESNO
+	msgbox LanternCave_2F_Text_Colress_AskBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LanternCave_2F_EventScript_Colress_Battle_NO
 
-	goto_if_eq VAR_COLRESS_1_STATE 1 LanternCave_2F_EventScript_Colress_Battle_Sun
-	trainerbattle_single TRAINER_COLRESS_1_RAIN, LanternCave_2F_Text_BattleIntro_Colress, JiangshenLake_Text_Defeated_Colress, LanternCave_2F_EventScript_Colress_PostBattle
+	goto_if_eq VAR_COLRESS_1_STATE 3 LanternCave_2F_EventScript_Colress_Battle_Sun
+	trainerbattle_single TRAINER_COLRESS_1_RAIN, LanternCave_2F_Text_BattleIntro_Colress, LanternCave_2F_Text_Colress_Defeat, LanternCave_2F_EventScript_Colress_PostBattle
 	end
 
 LanternCave_2F_EventScript_Colress_Battle_Sun::
-	trainerbattle_single TRAINER_COLRESS_1_SUN, LanternCave_2F_Text_BattleIntro_Colress, JiangshenLake_Text_Defeated_Colress, LanternCave_2F_EventScript_Colress_PostBattle
+	trainerbattle_single TRAINER_COLRESS_1_SUN, LanternCave_2F_Text_BattleIntro_Colress, LanternCave_2F_Text_Colress_Defeat, LanternCave_2F_EventScript_Colress_PostBattle
 	end
 
 LanternCave_2F_EventScript_Colress_Battle_NO::
 	speakername CommonName_Text_Colress
-	msgbox LanternCave_2F_Text_Colress_5_NO, MSGBOX_DEFAULT
+	msgbox LanternCave_2F_Text_Colress_RefuseBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -121,18 +129,18 @@ LanternCave_2F_EventScript_Colress_PostBattle::
 	lock
 	speakername CommonName_Text_Colress
 	msgbox LanternCave_2F_Text_Colress_Defeat_1, MSGBOX_DEFAULT
+	speakername NULL
 	giveitem ITEM_HM_SURF
 	setflag FLAG_RECEIVED_HM_SURF
+	speakername CommonName_Text_Colress
 	msgbox LanternCave_2F_Text_Colress_Defeat_2, MSGBOX_DEFAULT
 	msgbox LanternCave_2F_Text_Colress_Defeat_3, MSGBOX_DEFAULT
 
+	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_LANTERN_CAVE_COLRESS
-	setvar VAR_COLRESS_1_STATE 3
-
-	call_if_eq VAR_FACING, DIR_SOUTH, LanternCave_2F_EventScript_Colress_MovePlayer
-	applymovement LOCALID_COLRESS, Common_Movement_WalkUp6
-	waitmovement 0
 	removeobject LOCALID_COLRESS
+	fadescreen FADE_FROM_BLACK
+
 	release
 	end
 
@@ -156,7 +164,7 @@ LanternCave_2F_Text_Colress_1_NO:
 	.string "Oh, but where are my manners!\n"
 	.string "I am COLRESS, a POKéMON researcher.$"
 
-LanternCave_2F_Text_Colress_2::
+LanternCave_2F_Text_Colress_2:
 	.string "I'm passionate about research into the\n"
 	.string "potential of POKéMON!\p"
 	.string "We live together with POKéMON, so it's a\n"
@@ -188,7 +196,7 @@ LanternCave_2F_Text_Colress_4:
 	.string "Let me heal your POKéMON so they\n"
 	.string "can be at their peak condition.$"
 
-LanternCave_2F_Text_Colress_5:
+LanternCave_2F_Text_Colress_AskBattle:
 	.string "Will you battle me and help prove\n"
 	.string "my hypothesis?$"
 
@@ -196,16 +204,16 @@ LanternCave_2F_Text_BattleIntro_Colress:
 	.string "Excellent!\n"
 	.string "Let our experiment begin!$"
 
-LanternCave_2F_Text_Colress_5_NO:
+LanternCave_2F_Text_Colress_RefuseBattle:
 	.string "Ah, are you busy, perhaps?\p"
 	.string "You will not go unrewarded, so\n"
 	.string "do come back when you're ready!$"
 
-LanternCave_2F_Text_Defeated_Colress::
+LanternCave_2F_Text_Colress_Defeat::
 	.string "Our results are logged.\n"
 	.string "There is much to learn!$"
 
-LanternCave_2F_Text_Colress_Defeat_1::
+LanternCave_2F_Text_Colress_Defeat_1:
 	.string "... I see!\p"
 	.string "Your approach has shown merit...\n"
 	.string "Yet I spot another unexplained\l"
@@ -222,6 +230,6 @@ LanternCave_2F_Text_Colress_Defeat_2::
 	.string "I expect this to be useful on\n"
 	.string "the turbulent SKYWARD TRAIL.$"
 
-LanternCave_2F_Text_Colress_Defeat_3::
+LanternCave_2F_Text_Colress_Defeat_3:
 	.string "My research leads me elsewhere.\n"
 	.string "I'm sure we will cross paths again!$"
