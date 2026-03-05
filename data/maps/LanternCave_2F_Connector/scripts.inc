@@ -1,6 +1,11 @@
 LanternCave_2F_Connector_MapScripts::
 	.byte 0
 
+LanternCave_2F_Connector_EventScript_FlashGiverSimpleBattle::
+	trainerbattle_single TRAINER_FLASH_HIKER, LanternCave_2F_Connector_Text_FlashGiverBattle, LanternCave_2F_Connector_Text_FlashGiverDefeated
+	msgbox LanternCave_2F_Connector_Text_FlashGiverPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 LanternCave_2F_Connector_EventScript_FlashGiver::
 	goto_if_set FLAG_RECEIVED_HM_FLASH, LanternCave_2F_Connector_EventScript_FlashGiver_PostBattle
 	lock
