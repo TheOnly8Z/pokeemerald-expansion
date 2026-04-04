@@ -31,11 +31,21 @@ LanternCave_2F_Text_Grunt6Defeat:
 LanternCave_2F_Text_Grunt6PostBattle:
 	.string "Owww...$"
 
-
 LanternCave_2F_EventScript_ColressTrigger::
+	lock
 	setvar VAR_COLRESS_1_STATE 1
 	setflag FLAG_HIDE_SKYWARD_TRAIL_COLRESS
-	setflag FLAG_RECEIVED_HM_STRENGTH
+	setflag FLAG_RECEIVED_HM_SURF
+
+	applymovement LOCALID_COLRESS, Common_Movement_ExclamationMark
+	waitmovement 0
+
+	applymovement OBJ_EVENT_ID_PLAYER, LanternCave_2F_Movement_WalkUp3
+	waitmovement 0
+
+	release
+	goto LanternCave_2F_EventScript_Colress
+
 	end 
 
 LanternCave_2F_EventScript_Colress::
@@ -136,16 +146,21 @@ LanternCave_2F_EventScript_Colress_PostBattle::
 	msgbox LanternCave_2F_Text_Colress_Defeat_2, MSGBOX_DEFAULT
 	msgbox LanternCave_2F_Text_Colress_Defeat_3, MSGBOX_DEFAULT
 
-	fadescreen FADE_TO_BLACK
+	call_if_eq VAR_FACING, DIR_EAST, LanternCave_2F_EventScript_Colress_MovePlayer
+
+	applymovement LOCALID_COLRESS, LanternCave_Movement_WalkRight8
+	waitmovement 0
+
+	@ fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_LANTERN_CAVE_COLRESS
 	removeobject LOCALID_COLRESS
-	fadescreen FADE_FROM_BLACK
+	@ fadescreen FADE_FROM_BLACK
 
 	release
 	end
 
 LanternCave_2F_EventScript_Colress_MovePlayer::
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkUp
 	waitmovement 0
 	return
 
@@ -233,3 +248,20 @@ LanternCave_2F_Text_Colress_Defeat_2::
 LanternCave_2F_Text_Colress_Defeat_3:
 	.string "My research leads me elsewhere.\n"
 	.string "I'm sure we will cross paths again!$"
+
+LanternCave_2F_Movement_WalkUp3::
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+LanternCave_Movement_WalkRight8::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end

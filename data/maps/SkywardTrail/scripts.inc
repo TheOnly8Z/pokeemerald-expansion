@@ -24,9 +24,36 @@ SkywardTrail_EventScript_Grunt4::
 	end
 
 SkywardTrail_EventScript_ColressTrigger::
+	lock
 	setvar VAR_COLRESS_1_STATE 2
 	setflag FLAG_HIDE_LANTERN_CAVE_COLRESS
 	setflag FLAG_RECEIVED_HM_STRENGTH
+
+	applymovement LOCALID_COLRESS, Common_Movement_ExclamationMark
+	waitmovement 0
+
+	applymovement VAR_0x8008, SkywardTrail_Movement_WalkUp3
+	waitmovement 0
+	release
+	goto SkywardTrail_EventScript_Colress
+
+	end 
+
+SkywardTrail_EventScript_ColressTriggerLeft::
+	lock
+	setvar VAR_COLRESS_1_STATE 2
+	setflag FLAG_HIDE_LANTERN_CAVE_COLRESS
+	setflag FLAG_RECEIVED_HM_STRENGTH
+
+	applymovement LOCALID_COLRESS, Common_Movement_ExclamationMark
+	waitmovement 0
+
+	applymovement OBJ_EVENT_ID_PLAYER, SkywardTrail_Movement_WalkUp3Right1
+	waitmovement 0
+
+	release
+	goto SkywardTrail_EventScript_Colress
+
 	end 
 
 SkywardTrail_EventScript_Colress::
@@ -50,6 +77,8 @@ SkywardTrail_EventScript_Colress::
 	end
 
 SkywardTrail_EventScript_Colress_1::
+	setvar VAR_COLRESS_1_STATE, 2
+
 	speakername CommonName_Text_Colress
 	msgbox SkywardTrail_Text_Colress_1, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SkywardTrail_EventScript_Colress_1_NO
@@ -127,16 +156,23 @@ SkywardTrail_EventScript_Colress_PostBattle::
 	speakername CommonName_Text_Colress
 	msgbox SkywardTrail_Text_Colress_Defeat_2, MSGBOX_DEFAULT
 	msgbox LanternCave_2F_Text_Colress_Defeat_3, MSGBOX_DEFAULT
-	@ call_if_eq VAR_FACING, DIR_SOUTH, SkywardTrail_EventScript_Colress_MovePlayer
-	@ applymovement LOCALID_COLRESS, Common_Movement_WalkUp6
-	@ waitmovement 0
-	fadescreen FADE_TO_BLACK
+
+	call_if_eq VAR_FACING, DIR_SOUTH, SkywardTrail_EventScript_Colress_MovePlayer
+
+	applymovement LOCALID_COLRESS, Common_Movement_WalkUp6
+	waitmovement 0
+
+	@fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_SKYWARD_TRAIL_COLRESS
 	removeobject LOCALID_COLRESS
-	fadescreen FADE_FROM_BLACK
+	@fadescreen FADE_FROM_BLACK
 	release
 	end
 
+SkywardTrail_EventScript_Colress_MovePlayer::
+	applymovement OBJ_EVENT_ID_PLAYER, SkywardTrail_Movement_WalkLeft
+	waitmovement 0
+	return
 
 SkywardTrail_Text_GruntBringDouble::
 	.string "Bring another!$"
@@ -214,3 +250,21 @@ SkywardTrail_Text_Colress_Defeat_2::
 	.string "it also lets you push boulders!\p"
 	.string "I expect this to be useful in\n"
 	.string "the rock-filled LANTERN CAVES.$"
+
+
+SkywardTrail_Movement_WalkLeft::
+	walk_left
+	step_end
+
+SkywardTrail_Movement_WalkUp3::
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+SkywardTrail_Movement_WalkUp3Right1::
+	walk_up
+	walk_right
+	walk_up
+	walk_up
+	step_end

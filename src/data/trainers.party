@@ -16883,14 +16883,15 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
-Level: 20
-Ability: Quick Feet
+Glameow  
+Ability: Limber  
+Level: 25  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bite
-- Howl
-- Growl
-- Leer
+- Fake Out  
+- Scratch  
+- Growl  
+- Hypnosis
+
 
 === TRAINER_NEW_GRUNT_MAGMA_1 ===
 Name: GRUNT
@@ -16901,13 +16902,12 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Golbat
-Level: 20
+Zangoose  
+Ability: Immunity  
+Level: 20  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Screech
-- Absorb
-- Swift
-
+- Slash  
+- Hone Claws
 
 === TRAINER_SKYWARD_GRUNT_1 ===
 Name: GRUNT

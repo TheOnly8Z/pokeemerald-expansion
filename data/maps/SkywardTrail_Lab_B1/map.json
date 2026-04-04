@@ -35,6 +35,13 @@
       "elevation": 0,
       "dest_map": "MAP_SKYWARD_TRAIL_LAB",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 28,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SKYWARD_TRAIL_LAB_B2_DIVE_SPOT",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

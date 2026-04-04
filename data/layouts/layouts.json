@@ -4700,6 +4700,66 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/JointHideout_1F/border.bin",
       "blockdata_filepath": "data/layouts/JointHideout_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_1F_DIVE_SPOT",
+      "name": "LanternCave_1F_DiveSpot_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LanternCave_1F_DiveSpot/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_1F_DiveSpot/map.bin"
+    },
+    {
+      "id": "LAYOUT_LANTERN_CAVE_B1F_UNDERWATER",
+      "name": "LanternCave_B1F_Underwater_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/LanternCave_B1F_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/LanternCave_B1F_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_ROUTE_WEST",
+      "name": "DiveRoute_West_Layout",
+      "width": 60,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveRoute_West/border.bin",
+      "blockdata_filepath": "data/layouts/DiveRoute_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_LAB_B2_DIVE_SPOT",
+      "name": "SkywardTrail_Lab_B2_DiveSpot_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SkywardTrail_Lab_B2_DiveSpot/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_Lab_B2_DiveSpot/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKYWARD_TRAIL_LAB_B2F_UNDERWATER",
+      "name": "SkywardTrail_Lab_B2F_Underwater_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SkywardTrail_Lab_B2F_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/SkywardTrail_Lab_B2F_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_ROUTE_EAST",
+      "name": "DiveRoute_East_Layout",
+      "width": 60,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveRoute_East/border.bin",
+      "blockdata_filepath": "data/layouts/DiveRoute_East/map.bin"
     }
   ]
 }

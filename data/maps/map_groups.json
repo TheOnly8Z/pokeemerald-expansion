@@ -628,7 +628,9 @@
     "SkywardTrail",
     "ShuiyunShores",
     "JiangshenLake",
-    "JiangshenLake_Peak"
+    "JiangshenLake_Peak",
+    "DiveRoute_West",
+    "DiveRoute_East"
   ],
   "gMapGroup_NewIndoor": [
     "ShuiyunTownIntroBoat",
@@ -654,6 +656,10 @@
     "SkywardTrail_Lab_B1",
     "JiangshenLake_House",
     "JiangshenLake_Connector",
-    "JointHideout_1F"
+    "JointHideout_1F",
+    "LanternCave_1F_DiveSpot",
+    "LanternCave_B1F_Underwater",
+    "SkywardTrail_Lab_B2_DiveSpot",
+    "SkywardTrail_Lab_B2F_Underwater"
   ]
 }

@@ -502,15 +502,15 @@
       "x": 10,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_JOINT_HIDEOUT_1F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DIVE_ROUTE_WEST",
+      "dest_warp_id": "1"
     },
     {
       "x": 40,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_JOINT_HIDEOUT_1F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DIVE_ROUTE_EAST",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

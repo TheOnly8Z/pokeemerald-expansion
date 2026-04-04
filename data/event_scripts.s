@@ -1210,3 +1210,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/JiangshenLake_Peak/scripts.inc"
 
 	.include "data/maps/JointHideout_1F/scripts.inc"
+
+	.include "data/maps/LanternCave_1F_DiveSpot/scripts.inc"
+
+	.include "data/maps/LanternCave_B1F_Underwater/scripts.inc"
+
+	.include "data/maps/DiveRoute_West/scripts.inc"
+
+	.include "data/maps/SkywardTrail_Lab_B2_DiveSpot/scripts.inc"
+
+	.include "data/maps/SkywardTrail_Lab_B2F_Underwater/scripts.inc"
+
+	.include "data/maps/DiveRoute_East/scripts.inc"

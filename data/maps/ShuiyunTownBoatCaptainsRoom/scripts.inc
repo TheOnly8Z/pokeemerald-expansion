@@ -73,10 +73,11 @@ ShuiyunTownBoatCaptainsRoom_EventScript_RunCutscene1:
 
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_LookRight
 	waitmovement 0
-	delay 20
+	speakername NULL
 	msgbox ShuiyunTownBoatCaptainsRoom_Text_7 MSGBOX_DEFAULT
 	givemon SPECIES_EEVEE, 20, move1=MOVE_COVET, move2=MOVE_QUICK_ATTACK, move3=MOVE_BABY_DOLL_EYES, move4=MOVE_HELPING_HAND
-	delay 20
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
 	
 	applymovement LOCALID_CAPTAIN, Movement_CaptainLeave2
 	waitmovement 0

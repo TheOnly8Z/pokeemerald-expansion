@@ -8737,6 +8737,9 @@ static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
 
 #if P_FAMILY_ZANGOOSE
 static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
+    // custom
+    LEVEL_UP_MOVE( 1, MOVE_HONE_CLAWS),
+    //
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_COUNTER),
@@ -9522,6 +9525,7 @@ static const struct LevelUpMove sLuvdiscLevelUpLearnset[] = {
 static const struct LevelUpMove sLuvdiscLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE( 5, MOVE_AGILITY),
     LEVEL_UP_MOVE( 8, MOVE_WISH),
     LEVEL_UP_MOVE(10, MOVE_ATTRACT),
@@ -11087,23 +11091,31 @@ static const struct LevelUpMove sToxicroakLevelUpLearnset[] = {
 static const struct LevelUpMove sCarnivineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIND),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+    LEVEL_UP_MOVE( 1, MOVE_SPIKY_SHIELD), // custom
+    LEVEL_UP_MOVE( 1, MOVE_INGRAIN), // was 23
     LEVEL_UP_MOVE( 7, MOVE_BITE),
     LEVEL_UP_MOVE(11, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE(15, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE(20, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(23, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(25, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(22, MOVE_RAGE_POWDER), // custom
+    LEVEL_UP_MOVE(24, MOVE_POISON_FANG), // custom
+    LEVEL_UP_MOVE(25, MOVE_MEGA_DRAIN), // was 24
     LEVEL_UP_MOVE(28, MOVE_GRASS_KNOT),
-    LEVEL_UP_MOVE(31, MOVE_LEAF_TORNADO),
-    LEVEL_UP_MOVE(33, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(35, MOVE_SUPER_FANG),
-    LEVEL_UP_MOVE(37, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(37, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE(37, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(41, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(44, MOVE_SEED_BOMB),
-    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
-    LEVEL_UP_MOVE(55, MOVE_JAW_LOCK),
+    LEVEL_UP_MOVE(30, MOVE_LEAF_TORNADO), // was 31
+    LEVEL_UP_MOVE(33, MOVE_STUN_SPORE), // was 33
+    LEVEL_UP_MOVE(35, MOVE_CRUNCH), // was 41
+    LEVEL_UP_MOVE(37, MOVE_SUPER_FANG), // was 35
+    LEVEL_UP_MOVE(40, MOVE_HYPER_FANG), // custom
+//    LEVEL_UP_MOVE(37, MOVE_STOCKPILE),
+//    LEVEL_UP_MOVE(37, MOVE_SPIT_UP),
+//    LEVEL_UP_MOVE(37, MOVE_SWALLOW),
+    LEVEL_UP_MOVE(42, MOVE_PSYCHIC_FANGS), // custom
+    LEVEL_UP_MOVE(44, MOVE_SEED_BOMB), // was 44
+    LEVEL_UP_MOVE(46, MOVE_SWORDS_DANCE), // custom
+    LEVEL_UP_MOVE(48, MOVE_SEED_BOMB),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP), // was 50
+    LEVEL_UP_MOVE(55, MOVE_JAW_LOCK), // was 55
+    LEVEL_UP_MOVE(60, MOVE_SOLAR_BLADE), // custom
 
     LEVEL_UP_END
 };
@@ -14517,6 +14529,7 @@ static const struct LevelUpMove sMandibuzzLevelUpLearnset[] = {
 static const struct LevelUpMove sHeatmorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_LICK),
     LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE(1, MOVE_DETECT),
     LEVEL_UP_MOVE(2, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(3, MOVE_EMBER),
     LEVEL_UP_MOVE(5, MOVE_BIND),

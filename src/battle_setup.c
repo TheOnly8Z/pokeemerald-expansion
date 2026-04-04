@@ -1003,9 +1003,9 @@ static void CB2_GiveStarter(void)
         break;
     case SPECIES_LUVDISC:
         moves[0] = MOVE_WATER_PULSE;
-        moves[1] = MOVE_DRAINING_KISS;
+        moves[1] = MOVE_CHARM;
         moves[2] = MOVE_ICY_WIND;
-        moves[3] = MOVE_CHARM;
+        moves[3] = MOVE_PROTECT;
         ability = 1; // ABILITY_FRIEND_GUARD
         // item = ITEM_LEFTOVERS;
         break;
@@ -1013,7 +1013,7 @@ static void CB2_GiveStarter(void)
         moves[0] = MOVE_BITE;
         moves[1] = MOVE_VINE_WHIP;
         moves[2] = MOVE_GROWTH;
-        moves[3] = MOVE_SYNTHESIS;
+        moves[3] = MOVE_SPIKY_SHIELD;
         ability = 1; // ABILITY_STRONG_JAW
         // item = ITEM_ROCKY_HELMET;
         break;
@@ -1021,7 +1021,7 @@ static void CB2_GiveStarter(void)
         moves[0] = MOVE_INCINERATE;
         moves[1] = MOVE_SLASH;
         moves[2] = MOVE_WILL_O_WISP;
-        moves[3] = MOVE_FOCUS_ENERGY;
+        moves[3] = MOVE_DETECT;
         ability = 0; // ABILITY_EARTH_EATER
         // item = ITEM_SHELL_BELL;
         break;
