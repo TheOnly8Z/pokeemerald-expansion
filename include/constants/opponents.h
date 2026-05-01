@@ -892,8 +892,8 @@
 #define TRAINER_COLRESS_1_RAIN              886 // First encounter
 #define TRAINER_COLRESS_2_SUN               887
 #define TRAINER_COLRESS_2_RAIN              888
-#define TRAINER_MATT_1                      889 // At labs
-#define TRAINER_COURTNEY_1                  890 // Rescuing Zhong
+#define TRAINER_SKYWARD_MATT                889 // At labs
+#define TRAINER_LANTERN_COURTNEY            890 // Rescuing Zhong
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

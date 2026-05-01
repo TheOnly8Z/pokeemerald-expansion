@@ -717,8 +717,8 @@
 #define FLAG_HIDE_JIANGSHEN_COURTNEY  0x29E // Unused Flag
 #define FLAG_HIDE_LANTERN_CAVE_COLRESS  0x29F // Unused Flag
 #define FLAG_HIDE_SKYWARD_TRAIL_COLRESS  0x2A0 // Unused Flag
-#define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
+#define FLAG_HIDE_SKYWARD_TRAIL_MATT  0x2A1 // Unused Flag
+#define FLAG_HIDE_LANTERN_CAVE_COURTNEY  0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
 #define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
 #define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag

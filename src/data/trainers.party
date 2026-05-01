@@ -17818,8 +17818,8 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Items: Super Potion
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status
 
 Mightyena
 Level: 34
@@ -17837,7 +17837,71 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Items: Super Potion
-Double Battle: No
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status
+
+Mightyena
+Level: 34
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Golbat
+Level: 34
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+
+
+=== TRAINER_SKYWARD_MATT ===
+Name: MATT
+Class: Aqua Admin
+Pic: Aqua Admin M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer / Powerful Status
+
+Qwilfish @ Sitrus Berry  
+Ability: Intimidate  
+Level: 32
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Barb Barrage  
+- Liquidation  
+- Flip Turn  
+- Toxic
+
+Pelipper @ Focus Sash  
+Ability: Drizzle  
+Level: 34
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Weather Ball  
+- Tailwind  
+- Air Slash  
+- Protect
+
+Sharpedo @ Focus Sash  
+Ability: Speed Boost  
+Level: 37  
+- Close Combat  
+- Earthquake  
+- Waterfall  
+- Crunch
+
+Swampert @ Rindo Berry  
+Ability: Damp  
+Level: 40  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Earth Power  
+- Scald  
+- Focus Blast  
+- Blizzard
+
+
+=== TRAINER_LANTERN_COURTNEY ===
+Name: COURTNEY
+Class: Magma Admin
+Pic: Magma Admin F
+Gender: Female
+Music: Magma
+Double Battle: Yes
 AI: Basic Trainer
 
 Mightyena
@@ -17847,6 +17911,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Golbat
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 
 
 
