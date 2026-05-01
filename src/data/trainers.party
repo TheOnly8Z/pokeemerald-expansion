@@ -17857,11 +17857,11 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Powerful Status
+AI: Smart Trainer / Powerful Status / Ace Pokemon
 
 Qwilfish @ Sitrus Berry  
 Ability: Intimidate  
-Level: 32
+Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Barb Barrage  
 - Liquidation  
@@ -17870,18 +17870,18 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Pelipper @ Focus Sash  
 Ability: Drizzle  
-Level: 34
+Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Weather Ball  
 - Tailwind  
 - Air Slash  
 - Protect
 
-Sharpedo @ Focus Sash  
+Sharpedo @ Expert Belt
 Ability: Speed Boost  
 Level: 37  
 - Close Combat  
-- Earthquake  
+- Ice Fang  
 - Waterfall  
 - Crunch
 
@@ -17902,15 +17902,44 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Powerful Status / Ace Pokemon
 
-Mightyena
-Level: 34
+Infernape @ Punching Glove  
+Ability: Iron Fist  
+Level: 32  
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Fake Out  
+- Substitute  
+- Drain Punch  
+- Focus Punch  
 
-Golbat
-Level: 34
+Magmortar @ Blunder Policy  
+Ability: Flame Body  
+Level: 33  
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Follow Me  
+- Dynamic Punch  
+- Mach Punch  
+- Temper Flare  
+
+Arcanine @ Sitrus Berry  
+Ability: Intimidate  
+Level: 35  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Extreme Speed  
+- Will-O-Wisp  
+- Helping Hand  
+- Flare Blitz  
+
+Volcarona (F) @ Focus Sash  
+Ability: Flame Body  
+Level: 40  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Heat Wave  
+- Quiver Dance  
+- Protect  
+- Bug Buzz  
+
 
 
 
@@ -17929,7 +17958,7 @@ Castform @ Heat Rock
 Ability: Forecast  
 Level: 35  
 Timid Nature  
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Weather Ball  
 - Sunny Day  
 - Tailwind  
@@ -17970,7 +17999,7 @@ Castform @ Damp Rock
 Ability: Forecast  
 Level: 35  
 Timid Nature  
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Weather Ball  
 - Rain Dance  
 - Tailwind  
