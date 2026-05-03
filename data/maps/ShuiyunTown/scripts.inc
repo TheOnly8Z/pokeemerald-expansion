@@ -202,7 +202,10 @@ ShuiyunTown_Text_DebugGiveHM:
 
 ShuiyunTown_EventScript_TalkKaiZhong::
 	lock
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition1, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition1Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition1Zhong, MSGBOX_DEFAULT
 	closemessage
 
 	delay 40
@@ -212,6 +215,8 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 	waitmovement 0
 	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_FacePlayer
 	waitmovement 0
+
+	speakername CommonName_Text_Zhong
 	msgbox ShuiyunTown_Text_KaiZhong_Exposition1NoticePlayer, MSGBOX_DEFAULT
 
 	@ Zhong and Kai move into dialog position
@@ -220,13 +225,30 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveKaiZhongRight
 	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveKaiZhongUp
 
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition2, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition3, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition4, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition2Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition2Zhong, MSGBOX_DEFAULT
+
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition3Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition3Zhong, MSGBOX_DEFAULT
+
+
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition4Kai, MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition4Zhong, MSGBOX_DEFAULT
+
+
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition5Kai, MSGBOX_DEFAULT
 	closemessage
 
 	delay 40
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition4Turn, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition5Turn, MSGBOX_DEFAULT
 
 	@ Kai and Zhong turn to each other for a few sentences
 	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_ZhongKaiFaceEachOtherEast
@@ -237,10 +259,21 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 	call_if_eq VAR_RESULT, MALE, ShuiyunTown_EventScript_TalkKaiZhongExposition5He
 	call_if_eq VAR_RESULT, FEMALE, ShuiyunTown_EventScript_TalkKaiZhongExposition5She
 
+	@ Zhong forgor
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition8Pause, MSGBOX_DEFAULT
+
 	applymovement LOCALID_ZHONG, ShuiyunTown_Movement_Surprise
 	waitmovement 0
 
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition6, MSGBOX_DEFAULT
+	@ He remembers
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition8Zhong, MSGBOX_DEFAULT
+
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition8Kai, MSGBOX_DEFAULT
+
+	
 
 	@ Turn back to face player
 	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_ZhongKaiFacePlayerEast
@@ -248,12 +281,16 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_ZhongKaiFacePlayerSouth
 
 	@ blah blah blah
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition7, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition8, MSGBOX_DEFAULT
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition9, MSGBOX_DEFAULT
-	closemessage
+
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition9Zhong, MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition9Kai, MSGBOX_DEFAULT
 
 	@ Zhong goes into the gym
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition10Zhong, MSGBOX_DEFAULT
+	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveZhongGymRight
 	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveZhongGymUpRight
 	call_if_eq VAR_FACING, DIR_SOUTH, ShuiyunTown_EventScript_MoveZhongGymRightUp
@@ -265,7 +302,8 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 	closedoor 13, 20
 	
 	@ Kai goes into the gym
-	msgbox ShuiyunTown_Text_KaiZhong_Exposition10 MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition10Kai MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, ShuiyunTown_EventScript_MoveKaiGymRightUp
 	call_if_eq VAR_FACING, DIR_WEST, ShuiyunTown_EventScript_MoveKaiGymRight
@@ -294,11 +332,21 @@ ShuiyunTown_EventScript_TalkKaiZhong::
 
 
 ShuiyunTown_EventScript_TalkKaiZhongExposition5He::
+	speakername CommonName_Text_Zhong
 	msgbox ShuiyunTown_Text_KaiZhong_Exposition5He MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition6He MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition7He MSGBOX_DEFAULT
 	return
 
 ShuiyunTown_EventScript_TalkKaiZhongExposition5She::
+	speakername CommonName_Text_Zhong
 	msgbox ShuiyunTown_Text_KaiZhong_Exposition5She MSGBOX_DEFAULT
+	speakername CommonName_Text_Kai
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition6She MSGBOX_DEFAULT
+	speakername CommonName_Text_Zhong
+	msgbox ShuiyunTown_Text_KaiZhong_Exposition7She MSGBOX_DEFAULT
 	return
 
 
@@ -389,109 +437,132 @@ ShuiyunTown_EventScript_ZhongKaiFacePlayerSouth::
 	waitmovement 0
 	return
 
-ShuiyunTown_Text_KaiZhong_Exposition1:
-	.string "KAI: The rain isn’t letting up…\p"
-	.string "ZHONG: I could see the water level in\n"
-	.string "LANTERN CAVE rise with my bare eyes…$"
+ShuiyunTown_Text_KaiZhong_Exposition1Kai::
+	.string "The rain isn’t letting up.$"
 
-ShuiyunTown_Text_KaiZhong_Exposition1NoticePlayer:
-	.string "ZHONG: Ah, it's {PLAYER}! Tremendous!\n"
+ShuiyunTown_Text_KaiZhong_Exposition1Zhong::
+	.string "Even in the sweltering LANTERN CAVE,\n"
+	.string "I could see the water level rise with\l"
+	.string "my bare eyes…$"
+
+ShuiyunTown_Text_KaiZhong_Exposition1NoticePlayer::
+	.string "Ah, it's {PLAYER}! Tremendous!\n"
 	.string "Let's get this conversation started!$"
 
-ShuiyunTown_Text_KaiZhong_Exposition2:
-	.string "KAI: Pfft, you dork.\p"
-	.string "KAI: Alright, let me summarize our\n"
+ShuiyunTown_Text_KaiZhong_Exposition2Kai::
+	.string "Pfft, you dork.\p"
+	.string "Alright, let me summarize our\n"
 	.string "current situation.\p"
-	.string "KAI: The folks at the DOCKYARD has\n"
+	.string "The folks at the DOCKYARD has\n"
 	.string "installed the parts you delivered.\p"
-	.string "KAI: The ship is sea-worthy now,\n"
+	.string "The ship is sea-worthy now,\n"
 	.string "although the weather is still very\l"
-	.string "dangerous to sail in.\p"
-	.string "ZHONG: Doesn't take a PhD to realize\n"
+	.string "dangerous to sail in.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition2Zhong::
+	.string "Doesn't take a PhD to realize\n"
 	.string "the weather is abnormal.\p"
-	.string "ZHONG: {PLAYER}, you travelled around\n"
-	.string "the most. Did you notice anything?\p"
-	.string "……$"
+	.string "{PLAYER}, you travelled around\n"
+	.string "the most. Did you notice anything?$"
 
-ShuiyunTown_Text_KaiZhong_Exposition3:
-	.string "KAI: TEAM AQUA and TEAM MAGMA,\n"
-	.string "working together?\p"
-	.string "ZHONG: Huh? Those guys hate each other!\n"
+ShuiyunTown_Text_KaiZhong_Exposition3Kai::
+	.string "TEAM AQUA and TEAM MAGMA,\n"
+	.string "working together?$"
+
+ShuiyunTown_Text_KaiZhong_Exposition3Zhong::
+	.string "Huh? Those guys hate each other!\n"
 	.string "Also, they disbanded! It was all over\l"
-	.string "the news months ago!\p"
-	.string "KAI: Must be stubborn holdouts without\n"
-	.string "their original leaders in charge.\p"
-	.string "KAI: Judging by the weather, they likely\n"
-	.string "still have control of KYOGRE and GROUDON,\l"
-	.string "who are duking it out as we speak.\p"
-	.string "ZHONG: The way I see it, KYOGRE is\n"
-	.string "surrounded. But so is GROUDON!\p"
-	.string "ZHONG: They fight evenly, causing havoc\n"
-	.string "upon the weather, until RAYQUAZA shows\l"
-	.string "up and breaks up the fight!\p"
-	.string "KAI: Correct. But we can't assume\n"
-	.string "RAYQUAZA will show up and save us.$"
+	.string "the news months ago!$"
 
-ShuiyunTown_Text_KaiZhong_Exposition4:
-	.string "KAI: We know too little about the teams'\n"
+ShuiyunTown_Text_KaiZhong_Exposition4Kai::
+	.string "Must be stubborn holdouts without their\n"
+	.string "original leaders in charge.\p"
+	.string "Judging by the weather, they likely\n"
+	.string "still have control of KYOGRE and GROUDON,\l"
+	.string "who are duking it out as we speak.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition4Zhong::
+	.string "The way I see it, KYOGRE is surrounded.\n"
+	.string "But so is GROUDON!\p"
+	.string "They are evenly matched, and the only\n"
+	.string "thing that can stop them is RAYQUAZA!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition5Kai::
+	.string "We know too little about their\n"
 	.string "plans, and there's too little time.\l"
 	.string "We must proceed with the evacuation.$"
 
-ShuiyunTown_Text_KaiZhong_Exposition4Turn:
-	.string "KAI: {PLAYER}, you seem unhappy about\n"
+ShuiyunTown_Text_KaiZhong_Exposition5Turn::
+	.string "{PLAYER}, you seem unhappy about\n"
 	.string "this decision somehow.$"
 
-ShuiyunTown_Text_KaiZhong_Exposition5He:
-	.string "ZHONG: Of course he would! He saved\n"
-	.string "my sorry arse, picked up your slack,\l"
-	.string "and we're just gonna shrug and not\l"
-	.string "repay the favor?\p"
-	.string "KAI: How? By sending him to his doom\n"
-	.string "against the two teams and their\l"
-	.string "legendary POKéMON?\p"
-	.string "ZHONG: Well, maybe he's stronger than\n"
-	.string "you think.\p"
-	.string "ZHONG: If only there was a way to prove\n"
-	.string "someone's skills at POKéMON battles!\p"
-	.string "KAI: {PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+ShuiyunTown_Text_KaiZhong_Exposition5He::
+	.string "Of course he would! He saved my sorry\n"
+	.string "arse, picked up your slack,\l"
+	.string "and we're just gonna shrug and run away\n"
+	.string "instead of repaying the favor?$"
 
-ShuiyunTown_Text_KaiZhong_Exposition5She:
-	.string "ZHONG: Of course she would! She saved\n"
-	.string "my sorry arse, picked up your slack,\l"
-	.string "and we're just gonna shrug and not\l"
-	.string "repay the favor?\p"
-	.string "KAI: How? By sending her to her doom\n"
-	.string "against the two teams and their\l"
-	.string "legendary POKéMON?\p"
-	.string "ZHONG: Well, maybe she's stronger than\n"
-	.string "you think.\p"
-	.string "ZHONG: If only there was a way to prove\n"
-	.string "someone's skills at POKéMON battles!\p"
-	.string "KAI: {PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+ShuiyunTown_Text_KaiZhong_Exposition5She::
+	.string "Of course she would! She saved my sorry\n"
+	.string "arse, picked up your slack,\l"
+	.string "and we're just gonna shrug and run away\n"
+	.string "instead of repaying the favor?$"
 
-ShuiyunTown_Text_KaiZhong_Exposition6:
-	.string "ZHONG: Oh wait, I'm a GYM LEADER!\n"
+ShuiyunTown_Text_KaiZhong_Exposition6He::
+	.string "{PLAYER} is capable, but asking\n"
+	.string "him to face off against TEAM\l"
+	.string "AQUA and MAGMA, who both control\l"
+	.string "legendary POKéMON?\p"
+	.string "I cannot ask him to risk his life\n"
+	.string "like this.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition6She::
+	.string "{PLAYER} is capable, but asking\n"
+	.string "her to face off against TEAM\l"
+	.string "AQUA and MAGMA, who both control\l"
+	.string "legendary POKéMON?\p"
+	.string "I cannot ask her to risk his life\n"
+	.string "like this.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition7He::
+	.string "Maybe he's stronger than you think.\p"
+	.string "If only there was a way to prove\n"
+	.string "someone's skills at POKéMON battles!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition7She::
+	.string "Maybe she's stronger than you think.\p"
+	.string "If only there was a way to prove\n"
+	.string "someone's skills at POKéMON battles!$"
+
+ShuiyunTown_Text_KaiZhong_Exposition8Pause::
+	.string "{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
+
+ShuiyunTown_Text_KaiZhong_Exposition8Zhong::
+	.string "Oh wait, I'm a GYM LEADER!\n"
 	.string "We can just battle it out at my GYM!$"
 
-ShuiyunTown_Text_KaiZhong_Exposition7:
-	.string "KAI: Oh my god.\p"
-	.string "ZHONG: I had this whole thing where\n"
-	.string "you had to do a quiz while balancing\l"
+ShuiyunTown_Text_KaiZhong_Exposition8Kai::
+	.string "You are… as quick-witted as a\n"
+	.string "SLOWPOKE…$"
+
+ShuiyunTown_Text_KaiZhong_Exposition9Zhong:
+	.string "I had this whole thing where you had\n"
+	.string "to answer a quiz while balancing\l"
 	.string "on a unicycle, but we can skip the\l"
 	.string "formalities.\p"
-	.string "ZHONG: KAI, you should come as well.\n"
+	.string "KAI, you should come as well.\n"
 	.string "It's been a while, right?$"
 
-ShuiyunTown_Text_KaiZhong_Exposition8:
-	.string "KAI: Can't argue with that. Besides,\n"
-	.string "I want to test {PLAYER}'s skills myself.$"
+ShuiyunTown_Text_KaiZhong_Exposition9Kai:
+	.string "Can't argue with that. Besides, I\n"
+	.string "want to see {PLAYER}'s skills myself.$"
 
-ShuiyunTown_Text_KaiZhong_Exposition9:
-	.string "ZHONG: Perfectamundo!\n"
+ShuiyunTown_Text_KaiZhong_Exposition10Zhong:
+	.string "Perfectamundo!\n"
 	.string "See you at the GYM, {PLAYER}!$"
 
-ShuiyunTown_Text_KaiZhong_Exposition10:
-	.string "KAI: At least he's in good spirits…$"
+ShuiyunTown_Text_KaiZhong_Exposition10Kai:
+	.string "At least he's in good spirits…$"
 
 ShuiyunTown_Text_KaiZhong_ToBeContinued:
 	.string "TO BE CONTINUED{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"

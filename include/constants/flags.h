@@ -719,8 +719,8 @@
 #define FLAG_HIDE_SKYWARD_TRAIL_COLRESS  0x2A0 // Unused Flag
 #define FLAG_HIDE_SKYWARD_TRAIL_MATT  0x2A1 // Unused Flag
 #define FLAG_HIDE_LANTERN_CAVE_COURTNEY  0x2A2 // Unused Flag
-#define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
+#define FLAG_ITEM_SHUIYUN_SHORES_WATER_STONE  0x2A3 // Unused Flag
+#define FLAG_ITEM_LANTERN_CAVE_SANDSTORM  0x2A4 // Unused Flag
 #define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
 #define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag

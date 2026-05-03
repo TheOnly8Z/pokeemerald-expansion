@@ -68,6 +68,7 @@ ShuiyunTown_Gym_EventScript_ZhongRemindKai::
 	end
 
 ShuiyunTown_Gym_EventScript_ZhongRemindLake::
+	speakername CommonName_Text_Zhong
 	msgbox ShuiyunTown_Gym_Text_ZhongRemindLake, MSGBOX_NPC
 	end
 
@@ -453,7 +454,7 @@ ShuiyunTown_Gym_Text_KaiZhongGoodbye:
 	.string "punks who's boss, {PLAYER}.$"
 
 ShuiyunTown_Gym_Text_ZhongRemindLake:
-	.string "ZHONG: Ah, you're still here.\n"
+	.string "Ah, you're still here.\n"
 	.string "In case you forgot, you can reach\l"
 	.string "JIANGSHEN LAKE using WATERFALL.\p"
 	.string "Ascend the waterfall north of the\n"
