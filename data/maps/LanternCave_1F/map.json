@@ -427,13 +427,6 @@
       "elevation": 0,
       "dest_map": "MAP_LANTERN_CAVE_2F",
       "dest_warp_id": "3"
-    },
-    {
-      "x": 31,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_LANTERN_CAVE_1F_DIVE_SPOT",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

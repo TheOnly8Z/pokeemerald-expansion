@@ -25,10 +25,10 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 18,
+      "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_LANTERN_CAVE_1F",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_LANTERN_CAVE_1F_ICE_ROOM",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
