@@ -4760,6 +4760,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/DiveRoute_East/border.bin",
       "blockdata_filepath": "data/layouts/DiveRoute_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOINT_HIDEOUT_2F",
+      "name": "JointHideout_2F_Layout",
+      "width": 35,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/JointHideout_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JointHideout_2F/map.bin"
     }
   ]
 }

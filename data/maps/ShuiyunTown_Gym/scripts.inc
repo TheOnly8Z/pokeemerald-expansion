@@ -150,7 +150,7 @@ ShuiyunTown_Gym_EventScript_KaiZhongPostBattle::
 	msgbox ShuiyunTown_Gym_Text_KaiZhongPostBattle6Kai, MSGBOX_DEFAULT
 	speakername NULL
 
-	giveitem ITEM_HM07
+	@ giveitem ITEM_HM07
 	giveitem ITEM_HM08
 
 	speakername CommonName_Text_Kai
@@ -340,9 +340,9 @@ ShuiyunTown_Gym_Text_AdviceGuy_PostBattle:
 	.string "KAI and ZHONG!\p"
 	.string "If you want to test yourself even further,\n"
 	.string "pick a fight with some of the Trainers here.\p"
-	.string "I've been told they come from some sort of……\n"
-	.string "technology center? Anyways, I'm sure a battle\l"
-	.string "with them will be fruitful.$"
+	.string "I've been told they come from some sort of…\n"
+	.string "entertaining technology center?\p"
+	.string "I'm sure a battle with them will be fruitful.$"
 
 ShuiyunTown_Gym_Text_ManiacAskBattle:
 	.string "Kukuku… I have a cool strategy.\n"
@@ -395,7 +395,7 @@ ShuiyunTown_Gym_Text_BattleNotEnoughMons:
 
 ShuiyunTown_Gym_Text_BattleDefeatKaiZhong:
 	.string "KAI: I… what just happened?\p"
-	.string "ZHONG: Yowzers! Woah! Electric!$"
+	.string "ZHONG: Yowzers! Woah! Shocker!$"
 
 ShuiyunTown_Gym_Text_KaiZhongPostBattleToBeContinued:
 	.string "TO BE CONTINUED{PAUSE 15}.{PAUSE 15}.{PAUSE 15}.$"
@@ -427,21 +427,29 @@ ShuiyunTown_Gym_Text_KaiZhongPostBattle5Zhong:
 
 ShuiyunTown_Gym_Text_KaiZhongPostBattle6Kai:
 	.string "ZHONG!\p"
-	.string "Ahem. To go there, you'll need this.$"
+	.string "Ahem. The easy way to get there\n"
+	.string "is to use HM WATERFALL.\p"
+	.string "Unfortunately, we left in a hurry\n"
+	.string "and it is sitting in our house.\p"
+	.string "But we do have a plan B.$"
 
 ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall1Kai:
-	.string "You may have seen the large waterfall\n"
-	.string "north of the house on SKYWARD TRAIL.\p"
-	.string "Ascend the waterfall with WATERFALL, and\n"
-	.string "you will reach JIANGSHEN LAKE.\p"
-	.string "I also gave you the HM for DIVE, in case\n"
-	.string "there is a hidden entrance underwater.$"
+	.string "There are underwater routes that\n"
+	.string "connect to a submarine base.\p"
+	.string "Using HM DIVE, you can enter\n"
+	.string "JIANGSHEN LAKE from below.\p"
+	.string "There should be two entrances,\n"
+	.string "one in LANTERN CAVE and another\l"
+	.string "in YONGTAI LABORATORY.\p"
+	.string "TEAM AQUA and MAGMA have almost\n"
+	.string "certainly turned the base into\l"
+	.string "their hideout, so be prepared.$"
 
 ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall2Zhong:
 	.string "Definitely stop by our little hideaway\n"
 	.string "house by the lake!\p"
 	.string "You can use the bed to rest, and feel\n"
-	.string "free to take anything you need.$"
+	.string "free to grab anything you need.$"
 
 ShuiyunTown_Gym_Text_KaiZhongGiveWaterfall3Kai:
 	.string "ZHONG and I will stay here and continue\n"
@@ -455,14 +463,13 @@ ShuiyunTown_Gym_Text_KaiZhongGoodbye:
 
 ShuiyunTown_Gym_Text_ZhongRemindLake:
 	.string "Ah, you're still here.\n"
-	.string "In case you forgot, you can reach\l"
-	.string "JIANGSHEN LAKE using WATERFALL.\p"
-	.string "Ascend the waterfall north of the\n"
-	.string "house on SKYWARD TRAIL, and you'll\l"
-	.string "reach the lake.\p"
-	.string "You should stop by our house there\n"
+	.string "In case you forgot, JIANGSHEN LAKE\l"
+	.string "can be reached using HM DIVE.\p"
+	.string "There should be two entrances,\n"
+	.string "one in LANTERN CAVE and another\l"
+	.string "in YONGTAI LABORATORY.\p"
+	.string "Once there, stop by our house\n"
 	.string "to rest and stock up on items.$"
-
 	
 ShuiyunTown_Gym_Text_KaiNotSupposedToBeHere:
 	.string "KAI: Wait, I'm not supposed to be here.$"

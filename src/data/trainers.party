@@ -17596,7 +17596,6 @@ Pic: Colress
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-Items: Full Restore / Full Restore / Full Restore
 AI: Basic Trainer / Powerful Status
 Mugshot: Blue
 
@@ -17607,11 +17606,11 @@ EVs: 252 HP / 252 Def
 Adamant Nature  
 - Dragon Ascent  
 - Fly  
-- Hyper Beam  
-- Dragon Claw  
+- Solar Beam  
+- Dragon Claw
 
 Smeargle @ Focus Sash
-Ability: Own Tempo
+Ability: Moody
 Level: 50
 Timid Nature
 EVs: 252 HP / 252 Spe
@@ -17765,23 +17764,14 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Politoed @ Leftovers
-Ability: Drizzle
+Purugly @ Wide Lens
+Ability: Defiant  
 Level: 50
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Protect
-- Weather Ball
-- Hydro Pump
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fake Out  
+- Flash
+- Toxic
 - Hypnosis
-
-Roserade @ Black Sludge
-Ability: Natural Cure
-Level: 50
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Giga Drain
-- Sludge Bomb
-- Synthesis
-- Solar Beam
 
 === TRAINER_NEW_GRUNT_MAGMA_2 ===
 Name: GRUNT
@@ -17792,24 +17782,14 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Ludicolo @ Assault Vest
-Ability: Swift Swim
-Level: 50
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Hydro Pump
-- Mega Drain
-- Solar Beam
-- Weather Ball
-
-Torkoal @ Charcoal
-Ability: Drought
-Level: 50
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Overheat
-- Helping Hand
-- Solar Beam
-- Protect
-
+Zangoose @ Toxic Orb
+Ability: Toxic Boost  
+Level: 50  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Facade  
+- Shadow Claw
+- Swords Dance
+- Fling
 
 === TRAINER_JIANGSHEN_MATT ===
 Name: MATT
@@ -17817,7 +17797,6 @@ Class: Aqua Admin
 Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
-Items: Super Potion
 Double Battle: Yes
 AI: Smart Trainer / Powerful Status
 
@@ -17836,7 +17815,6 @@ Class: Magma Admin
 Pic: Magma Admin F
 Gender: Female
 Music: Magma
-Items: Super Potion
 Double Battle: Yes
 AI: Smart Trainer / Powerful Status
 
@@ -17857,42 +17835,34 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Powerful Status / Ace Pokemon
+AI: Smart Trainer / Powerful Status
 
 Qwilfish @ Sitrus Berry  
 Ability: Intimidate  
-Level: 33
+Level: 40
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Barb Barrage  
-- Liquidation  
+- Toxic  
 - Flip Turn  
-- Toxic
+- Protect
 
 Pelipper @ Focus Sash  
 Ability: Drizzle  
-Level: 35
+Level: 40
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Weather Ball  
 - Tailwind  
 - Air Slash  
 - Protect
 
-Sharpedo @ Expert Belt
-Ability: Speed Boost  
-Level: 37  
-- Close Combat  
-- Ice Fang  
-- Waterfall  
-- Crunch
-
-Swampert @ Rindo Berry  
+Swampert (M) @ Swampertite
 Ability: Damp  
-Level: 40  
+Level: 45  
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Earth Power  
-- Scald  
-- Focus Blast  
-- Blizzard
+- Bulk Up  
+- Liquidation 
+- Earthquake
+- Ice Punch
 
 
 === TRAINER_LANTERN_COURTNEY ===
@@ -17902,44 +17872,43 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Powerful Status / Ace Pokemon
+AI: Smart Trainer / Powerful Status
 
 Infernape @ Punching Glove  
 Ability: Iron Fist  
-Level: 32  
+Level: 50  
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Fake Out  
 - Substitute  
 - Drain Punch  
 - Focus Punch  
 
-Magmortar @ Blunder Policy  
-Ability: Flame Body  
-Level: 33  
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Follow Me  
-- Dynamic Punch  
-- Mach Punch  
-- Temper Flare  
-
 Arcanine @ Sitrus Berry  
 Ability: Intimidate  
-Level: 35  
+Level: 52  
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Extreme Speed  
 - Will-O-Wisp  
 - Helping Hand  
 - Flare Blitz  
 
-Volcarona (F) @ Focus Sash  
-Ability: Flame Body  
-Level: 40  
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Heat Wave  
-- Quiver Dance  
-- Protect  
-- Bug Buzz  
+Ninetales @ Focus Sash  
+Ability: Drought  
+Level: 55  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Calm Mind  
+- Helping Hand  
+- Encore  
+- Baton Pass  
 
+Houndoom (F) @ Houndoominite  
+Ability: Flash Fire  
+Level: 60  
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Heat Wave
+- Snarl  
+- Shadow Ball
+- Protect
 
 
 

@@ -230,11 +230,11 @@ SkywardTrail_Text_Lab::
 	.string "“Always The First Wave”$"
 
 SkywardTrail_Text_Colress_1::
-.string "...Oh! A POKéMON TRAINER!\p"
-.string "You must have battled many TEAM\n"
-.string "AQUA GRUNTS in this heavy rain\l"
-.string "to get here!\p"
-.string "May I have your name?$"
+	.string "...Oh! A POKéMON TRAINER!\p"
+	.string "You must have battled many TEAM\n"
+	.string "AQUA GRUNTS in this heavy rain\l"
+	.string "to get here!\p"
+	.string "May I have your name?$"
 
 
 SkywardTrail_Text_Colress_3::

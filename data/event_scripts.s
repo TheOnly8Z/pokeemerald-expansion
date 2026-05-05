@@ -1222,3 +1222,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SkywardTrail_Lab_B2F_Underwater/scripts.inc"
 
 	.include "data/maps/DiveRoute_East/scripts.inc"
+
+	.include "data/maps/JointHideout_2F/scripts.inc"

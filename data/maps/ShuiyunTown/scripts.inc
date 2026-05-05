@@ -661,5 +661,5 @@ ShuiyunTown_Text_ColressIntro:
 	.string "go go gadget mega rayquaza$"
 
 ShuiyunTown_Text_ColressDefeated:
-	.string "wtf are your zu shitmon strats$"
+	.string "wtf are those zu shitmons$"
 	

@@ -11549,14 +11549,14 @@
                 "species": "SPECIES_TROPIUS"
               },
               {
-                "min_level": 28,
-                "max_level": 29,
-                "species": "SPECIES_QUAGSIRE"
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_RALTS"
               },
               {
-                "min_level": 30,
-                "max_level": 31,
-                "species": "SPECIES_TROPIUS"
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_RALTS"
               }
             ]
           },
@@ -11566,12 +11566,12 @@
               {
                 "min_level": 30,
                 "max_level": 33,
-                "species": "SPECIES_GOLDEEN"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 34,
                 "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 36,
@@ -11884,7 +11884,7 @@
               {
                 "min_level": 25,
                 "max_level": 26,
-                "species": "SPECIES_SHUCKLE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 25,
@@ -12387,23 +12387,23 @@
                 "species": "SPECIES_SCYTHER"
               },
               {
-                "min_level": 20,
-                "max_level": 24,
+                "min_level": 10,
+                "max_level": 10,
                 "species": "SPECIES_IGGLYBUFF"
               },
               {
-                "min_level": 20,
-                "max_level": 24,
+                "min_level": 10,
+                "max_level": 10,
                 "species": "SPECIES_PICHU"
               },
               {
-                "min_level": 20,
-                "max_level": 24,
+                "min_level": 10,
+                "max_level": 10,
                 "species": "SPECIES_IGGLYBUFF"
               },
               {
-                "min_level": 20,
-                "max_level": 24,
+                "min_level": 10,
+                "max_level": 10,
                 "species": "SPECIES_PICHU"
               }
             ]

@@ -7,9 +7,9 @@ JiangshenLake_Connector_MapScripts::
 
 JiangshenLake_Connector_OnLoad:
 	setvar VAR_TEMP_0, 0
-	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 3, JiangshenLake_Connector_EventScript_CloseDoor
-	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 4, JiangshenLake_Connector_EventScript_RemoveMatt
-	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 5, JiangshenLake_Connector_EventScript_RemoveCourtney
+	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 4, JiangshenLake_Connector_EventScript_CloseDoor
+	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 5, JiangshenLake_Connector_EventScript_RemoveMatt
+	call_if_lt VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 6, JiangshenLake_Connector_EventScript_RemoveCourtney
 	end
 
 JiangshenLake_Connector_EventScript_CloseDoor::
@@ -47,7 +47,7 @@ JiangshenLake_Connector_EventScript_Door::
 	setmetatile 11, 10, METATILE_Facility_NewMauvilleDoor_Open_Tile5, TRUE
 	special DrawWholeMapView
 	playse SE_BANG
-	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 3
+	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 4
 	releaseall
 	end
 
@@ -71,7 +71,7 @@ JiangshenLake_Connector_Trainer_Matt::
 
 JiangshenLake_Connector_Trainer_Matt_PostBattle::
 	lock
-	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 4
+	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 5
 	setflag FLAG_HIDE_JIANGSHEN_MATT
 
 	speakername CommonName_Text_Matt
@@ -90,7 +90,7 @@ JiangshenLake_Connector_Trainer_Courtney::
 
 JiangshenLake_Connector_Trainer_Courtney_PostBattle::
 	lock
-	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 5
+	setvar VAR_JIANGSHEN_GRUNT_BATTLE_STATE, 6
 	setflag FLAG_HIDE_JIANGSHEN_COURTNEY
 
 	speakername CommonName_Text_Courtney
